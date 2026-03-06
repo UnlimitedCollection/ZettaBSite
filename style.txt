@@ -1,0 +1,57 @@
+ZettaB Theme Design System & Style Guide
+
+1. TYPOGRAPHY
+-------------
+Primary Heading Font : 'Jost', sans-serif
+Secondary Body Font  : 'Source Sans 3', sans-serif
+Font Weights       : 400 (Regular), 600 (Semi-Bold), 700 (Bold)
+
+2. COLOR PALETTE
+----------------
+Background Colors (Dark Theme):
+- Main Dark Background : #0b1119 (Used for deep sections like "Technical Growth Partner")
+- Card/Surface Dark    : #151a21 (Used for elevated cards, stat blocks)
+- Section Alternates   : #2f333c (Borders and subtle dividers)
+- Default Body Bg      : #ffffff (Light theme sections, though the recent focus was dark)
+
+Accent & Brand Colors:
+- Primary Brand Blue   : #0693e3 (Used for buttons, links, icons, and badges)
+- Brand Red            : #e30613 (Used for emphasis words like "Broken" and "Target")
+
+Text Colors:
+- Primary Text (Light) : #ffffff (For headings on dark backgrounds)
+- Muted Text (Light)   : #a0abb8 (For paragraph text on dark backgrounds)
+- Primary Text (Dark)  : #0b1119 (For text on light backgrounds)
+
+Gradients:
+- Primary Gradient     : linear-gradient(135deg, #0693e3 0%, #00d2ff 100%) (often mapped to ternary-to-primary in WP classes)
+
+3. UI PATTERNS & COMPONENTS
+---------------------------
+Buttons:
+- Solid Blue: Background #0693e3, Text #ffffff, Border-radius 5px, Font-weight 600.
+- Padding is typically generous (e.g., 15px 30px).
+
+Cards (Dark Theme):
+- Background: #151a21
+- Padding: 30px or var(--wp--preset--spacing--50)
+- Border-radius: 5px or 8px
+- Hover Effect: Slight Y-axis translation (transform: translateY(-5px)) and box-shadow enhancement.
+
+Badges/Pills:
+- Background: #0693e3
+- Text: #ffffff
+- Border-radius: 50px (Pill shape)
+- Padding: 5px 15px, smaller font size, uppercase or capitalized.
+
+4. LAYOUT & SPACING
+-------------------
+- Global Padding: Uses CSS variables like var(--wp--preset--spacing--70) for consistent vertical section rhythm (typically 50px - 80px).
+- Container Width: Typically constrained to a max-width (e.g., 1200px) centered via `auto` margins.
+- Flexbox & Grid: Extensively used for card layouts (e.g., 3-column or 4-column grids with gap: 30px).
+
+5. ANIMATIONS (wow.js & Animate.css)
+------------------------------------
+- Entrance animations are heavily utilized on scroll.
+- Common classes: `wow fadeInUp`, `wow fadeInDown`, `wow fadeInLeft`.
+- Animation Durations: Typically `data-wow-duration="1s"`.
