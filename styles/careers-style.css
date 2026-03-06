@@ -42,8 +42,9 @@
     background-position: center;
     border-radius: 20px;
     overflow: hidden;
-    margin: 80px auto 60px;
+    margin: 20px auto 60px;
     max-width: 1200px;
+    z-index: 0;
 }
 
 .careers-hero-overlay {
