@@ -2991,7 +2991,7 @@ a:where(:not(.wp-element-button)) {
 		width: auto !important;
 		max-width: 48px !important;
 		height: auto !important;
-		border-radius: 0 !important;
+		border-radius: 50% !important;
 		margin-bottom: 0 !important;
 	}
 
@@ -3023,5 +3023,38 @@ a:where(:not(.wp-element-button)) {
 		margin-left: 0 !important;
 		margin-right: 0 !important;
 		width: 100% !important;
+	}
+
+	/* Force all explicitly sized columns to stack on mobile (e.g. Stats, Features grids) */
+	.wp-block-column[style*="flex-basis"] {
+		flex-basis: 100% !important;
+		width: 100% !important;
+	}
+
+	/* Do not break header layout which has specific flex-basis styling */
+	header .wp-block-column[style*="flex-basis"] {
+		flex-basis: auto !important;
+	}
+
+	/* Fix Strategy + Design + Eng box layout on mobile */
+	.technical-growth-partner .wp-block-group.is-layout-flex {
+		flex-direction: column !important;
+		gap: 20px !important;
+		padding: 24px !important;
+	}
+
+	.technical-growth-partner .wp-block-group.is-layout-flex>div[style*="font-size: 20px"] {
+		display: none !important;
+		/* Hide '+' separators */
+	}
+
+	.technical-growth-partner .wp-block-group.is-layout-flex>div {
+		width: 100% !important;
+	}
+
+	/* Fix huge padding on small badges like 'Our Services' */
+	.our-services-small-heading h3 {
+		padding: 6px 16px !important;
+		font-size: 12px !important;
 	}
 }
