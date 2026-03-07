@@ -1,17 +1,20 @@
 /* Universal Footer Alignment & Layout Fixes */
 .footer-widgets {
-    background-color: #104c75 !important; 
+    background-color: #104c75 !important;
     padding-top: 60px !important;
     padding-bottom: 60px !important;
 }
+
 .footer-widgets .custom-logo {
-    max-width: 110px !important; /* Made logo smaller as requested */
+    max-width: 110px !important;
+    /* Made logo smaller as requested */
     height: auto !important;
     margin-bottom: 25px !important;
     display: block !important;
     filter: none !important;
     margin-left: 0 !important;
 }
+
 .footer-widgets .wp-block-site-logo {
     display: flex !important;
     justify-content: flex-start !important;
@@ -19,6 +22,7 @@
     margin: 0 !important;
     width: 100% !important;
 }
+
 .footer-widgets .wp-block-group.is-nowrap {
     display: flex !important;
     flex-wrap: nowrap !important;
@@ -28,6 +32,7 @@
     margin-bottom: 20px !important;
     width: auto !important;
 }
+
 .footer-widgets .wp-block-group.is-nowrap figure {
     margin: 0 !important;
     width: 20px !important;
@@ -36,6 +41,7 @@
     flex-shrink: 0 !important;
     filter: none !important;
 }
+
 .footer-widgets .wp-block-group.is-nowrap p {
     margin: 0 !important;
     text-align: left !important;
@@ -47,6 +53,7 @@
     width: auto !important;
     flex-grow: 1 !important;
 }
+
 .footer-widgets h5.wp-block-heading {
     font-size: 20px !important;
     font-weight: 700 !important;
@@ -55,6 +62,7 @@
     letter-spacing: normal !important;
     color: #ffffff !important;
 }
+
 .footer-widgets hr.wp-block-separator {
     margin-top: 15px !important;
     margin-bottom: 25px !important;
@@ -64,12 +72,14 @@
     background: transparent !important;
     opacity: 1 !important;
 }
+
 .footer-widgets .wp-block-column .wp-block-navigation-item {
     display: flex !important;
     align-items: center !important;
     margin-bottom: 18px !important;
     justify-content: flex-start !important;
 }
+
 .footer-widgets .wp-block-column .wp-block-navigation-item::before {
     content: '•';
     color: #3ca2e0;
@@ -77,6 +87,7 @@
     margin-right: 12px;
     line-height: 0.5;
 }
+
 .footer-widgets .wp-block-column .wp-block-navigation-item a {
     font-size: 14px !important;
     font-weight: 600 !important;
@@ -86,9 +97,11 @@
     transition: color 0.3s ease;
     text-align: left !important;
 }
+
 .footer-widgets .wp-block-column .wp-block-navigation-item a:hover {
     color: #3ca2e0 !important;
 }
+
 .wp-block-group.copyright-text p {
     font-size: 13px !important;
     color: #ffffff !important;
@@ -102,29 +115,41 @@
         padding-top: 40px !important;
         padding-bottom: 30px !important;
     }
+
     .footer-widgets .wp-block-column {
         margin-bottom: 30px !important;
     }
+
     .footer-widgets .custom-logo {
         margin-left: 0 !important;
         margin-right: auto !important;
         max-width: 140px !important;
         margin-bottom: 15px !important;
     }
+
     .footer-widgets .wp-block-group.is-nowrap {
         margin-bottom: 12px !important;
         gap: 12px !important;
         align-items: flex-start !important;
     }
+
     .footer-widgets .wp-block-group.is-nowrap figure {
         margin-top: 2px !important;
     }
+
     .footer-widgets hr.wp-block-separator {
         margin-top: 10px !important;
         margin-bottom: 20px !important;
     }
+
     .footer-widgets h5.wp-block-heading {
         font-size: 18px !important;
         margin-bottom: 10px !important;
+    }
+
+    /* Hide the huge massive WP spacers on mobile */
+    .footer-widgets .wp-block-spacer {
+        display: none !important;
+        height: 0 !important;
     }
 }

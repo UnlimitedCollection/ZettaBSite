@@ -2963,8 +2963,10 @@ a:where(:not(.wp-element-button)) {
 	}
 
 	/* Squish padding for Stats blocks and scale down text */
-	.wp-block-column.wow.fadeInUp[style*="text-align: center"] {
-		padding: 24px !important;
+	.wp-block-column.wow.fadeInUp[style*="text-align: center"],
+	.wp-block-column.wow.fadeInUp[style*="padding: 40px"] {
+		padding: 15px !important;
+		margin-bottom: 10px !important;
 	}
 
 	.wp-block-column h3.has-jost-font-family {
@@ -2973,7 +2975,7 @@ a:where(:not(.wp-element-button)) {
 
 	/* Fix Image Stacking (3-image layout gaps) */
 	.wp-block-image {
-		margin-bottom: 20px !important;
+		margin-bottom: 15px !important;
 	}
 
 	.wp-block-image img {
@@ -2981,6 +2983,23 @@ a:where(:not(.wp-element-button)) {
 		/* Ensure neat borders when stacked vertically */
 		width: 100% !important;
 		height: auto !important;
+	}
+
+	/* Stop small icons from blowing up to 100% width on mobile */
+	.service-box .wp-block-image img,
+	.readmore-group .wp-block-image img {
+		width: auto !important;
+		max-width: 48px !important;
+		height: auto !important;
+		border-radius: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	.readmore-group {
+		align-items: center !important;
+		justify-content: flex-start !important;
+		gap: 10px !important;
+		margin-top: 15px !important;
 	}
 
 	/* Fix Media-Text blocks squishing text on mobile */
