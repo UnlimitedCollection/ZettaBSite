@@ -102,7 +102,7 @@
 
 .about-section-title {
     font-size: 2.8rem;
-    color: #0f152d;
+    color: #0f152d !important;
     font-family: 'Jost', sans-serif;
     font-weight: 700;
     margin-bottom: 25px;
@@ -110,14 +110,14 @@
 
 .about-section-subtitle {
     font-size: 1.8rem;
-    color: #333;
+    color: #333 !important;
     font-family: 'Jost', sans-serif;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .intro-text p {
-    color: #555;
+    color: #555 !important;
     line-height: 1.8;
     margin-bottom: 20px;
     font-size: 1.1rem;
@@ -152,13 +152,13 @@
 .mv-card-title {
     font-size: 1.5rem;
     font-family: 'Jost', sans-serif;
-    color: #0f152d;
+    color: #0f152d !important;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
 .mv-card p {
-    color: #666;
+    color: #666 !important;
     line-height: 1.6;
     font-size: 1.05rem;
 }
@@ -173,7 +173,7 @@
 
 .expertise-subtitle {
     font-size: 1.2rem;
-    color: #555;
+    color: #555 !important;
     margin-bottom: 30px;
 }
 
@@ -189,7 +189,7 @@
     padding-left: 30px;
     position: relative;
     line-height: 1.6;
-    color: #555;
+    color: #555 !important;
     font-size: 1.1rem;
 }
 
@@ -205,7 +205,7 @@
 }
 
 .expertise-list li strong {
-    color: #0f152d;
+    color: #0f152d !important;
     font-family: 'Jost', sans-serif;
 }
 
@@ -229,13 +229,13 @@
 .stat-number {
     font-size: 3rem;
     font-weight: 700;
-    color: #0c71e0;
+    color: #0c71e0 !important;
     font-family: 'Jost', sans-serif;
     margin-bottom: 10px;
 }
 
 .stat-label {
-    color: #555;
+    color: #555 !important;
     font-size: 1.1rem;
     font-weight: 500;
     margin: 0;
@@ -243,26 +243,56 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .about-hero {
+        padding: 60px 20px !important;
+        margin-bottom: 40px !important;
+    }
+
     .about-hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem !important;
     }
 
     .about-section {
-        margin-bottom: 60px;
+        margin-bottom: 40px !important;
+    }
+
+    .about-section-title {
+        font-size: 2rem !important;
+    }
+
+    /* Force flex items to be 100% wide on mobile to prevent overflow from 500px flex-basis */
+    .company-intro-section {
+        flex-direction: column !important;
+    }
+
+    .intro-text,
+    .intro-image {
+        flex: 1 1 100% !important;
+        width: 100% !important;
     }
 
     .expertise-section {
-        padding: 40px 20px;
+        padding: 30px 20px !important;
     }
 
     .stats-banner {
-        padding: 40px 20px;
-        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 20px !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+
+    .stat-number {
+        font-size: 2.5rem !important;
     }
 }
 
 @media (max-width: 480px) {
     .stats-banner {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+    }
+
+    .mission-vision-grid,
+    .expertise-list {
+        grid-template-columns: 1fr !important;
     }
 }

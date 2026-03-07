@@ -99,6 +99,38 @@ css_content = """/* Universal Footer Alignment & Layout Fixes */
     margin: 0 !important;
     justify-content: center !important;
 }
+
+@media (max-width: 800px) {
+    .footer-widgets {
+        padding-top: 40px !important;
+        padding-bottom: 30px !important;
+    }
+    .footer-widgets .wp-block-column {
+        margin-bottom: 30px !important;
+    }
+    .footer-widgets .custom-logo {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        max-width: 140px !important;
+        margin-bottom: 15px !important;
+    }
+    .footer-widgets .wp-block-group.is-nowrap {
+        margin-bottom: 12px !important;
+        gap: 12px !important;
+        align-items: flex-start !important;
+    }
+    .footer-widgets .wp-block-group.is-nowrap figure {
+        margin-top: 2px !important;
+    }
+    .footer-widgets hr.wp-block-separator {
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+    }
+    .footer-widgets h5.wp-block-heading {
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+    }
+}
 """
 
 with open('styles/footer-style.css', 'w', encoding='utf-8') as f:

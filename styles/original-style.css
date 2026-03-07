@@ -2853,4 +2853,92 @@ a:where(:not(.wp-element-button)) {
 	header .header-buttons {
 		display: none;
 	}
+
+	header .inner-menu-header {
+		display: flex !important;
+		flex-direction: row !important;
+		flex-wrap: nowrap !important;
+		align-items: center !important;
+		justify-content: space-between !important;
+	}
+
+	header .nav-block {
+		display: block !important;
+		flex-basis: auto !important;
+		width: auto !important;
+		max-width: none !important;
+		margin: 0 0 0 auto !important;
+		padding: 0 !important;
+	}
+
+	header .logo-block {
+		display: block !important;
+		flex-basis: auto !important;
+		width: auto !important;
+		max-width: none !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	header .logo-block img.custom-logo {
+		max-width: 140px !important;
+		height: auto !important;
+	}
+
+	/* --- NEW Custom Sections Mobile Fixes --- */
+
+	/* Hero Section */
+	.banner-content-block h2 {
+		font-size: 32px !important;
+		line-height: 1.3 !important;
+	}
+
+	.banner-content-block p {
+		font-size: 16px !important;
+	}
+
+	.banner-small-heading h3 {
+		font-size: 14px !important;
+	}
+
+	.bannerimage .wp-block-cover {
+		min-height: 500px !important;
+	}
+
+	/* "The Old Way is Broken" & "Capability Ecosystem" Grids */
+	.the-old-way-broken .wp-block-columns,
+	.capability-ecosystem .wp-block-columns {
+		flex-direction: column !important;
+		gap: 20px !important;
+	}
+
+	.the-old-way-broken .wp-block-column,
+	.capability-ecosystem .wp-block-column {
+		flex-basis: 100% !important;
+		width: 100% !important;
+		margin-bottom: 20px !important;
+	}
+
+	.the-old-way-broken h2,
+	.capability-ecosystem h2,
+	.engineered-longevity h2 {
+		font-size: 32px !important;
+		line-height: 1.3 !important;
+	}
+
+	/* "The ZettaB Difference" strategy box */
+	.technical-growth-partner h2 {
+		font-size: 32px !important;
+		line-height: 1.3 !important;
+	}
+
+	.technical-growth-partner .wp-block-group.is-layout-flex {
+		flex-direction: column !important;
+		gap: 20px !important;
+		padding: 30px 20px !important;
+	}
+
+	.technical-growth-partner .is-layout-flex>div {
+		margin-bottom: 15px;
+	}
 }
