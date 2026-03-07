@@ -3094,4 +3094,10 @@ a:where(:not(.wp-element-button)) {
 	.readmore-group::after {
 		display: none !important;
 	}
+
+	/* Mobile Menu Header Height reduction */
+	.custom-home-header .menu-header {
+		padding-top: 15px !important;
+		padding-bottom: 15px !important;
+	}
 }
