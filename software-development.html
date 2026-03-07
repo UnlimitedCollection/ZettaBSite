@@ -118,14 +118,34 @@
         justify-content: flex-end !important;
     }
     
-    /* Hamburger Icon */
+    /* Hamburger Icon Fix */
     .wp-block-navigation__responsive-container-open {
         padding: 5px !important;
     }
     .wp-block-navigation__responsive-container-open svg {
-        width: 28px !important;
-        height: 28px !important;
+        width: 32px !important;
+        height: 32px !important;
         fill: #ffffff !important;
+    }
+    
+    /* Hide Social Block on Mobile Header */
+    header .social-block {
+        display: none !important;
+    }
+    
+    /* Fix the empty column causing huge hero banner gap */
+    .bannerimage .wp-block-columns > .wp-block-column:empty {
+        display: none !important;
+    }
+    
+    /* Polish Hero Welcome Button */
+    .banner-small-heading h3 {
+        font-size: 14px !important;
+        padding: 10px 15px !important;
+        background: transparent !important;
+        border: 2px solid #0693e3 !important;
+        border-radius: 6px !important;
+        letter-spacing: 1px !important;
     }
     
     /* Opened Menu Container */
@@ -234,12 +254,7 @@
 							<button aria-haspopup="dialog" aria-label="Open menu"
 								class="wp-block-navigation__responsive-container-open "
 								data-wp-on-async--click="actions.openMenuOnClick"
-								data-wp-on--keydown="actions.handleMenuKeydown"><svg width="24" height="24"
-									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
-									focusable="false">
-									<rect x="4" y="7.5" width="16" height="1.5" />
-									<rect x="4" y="15" width="16" height="1.5" />
-								</svg></button>
+								data-wp-on--keydown="actions.handleMenuKeydown"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" fill="currentColor"/></svg></button>
 							<div class="wp-block-navigation__responsive-container  has-text-color has-heading-color has-background has-section-bg-background-color"
 								id="modal-2" data-wp-class--has-modal-open="state.isMenuOpen"
 								data-wp-class--is-menu-open="state.isMenuOpen" data-wp-watch="callbacks.initMenu"
