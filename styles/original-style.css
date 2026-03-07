@@ -3198,4 +3198,28 @@ a:where(:not(.wp-element-button)) {
 	color: #ffffff !important;
 	display: inline-block !important;
 	white-space: nowrap !important;
+	font-size: 11px !important;
+	padding: 6px 16px !important;
+}
+
+/* ===== REMOVE DARK LINE BETWEEN HERO & CHALLENGES (DESKTOP) ===== */
+/* Remove dark body color bleeding under the hero cover block */
+.wp-block-cover.banner-image-cover,
+.bannerimage .wp-block-cover {
+	background-color: transparent !important;
+}
+
+/* Remove duotone dark filter on desktop too — causes dark tint */
+.wp-block-cover.banner-image-cover.wp-duotone-dark-grayscale {
+	filter: none !important;
+}
+
+.banner-image-cover .wp-block-cover__image-background {
+	filter: none !important;
+}
+
+/* Ensure the challenge section sits directly below hero with white bg */
+.the-old-way-broken {
+	background-color: #ffffff !important;
+	margin-top: 0 !important;
 }
