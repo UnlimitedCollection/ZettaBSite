@@ -2885,6 +2885,35 @@ a:where(:not(.wp-element-button)) {
 		height: auto !important;
 	}
 
+	/* --- Slim down the header bar on mobile --- */
+	.menu-header {
+		padding-top: 10px !important;
+		padding-bottom: 10px !important;
+	}
+
+	.wp-block-group.logodiv,
+	header .wp-block-group.logodiv {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.wp-block-site-logo,
+	header .wp-block-site-logo {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	header .logo-block img.custom-logo {
+		max-width: 100px !important;
+		height: auto !important;
+		display: block !important;
+	}
+
+	header .inner-menu-header {
+		margin: 0 !important;
+		gap: 0 !important;
+	}
+
 	/* --- NEW Custom Sections Mobile Fixes --- */
 
 	/* Hero Section */
