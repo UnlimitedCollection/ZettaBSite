@@ -280,6 +280,24 @@
             .wp-block-columns.is-layout-flex>.wp-block-column.wow {
                 flex: 1 1 100% !important;
             }
+
+            /* Fix About Us stacked images on mobile */
+            .about-img .wp-block-column figure.wp-block-image {
+                margin-bottom: 20px !important;
+                width: 100% !important;
+            }
+
+            .about-img .wp-block-column figure.wp-block-image img {
+                width: 100% !important;
+                height: 100% !important;
+                aspect-ratio: 4 / 3 !important;
+                object-fit: cover !important;
+                border-radius: 12px !important;
+            }
+
+            .about-img .wp-block-column {
+                margin-bottom: 0 !important;
+            }
         }
     </style>
 </head>
