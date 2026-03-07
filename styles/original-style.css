@@ -2941,4 +2941,68 @@ a:where(:not(.wp-element-button)) {
 	.technical-growth-partner .is-layout-flex>div {
 		margin-bottom: 15px;
 	}
+
+	/* Force Left Alignment for Service Boxes and squish padding */
+	.service-box,
+	.wp-block-column.service-box {
+		text-align: left !important;
+		align-items: flex-start !important;
+		padding: 30px 24px !important;
+	}
+
+	.service-box .wp-block-heading,
+	.service-box p,
+	.service-box ul,
+	.service-box li {
+		text-align: left !important;
+	}
+
+	.service-box figure {
+		margin-left: 0 !important;
+		margin-right: auto !important;
+	}
+
+	/* Squish padding for Stats blocks and scale down text */
+	.wp-block-column.wow.fadeInUp[style*="text-align: center"] {
+		padding: 24px !important;
+	}
+
+	.wp-block-column h3.has-jost-font-family {
+		font-size: 32px !important;
+	}
+
+	/* Fix Image Stacking (3-image layout gaps) */
+	.wp-block-image {
+		margin-bottom: 20px !important;
+	}
+
+	.wp-block-image img {
+		border-radius: 12px !important;
+		/* Ensure neat borders when stacked vertically */
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	/* Fix Media-Text blocks squishing text on mobile */
+	.wp-block-media-text {
+		display: flex !important;
+		flex-direction: column !important;
+	}
+
+	.wp-block-media-text__content,
+	.wp-block-media-text__media {
+		width: 100% !important;
+		max-width: 100% !important;
+		padding: 0 !important;
+		margin-bottom: 20px !important;
+	}
+
+	/* Fix alignwide containers remaining stuck to 30% or having massive margins */
+	.wp-block-group.alignwide,
+	.alignwide {
+		max-width: 100% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		width: 100% !important;
+	}
 }
