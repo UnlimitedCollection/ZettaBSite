@@ -3052,9 +3052,46 @@ a:where(:not(.wp-element-button)) {
 		width: 100% !important;
 	}
 
-	/* Fix huge padding on small badges like 'Our Services' */
-	.our-services-small-heading h3 {
-		padding: 6px 16px !important;
-		font-size: 12px !important;
+	/* Fix huge padding and text wrapping on small badges like 'Our Services' & 'Why Choose Us' */
+	.our-services-small-heading h3,
+	.chooseus-small-heading h3,
+	.wp-block-heading.has-small-font-size.has-primary-background-color {
+		padding: 8px 24px !important;
+		font-size: 13px !important;
+		white-space: nowrap !important;
+		width: fit-content !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	/* Mobile Menu adjustments - prevent text wrapping and reduce gap */
+	.wp-block-navigation .wp-block-navigation__responsive-container-content ul.wp-block-navigation__container li.wp-block-navigation-item a {
+		padding: 10px 15px !important;
+		width: 100% !important;
+		white-space: nowrap !important;
+		font-size: 14px !important;
+	}
+
+	/* Footer spacing - reduce height */
+	.footer-widgets .wp-block-column .wp-block-navigation-item {
+		margin-bottom: 8px !important;
+	}
+
+	.site-footer {
+		padding-top: 30px !important;
+		padding-bottom: 30px !important;
+	}
+
+	/* Service card sizing, centering, and fixing orphaned circle */
+	.wp-block-column.service-box {
+		width: 90% !important;
+		max-width: 340px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		padding: 30px 20px !important;
+	}
+
+	.readmore-group::after {
+		display: none !important;
 	}
 }
