@@ -3189,7 +3189,7 @@ a:where(:not(.wp-element-button)) {
 	margin-block-start: 0 !important;
 }
 
-/* Welcome button — apply as proper solid blue pill, no border */
+/* Welcome button — pill shape on all screens, size only mobile */
 .banner-small-heading h3 {
 	border: none !important;
 	outline: none !important;
@@ -3198,28 +3198,15 @@ a:where(:not(.wp-element-button)) {
 	color: #ffffff !important;
 	display: inline-block !important;
 	white-space: nowrap !important;
-	font-size: 11px !important;
-	padding: 6px 16px !important;
 }
 
-/* ===== REMOVE DARK LINE BETWEEN HERO & CHALLENGES (DESKTOP) ===== */
-/* Remove dark body color bleeding under the hero cover block */
-.wp-block-cover.banner-image-cover,
-.bannerimage .wp-block-cover {
-	background-color: transparent !important;
-}
-
-/* Remove duotone dark filter on desktop too — causes dark tint */
-.wp-block-cover.banner-image-cover.wp-duotone-dark-grayscale {
-	filter: none !important;
-}
-
-.banner-image-cover .wp-block-cover__image-background {
-	filter: none !important;
-}
-
-/* Ensure the challenge section sits directly below hero with white bg */
-.the-old-way-broken {
-	background-color: #ffffff !important;
-	margin-top: 0 !important;
+/* Mobile only — make the button small */
+@media (max-width: 800px) {
+	.banner-small-heading h3 {
+		font-size: 13px !important;
+		padding: 8px 24px !important;
+		letter-spacing: 1px !important;
+		margin: 0 auto 12px !important;
+		width: fit-content !important;
+	}
 }
