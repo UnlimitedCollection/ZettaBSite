@@ -63,7 +63,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
 </style>
 <style id='wp-block-separator-inline-css'>
-@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
 </style>
 <style id='wp-block-separator-theme-inline-css'>
 .wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
@@ -163,147 +163,205 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
   <link rel="stylesheet" href="styles/footer-style.css">
 
 <style id="zetta-header-mobile-fix">
-@media (max-width: 800px) {
-    /* Header layout */
-    header .wp-block-columns.inner-menu-header {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-    header .wp-block-column.logo-block {
-        display: flex !important;
-        flex-basis: auto !important;
-        width: auto !important;
-        max-width: 70% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        align-items: center !important;
-    }
-    header .wp-block-column.logo-block img.custom-logo {
-        max-width: 130px !important;
-        height: auto !important;
-        display: block !important;
-    }
-    header .wp-block-column.nav-block {
-        display: flex !important;
-        flex-basis: auto !important;
-        width: auto !important;
-        max-width: 30% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        align-items: center !important;
-        justify-content: flex-end !important;
-    }
-    
-    /* Hamburger Icon Fix */
-    .wp-block-navigation__responsive-container-open {
-        padding: 5px !important;
-    }
-    .wp-block-navigation__responsive-container-open svg {
-        width: 32px !important;
-        height: 32px !important;
-        fill: #ffffff !important;
-    }
-    
-    /* Hide Social Block on Mobile Header */
-    header .social-block {
-        display: none !important;
-    }
-    
-    /* Fix the empty column causing huge hero banner gap */
-    .bannerimage .wp-block-columns > .wp-block-column:empty {
-        display: none !important;
-    }
-    
-    /* Polish Hero Welcome Button */
-    .banner-small-heading h3 {
-        font-size: 14px !important;
-        padding: 10px 15px !important;
-        background: transparent !important;
-        border: 2px solid #0693e3 !important;
-        border-radius: 6px !important;
-        letter-spacing: 1px !important;
-        width: fit-content !important;
-        margin: 0 auto !important;
-        display: inline-block !important;
-    }
-    
-    /* Opened Menu Container */
-    .wp-block-navigation__responsive-container.is-menu-open {
-        background-color: #0f152d !important;
-        padding: 20px !important;
-    }
-    
-    /* Close Button */
-    .wp-block-navigation__responsive-container-close {
-        top: 25px !important;
-        right: 25px !important;
-    }
-    .wp-block-navigation__responsive-container-close svg {
-        fill: #ffffff !important;
-        width: 32px !important;
-        height: 32px !important;
-    }
-    
-    /* Menu Items Container */
-    .wp-block-navigation__responsive-container-content {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        padding-top: 50px !important;
-    }
-    ul.wp-block-navigation__container {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        width: 100% !important;
-    }
-    ul.wp-block-navigation__container li {
-        width: 100% !important;
-        text-align: left !important;
-        border-bottom: 1px solid rgba(255,255,255,0.06) !important;
-    }
-    ul.wp-block-navigation__container li:last-child {
-        border-bottom: none !important;
-    }
-    
-    /* Menu Links */
-    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item a {
-        font-size: 16px !important;
-        font-weight: 500 !important;
-        letter-spacing: 0.5px !important;
-        padding: 16px 10px !important;
-        color: #ffffff !important;
-        text-transform: uppercase !important;
-        display: block !important;
-        width: 100% !important;
-        text-align: left !important;
-    }
-    
-    /* Services Dropdown in Mobile Menu */
-    .wp-block-navigation-submenu__toggle {
-        color: #ffffff !important;
-        top: 5px !important;
-        right: 5px !important;
-    }
-    .wp-block-navigation__submenu-container {
-        background-color: rgba(0,0,0,0.1) !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
-    .wp-block-navigation__submenu-container .wp-block-navigation-item a {
-        font-size: 14px !important;
-        padding: 12px 10px !important;
-        border-bottom: none !important;
-        text-transform: capitalize !important;
-        color: #cbd5e1 !important;
-    }
-}
-</style>
+        @media (max-width: 800px) {
+
+            /* Header layout */
+            header .wp-block-columns.inner-menu-header {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: nowrap !important;
+                align-items: center !important;
+                justify-content: space-between !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            header .wp-block-column.logo-block {
+                display: flex !important;
+                flex-basis: auto !important;
+                width: auto !important;
+                max-width: 70% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                align-items: center !important;
+            }
+
+            header .wp-block-column.logo-block img.custom-logo {
+                max-width: 130px !important;
+                height: auto !important;
+                display: block !important;
+            }
+
+            header .wp-block-column.nav-block {
+                display: flex !important;
+                flex-basis: auto !important;
+                width: auto !important;
+                max-width: 30% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                align-items: center !important;
+                justify-content: flex-end !important;
+            }
+
+            /* Hamburger Icon Fix */
+            .wp-block-navigation__responsive-container-open {
+                padding: 5px !important;
+            }
+
+            .wp-block-navigation__responsive-container-open svg {
+                width: 32px !important;
+                height: 32px !important;
+                fill: #ffffff !important;
+            }
+
+            /* Hide Social Block on Mobile Header */
+            header .social-block {
+                display: none !important;
+            }
+
+            /* Fix the empty column causing huge hero banner gap */
+            .bannerimage .wp-block-columns>.wp-block-column:empty {
+                display: none !important;
+            }
+
+            /* Welcome to ZettaB - Proper Pill Button */
+            .banner-small-heading h3 {
+                font-size: 13px !important;
+                padding: 8px 24px !important;
+                background: #108BEA !important;
+                background-color: #108BEA !important;
+                border: none !important;
+                outline: none !important;
+                border-radius: 30px !important;
+                letter-spacing: 1px !important;
+                color: #ffffff !important;
+                width: fit-content !important;
+                white-space: nowrap !important;
+                margin: 0 auto 12px !important;
+                display: inline-block !important;
+            }
+
+            /* Opened Menu Container */
+            .wp-block-navigation__responsive-container.is-menu-open {
+                background-color: #0f152d !important;
+                padding: 20px !important;
+            }
+
+            /* Close Button */
+            .wp-block-navigation__responsive-container-close {
+                top: 25px !important;
+                right: 25px !important;
+            }
+
+            .wp-block-navigation__responsive-container-close svg {
+                fill: #ffffff !important;
+                width: 32px !important;
+                height: 32px !important;
+            }
+
+            /* Menu Items Container */
+            .wp-block-navigation__responsive-container-content {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                padding-top: 50px !important;
+            }
+
+            ul.wp-block-navigation__container {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                width: 100% !important;
+            }
+
+            ul.wp-block-navigation__container li {
+                width: 100% !important;
+                text-align: left !important;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+            }
+
+            ul.wp-block-navigation__container li:last-child {
+                border-bottom: none !important;
+            }
+
+            /* Menu Links */
+            .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item a {
+                font-size: 16px !important;
+                font-weight: 500 !important;
+                letter-spacing: 0.5px !important;
+                padding: 16px 10px !important;
+                color: #ffffff !important;
+                text-transform: uppercase !important;
+                display: block !important;
+                width: 100% !important;
+                text-align: left !important;
+            }
+
+            /* Services Dropdown in Mobile Menu */
+            .wp-block-navigation-submenu__toggle {
+                color: #ffffff !important;
+                top: 5px !important;
+                right: 5px !important;
+            }
+
+            .wp-block-navigation__submenu-container {
+                background-color: rgba(0, 0, 0, 0.1) !important;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+
+            .wp-block-navigation__submenu-container .wp-block-navigation-item a {
+                font-size: 14px !important;
+                padding: 12px 10px !important;
+                border-bottom: none !important;
+                text-transform: capitalize !important;
+                color: #cbd5e1 !important;
+            }
+
+            /* Remove dark gap between header and hero */
+            .wp-site-blocks>.wp-block-group.is-layout-flow {
+                margin-block-start: 0 !important;
+                background: transparent !important;
+            }
+
+            .wp-block-group.bannerimage {
+                margin-top: 0 !important;
+                padding-top: 0 !important;
+                background: transparent !important;
+            }
+
+            /* Remove auto block-spacing that creates dark gap */
+            :where(.wp-site-blocks)>* {
+                margin-block-start: 0 !important;
+            }
+
+            .bannerimage .wp-block-cover {
+                margin-top: 0 !important;
+            }
+
+            .menu-header,
+            .custom-home-header .menu-header {
+                padding-top: 8px !important;
+                padding-bottom: 8px !important;
+                min-height: unset !important;
+            }
+
+            /* Fix stats cards overlapping on mobile */
+            .wp-block-column.wow.fadeInUp[data-wow-delay] {
+                flex-basis: 100% !important;
+                width: 100% !important;
+                min-width: 0 !important;
+                max-width: 100% !important;
+                padding: 20px !important;
+                box-sizing: border-box !important;
+                margin-bottom: 16px !important;
+            }
+
+            .wp-block-columns.is-layout-flex>.wp-block-column.wow {
+                flex: 1 1 100% !important;
+            }
+        }
+    </style>
 </head>
 
 <body class="home blog wp-custom-logo wp-embed-responsive">
@@ -434,11 +492,11 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p class="has-text-align-left has-secondary-color has-text-color has-link-color wp-elements-06df1a30b85943b01bde8c577ec554b7">At ZettaB, we’re passionate about combining innovation and expertise to bring you amazing digital solutions! Whether you’re looking for digital marketing to help your business grow or mobile and web app development to enhance your users&#8217; experiences, we’ve got you covered with custom solutions tailored just for you. </p>
+<p class="has-text-align-left has-secondary-color has-text-color has-link-color wp-elements-06df1a30b85943b01bde8c577ec554b7">At ZettaB, were passionate about combining innovation and expertise to bring you amazing digital solutions! Whether youre looking for digital marketing to help your business grow or mobile and web app development to enhance your users&#8217; experiences, weve got you covered with custom solutions tailored just for you. </p>
 
 
 
-<p class="has-secondary-color has-text-color has-link-color wp-elements-7e3b74c4d480b8e71b0d6cd152a6d1c4">Our software development services make your processes smoother, and our cloud deployments ensure you have a secure and scalable infrastructure. We’re here to empower your business with the technology you need to thrive and move forward confidently!</p>
+<p class="has-secondary-color has-text-color has-link-color wp-elements-7e3b74c4d480b8e71b0d6cd152a6d1c4">Our software development services make your processes smoother, and our cloud deployments ensure you have a secure and scalable infrastructure. Were here to empower your business with the technology you need to thrive and move forward confidently!</p>
 
 
 
@@ -524,7 +582,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p class="has-text-color has-link-color wp-elements-a0beba68fd8885e04adaec759041d283" style="color:#78808f">Websites are designed and developed to reflect your organization’s values, offering custom solutions that enhance user experience, functionality, and engagement across all devices.</p>
+<p class="has-text-color has-link-color wp-elements-a0beba68fd8885e04adaec759041d283" style="color:#78808f">Websites are designed and developed to reflect your organizations values, offering custom solutions that enhance user experience, functionality, and engagement across all devices.</p>
 </div>
 
 
@@ -578,7 +636,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p class="has-text-color has-link-color wp-elements-d985b40ce692e718a9b55ef974aef113" style="color:#78808f">Tailored digital marketing strategies are created, combining creative design, content management, and data insights to maximize your brand’s reach and engagement.</p>
+<p class="has-text-color has-link-color wp-elements-d985b40ce692e718a9b55ef974aef113" style="color:#78808f">Tailored digital marketing strategies are created, combining creative design, content management, and data insights to maximize your brands reach and engagement.</p>
 </div>
 
 
@@ -751,7 +809,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<p class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-8e7c7ae582002eb6dd9d253c8e856a85">We’re confident you’ll be 100% satisfied With Our Awesome Services!</p>
+<p class="has-text-align-center has-white-color has-text-color has-link-color wp-elements-8e7c7ae582002eb6dd9d253c8e856a85">Were confident youll be 100% satisfied With Our Awesome Services!</p>
 
 
 
@@ -853,7 +911,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 <div class="wp-block-group has-white-color has-footer-bg-background-color has-text-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-38 wp-block-group-is-layout-constrained" style="padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
 <div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow">
 <div class="wp-block-group copyright-text is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-36 wp-block-group-is-layout-flex">
-<p class="has-white-color has-text-color has-link-color has-jost-font-family wp-elements-95860702ebe8dc5c5c71efff61035cb8">Copyright © 2026 ZettaB · All Rights Reserved.</p>
+<p class="has-white-color has-text-color has-link-color has-jost-font-family wp-elements-95860702ebe8dc5c5c71efff61035cb8">Copyright  2026 ZettaB  All Rights Reserved.</p>
 </div>
 
 
