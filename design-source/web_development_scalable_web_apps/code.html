@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Web Development: Scalable Web Apps</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#067ff9",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1923",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-10 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tight">ZettaB</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium leading-normal text-primary" href="#">Services</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+<span class="truncate">Get a Quote</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center pb-20">
+<div class="w-full max-w-[1200px] px-6 py-8">
+<div class="@container w-full mb-16">
+<div class="relative flex min-h-[500px] w-full flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-2xl items-start justify-end p-10 overflow-hidden" data-alt="Modern web development code on screen" style='background-image: linear-gradient(rgba(15, 25, 35, 0.4) 0%, rgba(15, 25, 35, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1_ylZ_wVAVNl8f3FCnBERjrL_vQ5GUgPwMsQeFUdn0Xoq_cQxXWEmc9udMnSi-D9VVlOsdHRIhdYBR93aIb9uRH8p1l7ksTO932t7qBwBNDs9uAd0mLqILApiUQf_YL5px7ZvxAxBVDlinNL0hyKZZLD8ixaKfUhw7aspdxyyXEeZzs_cHGg2lkcUjcwkTVVByIXm2tRD9IXRFgs308unaKHf0lzB-yPYxA3DgnF6thLdfA4DH16FBsb1sqr-Lrp_rt9lbyzHP9E");'>
+<div class="relative z-10 flex flex-col gap-4 max-w-2xl text-left">
+<h1 class="text-white text-5xl font-extrabold leading-tight tracking-tight">
+                                    Scalable Web Development
+                                </h1>
+<p class="text-slate-200 text-lg font-normal leading-relaxed">
+                                    Modern, responsive web experiences tailored for your business needs. We build premium digital solutions that drive growth.
+                                </p>
+<div class="mt-4 flex gap-4">
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-primary text-white text-base font-bold leading-normal hover:bg-primary/90 transition-colors">
+                                        Discuss Your Project
+                                    </button>
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-base font-bold leading-normal hover:bg-white/20 transition-colors">
+                                        View Portfolio
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-12 @container w-full mb-20">
+<div class="flex flex-col gap-4 text-center max-w-3xl mx-auto">
+<h2 class="text-primary text-sm font-bold uppercase tracking-wider">Our Expertise</h2>
+<h3 class="text-3xl @[768px]:text-4xl font-extrabold leading-tight tracking-tight">
+                                Building the Web of Tomorrow
+                            </h3>
+<p class="text-slate-600 dark:text-slate-400 text-lg font-normal leading-relaxed">
+                                We deliver full-cycle web development services from Sri Lanka to the world, focusing on performance, scalability, and exceptional user experiences.
+                            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 hover:border-primary/50 transition-colors shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">devices</span>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="text-lg font-bold leading-tight">Responsive Design</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Pixel-perfect, seamless experiences across desktops, tablets, and mobile devices ensuring maximum reach.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 hover:border-primary/50 transition-colors shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">layers</span>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="text-lg font-bold leading-tight">Full-Stack Excellence</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Robust frontend and backend architectures built to scale securely as your business grows.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 hover:border-primary/50 transition-colors shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">api</span>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="text-lg font-bold leading-tight">API Integrations</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Seamlessly connect your web application with essential third-party tools, payment gateways, and CRMs.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 hover:border-primary/50 transition-colors shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">speed</span>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="text-lg font-bold leading-tight">Performance Optimization</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Lightning-fast load times, SEO optimization, and smooth interactions that keep users engaged.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full mb-20 p-8 md:p-12 rounded-2xl bg-slate-900 dark:bg-slate-800/50 text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1 flex flex-col gap-6">
+<h3 class="text-3xl font-extrabold leading-tight">Why Web Matters: The ROI</h3>
+<p class="text-slate-300 text-lg leading-relaxed">A premium website is more than just a digital storefront; it's a powerful growth engine. Investing in high-quality web development yields measurable returns.</p>
+<ul class="flex flex-col gap-4 mt-2">
+<li class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+</div>
+<span class="text-slate-200 font-medium">Higher Conversion Rates</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-sm">public</span>
+</div>
+<span class="text-slate-200 font-medium">Expanded Global Reach</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+</div>
+<span class="text-slate-200 font-medium">Enhanced Brand Credibility</span>
+</li>
+</ul>
+</div>
+<div class="w-full md:w-1/3 flex justify-center">
+<div class="relative w-full max-w-sm aspect-square rounded-full border-4 border-slate-800 flex items-center justify-center p-8 bg-slate-800/50">
+<div class="text-center">
+<span class="block text-5xl font-black text-primary mb-2">3x</span>
+<span class="block text-sm text-slate-400 uppercase tracking-widest font-bold">Average ROI</span>
+<span class="block text-xs text-slate-500 mt-2">in first 12 months</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-8 w-full">
+<div class="text-center mb-6">
+<h3 class="text-2xl font-bold leading-tight tracking-tight mb-2">Technologies We Use</h3>
+<p class="text-slate-600 dark:text-slate-400">Modern stack for modern solutions.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 md:gap-8">
+<div class="flex flex-col items-center justify-center w-24 h-24 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined text-4xl text-blue-500 mb-2">javascript</span>
+<span class="text-xs font-bold text-slate-500">React</span>
+</div>
+<div class="flex flex-col items-center justify-center w-24 h-24 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined text-4xl text-green-600 mb-2">code</span>
+<span class="text-xs font-bold text-slate-500">Node.js</span>
+</div>
+<div class="flex flex-col items-center justify-center w-24 h-24 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined text-4xl text-blue-600 mb-2">data_object</span>
+<span class="text-xs font-bold text-slate-500">TypeScript</span>
+</div>
+<div class="flex flex-col items-center justify-center w-24 h-24 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined text-4xl text-teal-500 mb-2">style</span>
+<span class="text-xs font-bold text-slate-500">Tailwind</span>
+</div>
+<div class="flex flex-col items-center justify-center w-24 h-24 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined text-4xl text-orange-500 mb-2">storage</span>
+<span class="text-xs font-bold text-slate-500">AWS</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

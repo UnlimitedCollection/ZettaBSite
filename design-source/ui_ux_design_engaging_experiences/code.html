@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UI/UX Design - TechWave SL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#067ff9",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1923",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navbar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-10 py-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-3xl">waves</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">TechWave SL</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9 hidden md:flex">
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Home</a>
+<a class="text-primary text-sm font-bold" href="#">Services</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">About</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#">Contact</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-white hover:bg-primary/90 transition-colors text-sm font-bold shadow-md shadow-primary/20">
+<span>Get Started</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col w-full max-w-[1200px] mx-auto">
+<!-- Hero Section -->
+<div class="@container px-6 py-12 md:py-20">
+<div class="flex flex-col-reverse md:flex-row gap-10 items-center">
+<div class="flex flex-col gap-6 md:w-1/2">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary w-fit">
+<span class="material-symbols-outlined text-sm">palette</span>
+<span class="text-xs font-bold uppercase tracking-wider">UI/UX Design</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-slate-900 dark:text-slate-100">
+                                User-Centric Design that <span class="text-primary">Converts</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 font-medium leading-relaxed max-w-xl">
+                                We craft engaging, intuitive digital experiences that delight your users and drive measurable business results for your brand.
+                            </p>
+<div class="flex flex-wrap gap-4 mt-2">
+<button class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white hover:bg-primary/90 transition-colors text-base font-bold shadow-lg shadow-primary/30">
+                                    Start Your Design Project
+                                    <span class="material-symbols-outlined ml-2 text-xl">arrow_forward</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-12 px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors text-base font-bold">
+                                    View Portfolio
+                                </button>
+</div>
+</div>
+<div class="md:w-1/2 w-full">
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-primary/10">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay z-10"></div>
+<img alt="UI Design Workspace" class="w-full h-full object-cover" data-alt="Designers collaborating over digital interface wireframes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN4-xR3i0S5kAqVkveZGg6WzpeQwdR_g_1QL7Mj_6aPzs8sdKCA-hTpKVHu3xlHtJ-RXO-3Fo1W1fPVqZmv1JjNmmZRmgLpVqS_Rofo5yyvrc_u1J5l2XA2iFJAxU87WNP2Bn8K-FG9HQ66mpCgQIqUgVCimrFQ_AxerIpeSprEx-pLhtKXI2eKJBSt98aMTGs7sEQkwjxLEe-qmXE_qDW1P0a1gE1LrLI_r4UUsH4BsL2tzk4zQycV-cSxEjmAWlOapmpxLRQ4F0"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Process Section -->
+<section class="px-6 py-16 md:py-24 bg-slate-100/50 dark:bg-slate-800/20 rounded-3xl mx-4 md:mx-0 my-8">
+<div class="flex flex-col gap-12 @container">
+<div class="flex flex-col gap-4 text-center max-w-3xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-black leading-tight tracking-tight text-slate-900 dark:text-slate-100">
+                                Our Design Process
+                            </h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg font-medium leading-relaxed">
+                                From conceptualization to execution, we follow a rigorous, user-focused methodology to ensure the final product meets your goals and exceeds expectations.
+                            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+<!-- Step 1 -->
+<div class="flex flex-col gap-5 p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-md hover:border-primary/50 transition-all group">
+<div class="w-14 h-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">architecture</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-slate-100">1. Wireframing</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
+                                        We start by creating structural blueprints of your digital product, focusing on layout, user flow, and core functionality before diving into visual aesthetics.
+                                    </p>
+</div>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-800">
+<img alt="Wireframing process" class="w-full h-32 object-cover rounded-lg opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Sketching low-fidelity wireframes on paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPdYL90LOg0n0HmlYYAhEaaAIHT5x2n0Jvs536Rtes9BtFHavH0O9G6xABeBhpltFs37srzITOk-08yZXNxDVgwbKlB6mVkEBPyEaU-MN8NGOgS7krUyoBZfgl8UB9FqVdUk_tS8jqSIXZIARNuWDK4Rie4_ZMA5sHlGahszZ50QEKb-hhslxy7LKZWYxd48T8iidXQUAPneQ5HUyDnnMwdD85nzd_jJHLtlr96E6XVp21CIe_WMDt_X9zrNhdq8jSR3ZcbgotfS8"/>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col gap-5 p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-md hover:border-primary/50 transition-all group">
+<div class="w-14 h-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">important_devices</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-slate-100">2. Prototyping</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
+                                        We build high-fidelity interactive prototypes that bring your concepts to life, allowing for early stakeholder feedback and rapid iteration on the experience.
+                                    </p>
+</div>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-800">
+<img alt="Prototyping" class="w-full h-32 object-cover rounded-lg opacity-80 group-hover:opacity-100 transition-opacity" data-alt="High fidelity UI screens on a laptop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_5uIfHeD74pggJCZyjABXAot3Fq4Xc2S6cCHIZGB0sXIuAP3thWYL6-j592Kzko6ag-9IH0Uwt7mVvzLKCZJBtbe9wpWRHObOYoLVTzJzPjSJkO3ueTjNBWEu9XCH6sXwuYx5wygWS78Gy7R6PHCk7CMNj_D5mia2Hydu3VWIX2nwPHNZfh5W4KdX_iCyII9lpY46DBFJdsgoyjh0qGHs8fIf2VV4yDUCWo_HibdgLUqC9Ng2onkB6M0EeO2VZqBn7m493ui03BE"/>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col gap-5 p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-md hover:border-primary/50 transition-all group">
+<div class="w-14 h-14 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">fact_check</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-slate-100">3. Testing</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
+                                        We conduct rigorous usability testing sessions with target users to validate design decisions, identify friction points, and ensure the final product is highly intuitive.
+                                    </p>
+</div>
+<div class="mt-auto pt-4 border-t border-slate-100 dark:border-slate-800">
+<img alt="Usability Testing" class="w-full h-32 object-cover rounded-lg opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Analyzing user interactions with data charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEJrTv6SD2cgS_V9pKeT2iZrcv9Z4oMIuNjiq69d2lUpUkAQADFB_Xkzt18pRYGulH_wN7O6gmSZuTdLrZwlVKVMLWe8BX79q5R5xUsNYavX6g5D-zwDALdN7M97sXfgtau3c3YNV3D4dguWJ2QJwugSX2utBo3m-Ebl-zrZrRqiOP546jjQWUHmCNr4SyAVYIi5abwfYu6dTRFxOYv9I0R0CNFEKRuZhriuxEnRTz6xkbZxBjR6kR6Yb_x2ocf_Su1wR_oV9-Ujk"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Accessibility Section -->
+<section class="px-6 py-12 flex flex-col md:flex-row gap-10 items-center">
+<div class="md:w-1/2 order-2 md:order-1">
+<div class="grid grid-cols-2 gap-4">
+<div class="rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 p-6 flex flex-col items-center justify-center text-center aspect-square shadow-inner">
+<span class="material-symbols-outlined text-4xl text-primary mb-3">accessibility_new</span>
+<h4 class="font-bold text-slate-900 dark:text-slate-100 mb-1">Inclusive Design</h4>
+<p class="text-xs text-slate-600 dark:text-slate-400">Usable by everyone</p>
+</div>
+<div class="rounded-2xl bg-slate-100 dark:bg-slate-800 p-6 flex flex-col items-center justify-center text-center aspect-square mt-8 shadow-sm">
+<span class="material-symbols-outlined text-4xl text-slate-700 dark:text-slate-300 mb-3">contrast</span>
+<h4 class="font-bold text-slate-900 dark:text-slate-100 mb-1">WCAG Compliant</h4>
+<p class="text-xs text-slate-600 dark:text-slate-400">High contrast standards</p>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 flex flex-col gap-6 order-1 md:order-2">
+<h2 class="text-3xl md:text-4xl font-black leading-tight tracking-tight text-slate-900 dark:text-slate-100">
+                            Accessibility &amp; Standards
+                        </h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                            We design with accessibility at the core, ensuring our digital products are usable by everyone, regardless of ability. We adhere strictly to WCAG guidelines to create truly inclusive digital experiences that expand your market reach.
+                        </p>
+<ul class="flex flex-col gap-3 mt-2">
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                                Color contrast optimization
+                            </li>
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                                Keyboard navigation support
+                            </li>
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                                Screen reader compatibility
+                            </li>
+</ul>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="px-6 py-16 mt-8 mb-16">
+<div class="relative rounded-3xl overflow-hidden bg-slate-900 p-10 md:p-16 text-center shadow-2xl">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/40 to-indigo-600/40 mix-blend-multiply"></div>
+<!-- Abstract background pattern -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+<div class="relative z-10 flex flex-col items-center gap-6 max-w-2xl mx-auto">
+<h2 class="text-3xl md:text-5xl font-black text-white leading-tight">
+                                Ready to elevate your digital experience?
+                            </h2>
+<p class="text-slate-300 text-lg md:text-xl">
+                                Let's collaborate to build an interface your users will love.
+                            </p>
+<button class="mt-4 flex items-center justify-center rounded-xl h-14 px-8 bg-primary text-white hover:bg-white hover:text-slate-900 transition-all duration-300 text-lg font-bold shadow-lg">
+                                Start Your Project Today
+                            </button>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+</body></html>

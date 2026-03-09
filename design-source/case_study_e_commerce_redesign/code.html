@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#067ff9",
+                "background-light": "#f5f7f8",
+                "background-dark": "#0f1923",
+              },
+              fontFamily: {
+                "display": ["Manrope", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<title>Case Study: E-Commerce Redesign | ZettaB</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<!-- Sticky Navigation -->
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined text-2xl">rocket_launch</span>
+</div>
+<h2 class="text-xl font-800 tracking-tight">ZettaB</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-semibold text-primary" href="#">Case Studies</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                    Get in Touch
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-16 pb-24 px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">shopping_bag</span>
+                        Retail &amp; E-commerce
+                    </div>
+<h1 class="text-5xl lg:text-7xl font-800 leading-[1.1] tracking-tight text-slate-900 dark:text-white">
+                        E-Commerce Platform Redesign for <span class="text-primary">Global Retailer</span>
+</h1>
+<p class="text-xl text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
+                        A complete digital transformation driving global sales through performance-led design and cutting-edge cloud infrastructure.
+                    </p>
+<div class="flex gap-4">
+<button class="flex items-center gap-2 bg-slate-900 dark:bg-white dark:text-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform">
+                            View Live Project <span class="material-symbols-outlined">arrow_outward</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/20 rounded-3xl blur-3xl opacity-30"></div>
+<div class="relative aspect-[4/3] rounded-2xl bg-slate-200 dark:bg-slate-800 overflow-hidden shadow-2xl border border-primary/10">
+<img alt="Platform Preview" class="w-full h-full object-cover" data-alt="Modern e-commerce platform displayed on multiple digital devices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDVFA82AlfKBPhNZWdbZUWObmYd9hVV3bPXlLpqQtHG2r-3yVM79l9fvuEQOXY8vQ7vLTVOwPqjXpWKVtJdEqipNIhsRCZ1IYjDO5bUIwxtH2dbnsgXA_4qbBbhZB1ogpZLe8Y1CQSZnIBT7XQuarqIE99IACBbawjVg2E7d9qf0b_aHjnJDT6JUUGZFwY3E3o5FlbUKfRAt7xs0Qqe0MAkUO9b-ZtLtjNzmUFRSyDus5XnS4gmJ6IptZLy18OCmF2quA3XeX3KQ4"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Overview & Challenge -->
+<section class="py-24 px-6 bg-white dark:bg-slate-900/50">
+<div class="max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-12 gap-16">
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div>
+<h2 class="text-3xl font-800 mb-6">Project Overview</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Our client, a leading global retailer with operations in 14 countries, needed a modernized digital storefront to stay competitive in an increasingly mobile-first market. The goal was to unify their brand experience across regions while drastically improving site performance and checkout conversion rates.
+                            </p>
+</div>
+<div class="p-8 rounded-2xl bg-primary/5 border border-primary/10">
+<h3 class="text-xl font-bold text-primary mb-2">Core Objective</h3>
+<p class="text-slate-700 dark:text-slate-300">Deliver a sub-2s page load time and a seamless 3-step checkout process for 50M+ monthly users.</p>
+</div>
+</div>
+<div class="lg:col-span-7">
+<h2 class="text-3xl font-800 mb-6">The Challenge</h2>
+<div class="grid sm:grid-cols-2 gap-6">
+<div class="p-6 bg-background-light dark:bg-background-dark rounded-xl border border-primary/5">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">speed</span>
+<h4 class="font-bold mb-2">Performance Bottlenecks</h4>
+<p class="text-sm text-slate-500">Legacy monolithic architecture caused 6s+ load times during peak traffic, leading to high cart abandonment.</p>
+</div>
+<div class="p-6 bg-background-light dark:bg-background-dark rounded-xl border border-primary/5">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">devices</span>
+<h4 class="font-bold mb-2">Fragmented Experience</h4>
+<p class="text-sm text-slate-500">Inconsistent mobile UI across different regions resulted in a disjointed brand image and poor UX.</p>
+</div>
+<div class="p-6 bg-background-light dark:bg-background-dark rounded-xl border border-primary/5">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">database</span>
+<h4 class="font-bold mb-2">Data Silos</h4>
+<p class="text-sm text-slate-500">Inventory systems weren't synced in real-time, causing stock discrepancies and customer frustration.</p>
+</div>
+<div class="p-6 bg-background-light dark:bg-background-dark rounded-xl border border-primary/5">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">security</span>
+<h4 class="font-bold mb-2">Legacy Tech Debt</h4>
+<p class="text-sm text-slate-500">Outdated security protocols and hard-to-maintain code made rapid updates impossible.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Approach & Solution -->
+<section class="py-24 px-6">
+<div class="max-w-7xl mx-auto text-center mb-16">
+<h2 class="text-4xl font-800 mb-4">Our Approach &amp; Solution</h2>
+<p class="text-slate-500 max-w-2xl mx-auto">We transitioned the platform from a legacy monolith to a headless, microservices-based architecture.</p>
+</div>
+<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+<div class="relative p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="size-12 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-6">01</div>
+<h3 class="text-xl font-bold mb-4">Strategic Discovery</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">We performed a 4-week deep dive into user behavior data and system architecture to identify the highest-impact improvements for conversion.</p>
+</div>
+<div class="relative p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="size-12 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-6">02</div>
+<h3 class="text-xl font-bold mb-4">Design Systems</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Created a unified Atomic Design System that ensures visual consistency across web, iOS, and Android platforms globally.</p>
+</div>
+<div class="relative p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="size-12 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-6">03</div>
+<h3 class="text-xl font-bold mb-4">Technical Execution</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Implemented a Next.js frontend with an AWS-hosted serverless backend to handle 100k+ concurrent users with zero downtime.</p>
+</div>
+</div>
+</section>
+<!-- Key Features -->
+<section class="py-24 px-6 bg-primary/5">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-800 mb-12 text-center">Engineered for Excellence</h2>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center text-center">
+<div class="size-20 bg-white dark:bg-slate-800 rounded-2xl shadow-xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">payments</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Custom Checkout</h4>
+<p class="text-slate-500 text-sm">A friction-less 3-step checkout with Apple Pay, Google Pay, and localized payment gateways integrated.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="size-20 bg-white dark:bg-slate-800 rounded-2xl shadow-xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">inventory_2</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Real-time Inventory</h4>
+<p class="text-slate-500 text-sm">Distributed WebSocket architecture ensuring stock levels are accurate down to the second across all regions.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="size-20 bg-white dark:bg-slate-800 rounded-2xl shadow-xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">psychology</span>
+</div>
+<h4 class="text-xl font-bold mb-3">AI Recommendations</h4>
+<p class="text-slate-500 text-sm">Personalized shopping experience powered by machine learning algorithms for upselling and cross-selling.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Stack -->
+<section class="py-16 px-6">
+<div class="max-w-7xl mx-auto flex flex-col items-center">
+<p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-10">Modern Tech Stack</p>
+<div class="flex flex-wrap justify-center gap-12 md:gap-24 grayscale opacity-60 dark:invert">
+<div class="flex items-center gap-2 font-bold text-2xl"><span class="material-symbols-outlined">data_object</span> React</div>
+<div class="flex items-center gap-2 font-bold text-2xl"><span class="material-symbols-outlined">api</span> Node.js</div>
+<div class="flex items-center gap-2 font-bold text-2xl"><span class="material-symbols-outlined">cloud</span> AWS</div>
+<div class="flex items-center gap-2 font-bold text-2xl"><span class="material-symbols-outlined">storage</span> MongoDB</div>
+</div>
+</div>
+</section>
+<!-- Results & Impact -->
+<section class="py-24 px-6 bg-slate-900 text-white overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-primary/10 blur-[120px] rounded-full"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<h2 class="text-4xl font-800 mb-16 text-center">Measuring Success</h2>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-10 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm text-center">
+<div class="text-5xl font-800 text-primary mb-2">+45%</div>
+<p class="text-slate-400 font-medium">Conversion Rate</p>
+</div>
+<div class="p-10 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm text-center">
+<div class="text-5xl font-800 text-primary mb-2">3.2s</div>
+<p class="text-slate-400 font-medium">Faster Load Speed</p>
+</div>
+<div class="p-10 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm text-center">
+<div class="text-5xl font-800 text-primary mb-2">+28%</div>
+<p class="text-slate-400 font-medium">Avg. Order Value</p>
+</div>
+<div class="p-10 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm text-center">
+<div class="text-5xl font-800 text-primary mb-2">-60%</div>
+<p class="text-slate-400 font-medium">Infrastructure Costs</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial -->
+<section class="py-24 px-6">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-6xl text-primary/30 mb-8">format_quote</span>
+<p class="text-2xl md:text-3xl font-medium leading-relaxed mb-10 italic">
+                    "ZettaB didn't just rebuild our platform; they reimagined how we connect with our customers globally. The performance gains alone have transformed our holiday season operations from stressful to seamless."
+                </p>
+<div class="flex flex-col items-center">
+<div class="size-16 rounded-full bg-slate-200 mb-4 overflow-hidden border-2 border-primary">
+<img alt="Stakeholder" class="w-full h-full object-cover" data-alt="Professional portrait of a corporate executive" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD85wnRGjY9tre-ScIhSc5ZZe3OkePHdj2Yyv9RXZjCk3aocWvgyxotrUFxOF20zTXRnaRwAniR2PczwkoiWOKt42EqJPkuLk9bAp6QiE9c1ahzgvISpQ5bQpIfSbmj8lPb0mpDUK24Y4oFQxJUc3Rdacd85nwyciSsmzkFzqtCjhBkrJWDxoAjUzyhWGzFebArs2fFMHaNnC8-bR57lxS9IrITgZ8b69tuKEu06jl9feC1zcB_FF8G-wGmXsN3t67gcs2YnTzXWE"/>
+</div>
+<h5 class="text-lg font-bold">Marcus Thorne</h5>
+<p class="text-slate-500 text-sm">Chief Technology Officer, Global Retail Corp</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="pb-24 px-6">
+<div class="max-w-7xl mx-auto bg-primary rounded-3xl p-12 md:p-20 text-center text-white relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+<div class="relative z-10 flex flex-col items-center">
+<h2 class="text-4xl md:text-5xl font-800 mb-6">Ready to build your success story?</h2>
+<p class="text-lg text-white/80 max-w-2xl mb-10">Let's discuss how we can transform your digital infrastructure and drive measurable business growth.</p>
+<button class="bg-white text-primary px-10 py-5 rounded-2xl font-800 hover:scale-105 transition-transform shadow-xl">
+                        Start Your Project
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 text-white pt-20 pb-10 px-6 border-t border-white/5">
+<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="bg-primary p-1 rounded-lg">
+<span class="material-symbols-outlined text-white">rocket_launch</span>
+</div>
+<h2 class="text-xl font-800 tracking-tight">ZettaB</h2>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                    High-performance software development for industry leaders. Crafting digital products that scale and convert.
+                </p>
+</div>
+<div>
+<h5 class="font-bold mb-6">Company</h5>
+<ul class="flex flex-col gap-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Process</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6">Expertise</h5>
+<ul class="flex flex-col gap-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Web Development</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Mobile Apps</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cloud Infrastructure</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">UI/UX Design</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6">Connect</h5>
+<div class="flex gap-4 mb-6">
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+</div>
+<p class="text-slate-400 text-xs">hello@zettab.io</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:row justify-between items-center gap-4 text-slate-500 text-xs">
+<p>© 2024 ZettaB Software Development. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
