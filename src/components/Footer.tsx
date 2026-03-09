@@ -19,11 +19,8 @@ export function Footer() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-12 gap-16 mb-20">
                     <div className="lg:col-span-4">
-                        <div className="flex items-center gap-2 mb-8">
-                            <div className="size-8 bg-primary rounded-lg flex items-center justify-center text-white relative overflow-hidden">
-                                <Image src="/logo.webp" alt="ZettaB Logo" fill className="object-cover" />
-                            </div>
-                            <span className="text-xl font-bold tracking-tight text-white">ZettaB<span className="text-primary">.io</span></span>
+                        <div className="mb-8">
+                            <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain brightness-200" />
                         </div>
                         <p className="mb-8 leading-relaxed">
                             Leading global innovation through high-end software development, cloud strategy, and digital transformation. Delivering Excellence from Kandy to the World.
