@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -10,22 +11,8 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-12">
                     {/* Brand Column */}
                     <div className="col-span-1 md:col-span-2 lg:col-span-1 flex flex-col items-start">
-                        <Link href="/" className="flex items-center gap-2 group mb-4">
-                            <div className="bg-primary text-white p-1.5 rounded-md flex items-center justify-center transition-transform group-hover:scale-105">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2.5"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                >
-                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                                </svg>
-                            </div>
+                        <Link href="/" className="flex items-center gap-3 group mb-4">
+                            <Image src="/logo.webp" alt="ZettaB Logo" width={40} height={40} className="w-8 h-8 md:w-10 md:h-10 transition-transform group-hover:scale-105" />
                             <span className="text-xl font-bold tracking-tight text-white mt-0.5">ZettaB</span>
                         </Link>
                         <p className="text-sm text-gray-400 capitalize-first mt-2 max-w-xs leading-relaxed">

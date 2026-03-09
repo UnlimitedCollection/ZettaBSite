@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export function Header() {
@@ -28,28 +29,14 @@ export function Header() {
     return (
         <header
             className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled
-                    ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 py-3"
-                    : "bg-transparent py-5"
+                ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 py-3"
+                : "bg-transparent py-5"
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 group">
-                    <div className="bg-primary text-white p-1.5 rounded-md flex items-center justify-center transition-transform group-hover:scale-105">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        >
-                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                        </svg>
-                    </div>
+                <Link href="/" className="flex items-center gap-3 group">
+                    <Image src="/logo.webp" alt="ZettaB Logo" width={40} height={40} className="w-8 h-8 md:w-10 md:h-10 transition-transform group-hover:scale-105" priority />
                     <span className="text-xl font-bold tracking-tight text-gray-900">ZettaB</span>
                 </Link>
 
