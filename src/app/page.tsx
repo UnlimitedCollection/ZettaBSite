@@ -100,8 +100,23 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <div className="absolute -top-20 -right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
-              <div className="relative bg-gradient-to-br from-primary/5 to-transparent rounded-3xl p-4 border border-primary/10 shadow-2xl">
-                <img alt="Dashboard Mockup" className="rounded-2xl w-full h-auto object-cover" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" />
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100">
+                <img
+                  alt="ZettaB Tech Team"
+                  className="w-full h-[520px] object-cover object-center"
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1400"
+                />
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+              </div>
+              {/* Floating badge */}
+              <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3">
+                <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
+                  <span className="material-symbols-outlined text-primary">rocket_launch</span>
+                </div>
+                <div>
+                  <div className="text-sm font-black text-slate-900">150+ Projects Delivered</div>
+                  <div className="text-xs text-slate-500">Across 30+ Countries</div>
+                </div>
               </div>
             </div>
           </div>
