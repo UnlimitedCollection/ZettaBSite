@@ -146,10 +146,10 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="space-y-4">
-                <div className="h-48 rounded-2xl bg-slate-900 flex items-center justify-center p-8">
+                <div className="h-64 rounded-2xl bg-slate-900 flex items-center justify-center p-8">
                   <span className="material-symbols-outlined text-6xl text-white">psychology</span>
                 </div>
-                <div className="h-64 rounded-2xl bg-slate-200 overflow-hidden">
+                <div className="h-48 rounded-2xl bg-slate-200 overflow-hidden">
                   <img alt="Tech" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1CJTAct-7bxyebZCS8TlmTSrpgfi5UviiIYbU1LHPtn2AD3E8dluyFn7ourPcBlDd6BqnZg68MQt-l_JfvebgLplsujhR37N5Vz__GnuNVY5MZ6-IuOPVyqZTv7zB9IFVqLr2TPVJq7NhMcY0RJs1EZs13KfvHD9Mdf8wJLSfI6rA4mQRUkg1ZYFGvE5kt3RwnCWIdE6784cyc2tEvRcz9C1vbEv8v14iLQMsAqTher-7bo75o4-uvCkWMcb4WXNT6RJoBPjRako" />
                 </div>
               </div>
