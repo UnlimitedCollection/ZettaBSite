@@ -17,15 +17,8 @@
 }
 
 :root {
-  --background: var(--color-background-light);
+  --background: #ffffff;
   --foreground: #0f172a;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--color-background-dark);
-    --foreground: #f8fafc;
-  }
 }
 
 body {

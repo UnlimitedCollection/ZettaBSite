@@ -27,33 +27,30 @@ export function Header() {
     ];
 
     return (
-        <header className="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+        <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-slate-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
-                    <div className="flex items-center gap-2">
-                        <div className="size-10 bg-primary rounded-lg flex items-center justify-center text-white relative overflow-hidden">
-                            <Image src="/logo.webp" alt="ZettaB Logo" fill className="object-cover" />
-                        </div>
-                        <span className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">ZettaB<span className="text-primary">.io</span></span>
+                    <div className="flex items-center">
+                        <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain" priority />
                     </div>
                     <nav className="hidden md:flex items-center gap-8">
-                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/">Home</Link>
-                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/about">About</Link>
+                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/">Home</Link>
+                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/about">About</Link>
                         <div className="relative group">
-                            <Link className="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/services">
+                            <Link className="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/services">
                                 Services <span className="material-symbols-outlined text-sm">expand_more</span>
                             </Link>
                         </div>
-                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/case-study-ecommerce-redesign">Portfolio</Link>
-                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/blog">Blog</Link>
-                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/contact">Contact</Link>
+                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/case-study-ecommerce-redesign">Portfolio</Link>
+                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/blog">Blog</Link>
+                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/contact">Contact</Link>
                     </nav>
                     <div className="flex items-center gap-4">
                         <Link href="/contact" className="hidden lg:flex items-center justify-center px-6 py-2.5 bg-primary text-white rounded-xl font-bold text-sm hover:opacity-90 transition-all shadow-lg shadow-primary/20">
                             Get Started
                         </Link>
                         <button
-                            className="md:hidden text-slate-900 dark:text-white"
+                            className="md:hidden text-slate-900"
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         >
                             <span className="material-symbols-outlined text-3xl">{mobileMenuOpen ? 'close' : 'menu'}</span>
@@ -63,7 +60,7 @@ export function Header() {
             </div>
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-background-light dark:bg-background-dark border-b border-primary/10 shadow-lg py-4 px-4 flex flex-col gap-4">
+                <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-lg py-4 px-4 flex flex-col gap-4">
                     <Link href="/" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                     <Link href="/about" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>About</Link>
                     <Link href="/services" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Services</Link>
