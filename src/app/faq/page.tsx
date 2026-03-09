@@ -41,7 +41,7 @@ const faqs = [
 function FAQItem({ question, answer }: { question: string; answer: string }) {
     const [open, setOpen] = useState(false);
     return (
-        <div className={`p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border ${open ? 'border-primary shadow-lg shadow-primary/5' : 'border-slate-100 dark:border-slate-800'} transition-all`}>
+        <div className={`p-6 bg-slate-50 rounded-2xl border ${open ? 'border-primary shadow-lg shadow-primary/5' : 'border-slate-100'} transition-all`}>
             <button
                 onClick={() => setOpen(!open)}
                 className="w-full flex items-start justify-between gap-4 text-left"
@@ -49,14 +49,14 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
             >
                 <div className="flex gap-4">
                     <span className="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-1">help</span>
-                    <h3 className="text-lg font-bold text-slate-900 dark:text-white pr-4">{question}</h3>
+                    <h3 className="text-lg font-bold text-slate-900 pr-4">{question}</h3>
                 </div>
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${open ? 'bg-primary text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400'}`}>
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${open ? 'bg-primary text-white' : 'bg-slate-200 text-slate-600'}`}>
                     <span className={`material-symbols-outlined text-sm transition-transform ${open ? "rotate-180" : ""}`}>expand_more</span>
                 </div>
             </button>
             {open && (
-                <div className="mt-4 pl-10 pr-12 text-slate-600 dark:text-slate-400 leading-relaxed">
+                <div className="mt-4 pl-10 pr-12 text-slate-600 leading-relaxed">
                     {answer}
                 </div>
             )}
@@ -81,15 +81,15 @@ export default function FAQPage() {
             </section>
 
             {/* FAQ Content */}
-            <section className="py-24 bg-white dark:bg-slate-900">
+            <section className="py-24 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="space-y-16">
                         {faqs.map((section) => (
                             <div key={section.category}>
                                 <div className="flex items-center gap-4 mb-8">
-                                    <div className="h-px bg-slate-200 dark:bg-slate-800 flex-grow"></div>
-                                    <h2 className="text-2xl font-black text-slate-900 dark:text-white uppercase tracking-wider">{section.category}</h2>
-                                    <div className="h-px bg-slate-200 dark:bg-slate-800 flex-grow"></div>
+                                    <div className="h-px bg-slate-200 flex-grow"></div>
+                                    <h2 className="text-2xl font-black text-slate-900 uppercase tracking-wider">{section.category}</h2>
+                                    <div className="h-px bg-slate-200 flex-grow"></div>
                                 </div>
                                 <div className="space-y-4">
                                     {section.questions.map((item) => (

@@ -51,7 +51,7 @@ export default function CaseStudiesPage() {
             </section>
 
             {/* Case Studies Grid */}
-            <section className="py-24 bg-white dark:bg-slate-900">
+            <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
                     {caseStudies.map((study, idx) => (
                         <div key={study.title} className={`flex flex-col ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-20`}>
@@ -68,23 +68,23 @@ export default function CaseStudiesPage() {
                             <div className="w-full lg:w-1/2 space-y-6">
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {study.tags.map(tag => (
-                                        <span key={tag} className="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold uppercase tracking-wider rounded-full">{tag}</span>
+                                        <span key={tag} className="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase tracking-wider rounded-full">{tag}</span>
                                     ))}
                                 </div>
                                 <div>
                                     <p className="text-primary font-bold mb-2">{study.client}</p>
-                                    <h2 className="text-3xl lg:text-4xl font-black text-slate-900 dark:text-white mb-6 leading-tight">{study.title}</h2>
+                                    <h2 className="text-3xl lg:text-4xl font-black text-slate-900 mb-6 leading-tight">{study.title}</h2>
                                 </div>
 
                                 {/* Metrics Grid */}
-                                <div className="grid grid-cols-2 gap-4 py-6 border-y border-slate-100 dark:border-slate-800">
+                                <div className="grid grid-cols-2 gap-4 py-6 border-y border-slate-100">
                                     {study.metrics.map(metric => {
                                         const [value, ...rest] = metric.split(" ");
                                         const label = rest.join(" ");
                                         return (
                                             <div key={metric}>
-                                                <div className="text-2xl font-black text-slate-900 dark:text-white">{value}</div>
-                                                <div className="text-sm text-slate-500 dark:text-slate-400 font-medium">{label}</div>
+                                                <div className="text-2xl font-black text-slate-900">{value}</div>
+                                                <div className="text-sm text-slate-500 font-medium">{label}</div>
                                             </div>
                                         )
                                     })}
@@ -100,10 +100,10 @@ export default function CaseStudiesPage() {
             </section>
 
             {/* CTA */}
-            <section className="py-24 bg-slate-50 dark:bg-slate-800 text-center border-t border-slate-200 dark:border-slate-700">
+            <section className="py-24 bg-slate-50 text-center border-t border-slate-200">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-6">Ready to be our next success story?</h2>
-                    <p className="text-xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">Let's discuss your technical challenges and map out a solution tailored to your goals.</p>
+                    <h2 className="text-4xl font-black text-slate-900 mb-6">Ready to be our next success story?</h2>
+                    <p className="text-xl text-slate-600 mb-10 leading-relaxed">Let's discuss your technical challenges and map out a solution tailored to your goals.</p>
                     <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:bg-slate-900 transition-colors shadow-lg">
                         Start a Conversation
                     </Link>

@@ -10,20 +10,20 @@ export default function PrivacyPolicyPage() {
     return (
         <main>
             {/* Header / Hero */}
-            <section className="pt-32 pb-16 bg-slate-50 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 text-center">
+            <section className="pt-32 pb-16 bg-slate-50 border-b border-slate-200 text-center">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Legal</p>
-                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-6">
+                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
                         Privacy Policy
                     </h1>
-                    <p className="text-slate-500 dark:text-slate-400 font-medium">
+                    <p className="text-slate-500 font-medium">
                         Effective Date: 1 January 2025 &middot; Last updated: 1 March 2026
                     </p>
                 </div>
             </section>
 
             {/* Privacy Content */}
-            <section className="py-16 bg-white dark:bg-slate-950">
+            <section className="py-16 bg-white">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="space-y-12">
                         {[
@@ -73,8 +73,8 @@ export default function PrivacyPolicyPage() {
                             },
                         ].map((section) => (
                             <div key={section.heading}>
-                                <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-4">{section.heading}</h2>
-                                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                <h2 className="text-xl font-bold text-slate-900 mb-4">{section.heading}</h2>
+                                <p className="text-slate-600 leading-relaxed">
                                     {section.content}
                                 </p>
                             </div>
@@ -82,17 +82,17 @@ export default function PrivacyPolicyPage() {
                     </div>
 
                     {/* Contact Box */}
-                    <div className="mt-16 p-8 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6">
+                    <div className="mt-16 p-8 bg-slate-50 rounded-2xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-6">
                         <div>
-                            <h3 className="font-bold text-slate-900 dark:text-white mb-2">Questions about this policy?</h3>
-                            <p className="text-slate-600 dark:text-slate-400 text-sm">We're happy to clarify anything. Just get in touch.</p>
+                            <h3 className="font-bold text-slate-900 mb-2">Questions about this policy?</h3>
+                            <p className="text-slate-600 text-sm">We're happy to clarify anything. Just get in touch.</p>
                         </div>
-                        <Link href="/contact" className="w-full sm:w-auto px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:border-primary transition-colors text-center shadow-sm">
+                        <Link href="/contact" className="w-full sm:w-auto px-6 py-3 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold hover:border-primary transition-colors text-center shadow-sm">
                             Contact Us
                         </Link>
                     </div>
 
-                    <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800 flex items-center gap-2 text-slate-500 dark:text-slate-400 font-medium">
+                    <div className="mt-8 pt-8 border-t border-slate-200 flex items-center gap-2 text-slate-500 font-medium">
                         <span className="material-symbols-outlined text-sm">link</span>
                         Related: <Link href="/terms-conditions" className="text-primary hover:underline transition-all">Terms & Conditions</Link>
                     </div>

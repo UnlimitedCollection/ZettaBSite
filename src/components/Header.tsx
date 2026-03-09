@@ -61,12 +61,12 @@ export function Header() {
             {/* Mobile Menu */}
             {mobileMenuOpen && (
                 <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-lg py-4 px-4 flex flex-col gap-4">
-                    <Link href="/" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-                    <Link href="/about" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>About</Link>
-                    <Link href="/services" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Services</Link>
-                    <Link href="/case-study-ecommerce-redesign" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Portfolio</Link>
-                    <Link href="/blog" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
-                    <Link href="/contact" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+                    <Link href="/" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+                    <Link href="/about" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>About</Link>
+                    <Link href="/services" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+                    <Link href="/case-study-ecommerce-redesign" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Portfolio</Link>
+                    <Link href="/blog" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+                    <Link href="/contact" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                     <Link
                         href="/contact"
                         className="flex items-center justify-center px-6 py-3 mt-2 bg-primary text-white rounded-xl font-bold text-sm shadow-md"

@@ -10,20 +10,20 @@ export default function TermsConditionsPage() {
     return (
         <main>
             {/* Header / Hero */}
-            <section className="pt-32 pb-16 bg-slate-50 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 text-center">
+            <section className="pt-32 pb-16 bg-slate-50 border-b border-slate-200 text-center">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Legal</p>
-                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-6">
+                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
                         Terms & Conditions
                     </h1>
-                    <p className="text-slate-500 dark:text-slate-400 font-medium">
+                    <p className="text-slate-500 font-medium">
                         Effective Date: 1 January 2025 &middot; Last updated: 1 March 2026
                     </p>
                 </div>
             </section>
 
             {/* Terms Content */}
-            <section className="py-16 bg-white dark:bg-slate-950">
+            <section className="py-16 bg-white">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="space-y-12">
                         {[
@@ -73,15 +73,15 @@ export default function TermsConditionsPage() {
                             },
                         ].map((section) => (
                             <div key={section.heading}>
-                                <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-4">{section.heading}</h2>
-                                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                <h2 className="text-xl font-bold text-slate-900 mb-4">{section.heading}</h2>
+                                <p className="text-slate-600 leading-relaxed">
                                     {section.content}
                                 </p>
                             </div>
                         ))}
                     </div>
 
-                    <div className="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex items-center gap-2 text-slate-500 dark:text-slate-400 font-medium">
+                    <div className="mt-16 pt-8 border-t border-slate-200 flex items-center gap-2 text-slate-500 font-medium">
                         <span className="material-symbols-outlined text-sm">link</span>
                         Related: <Link href="/privacy-policy" className="text-primary hover:underline transition-all">Privacy Policy</Link>
                     </div>

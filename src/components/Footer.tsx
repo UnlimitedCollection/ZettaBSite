@@ -20,13 +20,13 @@ export function Footer() {
                             Leading global innovation through high-end software development, cloud strategy, and digital transformation. Delivering Excellence from Kandy to the World.
                         </p>
                         <div className="flex gap-4">
-                            <Link href="#" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <Link href="https://linkedin.com/company/zettab" target="_blank" rel="noopener noreferrer" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
                                 <span className="material-symbols-outlined">public</span>
                             </Link>
-                            <Link href="#" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <Link href="mailto:hello@zettab.io" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
                                 <span className="material-symbols-outlined">alternate_email</span>
                             </Link>
-                            <Link href="#" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
+                            <Link href="https://twitter.com/zettabio" target="_blank" rel="noopener noreferrer" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
                                 <span className="material-symbols-outlined">share</span>
                             </Link>
                         </div>
@@ -78,7 +78,7 @@ export function Footer() {
                         </div>
                         <div className="flex items-center gap-2">
                             <span className="material-symbols-outlined text-sm text-primary">mail</span>
-                            <span>hello@zettab.io</span>
+                            <a href="mailto:hello@zettab.io" className="hover:text-primary transition-colors">hello@zettab.io</a>
                         </div>
                     </div>
                     <p className="text-sm">© {currentYear} ZettaB.io. All rights reserved.</p>

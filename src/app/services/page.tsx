@@ -74,7 +74,7 @@ export default function ServicesPage() {
             </section>
 
             {/* Services Detailed Breakdown */}
-            <section className="py-24 bg-white dark:bg-slate-900">
+            <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="space-y-32">
 
@@ -85,26 +85,26 @@ export default function ServicesPage() {
                                     <span className="material-symbols-outlined text-sm">developer_mode</span>
                                     Custom Software
                                 </div>
-                                <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-6">Bespoke systems built for complex operations.</h2>
-                                <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                                <h2 className="text-4xl font-black text-slate-900 mb-6">Bespoke systems built for complex operations.</h2>
+                                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                                     Off-the-shelf software often forces you to adapt your business to the tool. We build custom software that adapts to your business. From internal ERP systems to customer-facing portals, we engineer solutions that streamline workflows and create competitive advantages.
                                 </p>
                                 <ul className="space-y-4 mb-8">
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">Enterprise Resource Planning (ERP) integrations</span>
+                                        <span className="text-slate-700">Enterprise Resource Planning (ERP) integrations</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">Custom CRM development</span>
+                                        <span className="text-slate-700">Custom CRM development</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">Legacy system modernization</span>
+                                        <span className="text-slate-700">Legacy system modernization</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">API development & third-party integrations</span>
+                                        <span className="text-slate-700">API development & third-party integrations</span>
                                     </li>
                                 </ul>
                                 <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
@@ -126,26 +126,26 @@ export default function ServicesPage() {
                                     <span className="material-symbols-outlined text-sm">cloud_queue</span>
                                     Cloud Architecture
                                 </div>
-                                <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-6">Secure, scalable, and highly available infrastructure.</h2>
-                                <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                                <h2 className="text-4xl font-black text-slate-900 mb-6">Secure, scalable, and highly available infrastructure.</h2>
+                                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                                     Downtime is not an option. We design and deploy robust cloud architectures on AWS, Google Cloud, and Azure that ensure your applications remain fast and accessible, even under extreme load.
                                 </p>
                                 <ul className="space-y-4 mb-8">
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">Cloud migration & strategy</span>
+                                        <span className="text-slate-700">Cloud migration & strategy</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">Serverless architecture</span>
+                                        <span className="text-slate-700">Serverless architecture</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">Container orchestration (Kubernetes)</span>
+                                        <span className="text-slate-700">Container orchestration (Kubernetes)</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">CI/CD pipeline automation</span>
+                                        <span className="text-slate-700">CI/CD pipeline automation</span>
                                     </li>
                                 </ul>
                                 <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
@@ -161,26 +161,26 @@ export default function ServicesPage() {
                                     <span className="material-symbols-outlined text-sm">language</span>
                                     Web Development
                                 </div>
-                                <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-6">High-performance web experiences that convert.</h2>
-                                <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                                <h2 className="text-4xl font-black text-slate-900 mb-6">High-performance web experiences that convert.</h2>
+                                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                                     Your website is your best salesperson. We build lightning-fast, SEO-optimized, and highly interactive web applications using modern frameworks like Next.js and React to drive engagement and revenue.
                                 </p>
                                 <ul className="space-y-4 mb-8">
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">Performant corporate websites</span>
+                                        <span className="text-slate-700">Performant corporate websites</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">Complex e-commerce platforms</span>
+                                        <span className="text-slate-700">Complex e-commerce platforms</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">Interactive SaaS dashboards</span>
+                                        <span className="text-slate-700">Interactive SaaS dashboards</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700 dark:text-slate-300">Headless CMS implementation</span>
+                                        <span className="text-slate-700">Headless CMS implementation</span>
                                     </li>
                                 </ul>
                                 <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
@@ -196,17 +196,17 @@ export default function ServicesPage() {
             </section>
 
             {/* Tech Stack Banner */}
-            <section className="py-20 bg-slate-50 dark:bg-slate-950/50 border-y border-slate-100 dark:border-slate-800">
+            <section className="py-20 bg-slate-50 border-y border-slate-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-10">Powered by modern technologies</h3>
+                    <h3 className="text-2xl font-bold text-slate-900 mb-10">Powered by modern technologies</h3>
                     <div className="flex flex-wrap justify-center gap-6 opacity-60">
-                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">React / Next.js</span>
-                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">Node.js</span>
-                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">TypeScript</span>
-                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">Python</span>
-                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">PostgreSQL</span>
-                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">AWS / GCP</span>
-                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">Kubernetes</span>
+                        <span className="px-6 py-3 bg-white border border-slate-200 rounded-full font-semibold shadow-sm">React / Next.js</span>
+                        <span className="px-6 py-3 bg-white border border-slate-200 rounded-full font-semibold shadow-sm">Node.js</span>
+                        <span className="px-6 py-3 bg-white border border-slate-200 rounded-full font-semibold shadow-sm">TypeScript</span>
+                        <span className="px-6 py-3 bg-white border border-slate-200 rounded-full font-semibold shadow-sm">Python</span>
+                        <span className="px-6 py-3 bg-white border border-slate-200 rounded-full font-semibold shadow-sm">PostgreSQL</span>
+                        <span className="px-6 py-3 bg-white border border-slate-200 rounded-full font-semibold shadow-sm">AWS / GCP</span>
+                        <span className="px-6 py-3 bg-white border border-slate-200 rounded-full font-semibold shadow-sm">Kubernetes</span>
                     </div>
                 </div>
             </section>

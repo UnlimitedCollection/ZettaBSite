@@ -37,56 +37,56 @@ export default function CloudDeploymentsPage() {
             </section>
 
             {/* Service Details Main Content */}
-            <section className="py-24 bg-white dark:bg-slate-900">
+            <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-16">
 
                     {/* Left Content (Text) */}
                     <div className="lg:col-span-7 space-y-12">
                         <div>
-                            <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-6">Overview</h2>
-                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            <h2 className="text-3xl font-black text-slate-900 mb-6">Overview</h2>
+                            <p className="text-lg text-slate-600 leading-relaxed mb-6">
                                 Modern software requires modern infrastructure. We architect cloud environments that automate deployments, scale dynamically with traffic spikes, and provide deep observability into system health.
                             </p>
-                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                            <p className="text-lg text-slate-600 leading-relaxed">
                                 Our DevOps philosophy treats infrastructure as code (IaC), eliminating manual configuration drift and ensuring that environments are reproducible, secure, and easily auditable.
                             </p>
                         </div>
 
                         <div>
-                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Capabilities</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-6">Core Capabilities</h3>
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {pillars.map((item) => (
-                                    <div key={item.title} className="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                    <div key={item.title} className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                                         <span className="material-symbols-outlined text-primary text-3xl mb-4">cloud</span>
-                                        <h4 className="font-bold dark:text-white mb-2">{item.title}</h4>
-                                        <p className="text-sm text-slate-600 dark:text-slate-400">{item.desc}</p>
+                                        <h4 className="font-bold mb-2">{item.title}</h4>
+                                        <p className="text-sm text-slate-600">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
                         </div>
 
                         <div>
-                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Our Process</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-6">Our Process</h3>
                             <ul className="space-y-6">
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">1</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">Audit & Architecture Design</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Reviewing existing systems, identifying bottlenecks, and designing an target architecture optimised for cost and performance.</p>
+                                        <h4 className="font-bold text-lg mb-1">Audit & Architecture Design</h4>
+                                        <p className="text-slate-600">Reviewing existing systems, identifying bottlenecks, and designing an target architecture optimised for cost and performance.</p>
                                     </div>
                                 </li>
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">2</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">Infrastructure as Code (IaC)</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Writing Terraform or CloudFormation scripts to provision resources deterministically across all environments.</p>
+                                        <h4 className="font-bold text-lg mb-1">Infrastructure as Code (IaC)</h4>
+                                        <p className="text-slate-600">Writing Terraform or CloudFormation scripts to provision resources deterministically across all environments.</p>
                                     </div>
                                 </li>
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">3</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">CI/CD & Monitoring Setup</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Implementing automated pipelines for zero-downtime deployments and configuring comprehensive observability stacks.</p>
+                                        <h4 className="font-bold text-lg mb-1">CI/CD & Monitoring Setup</h4>
+                                        <p className="text-slate-600">Implementing automated pipelines for zero-downtime deployments and configuring comprehensive observability stacks.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -117,10 +117,10 @@ export default function CloudDeploymentsPage() {
                         </div>
 
                         {/* Contact CTA Box */}
-                        <div className="p-8 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-200 dark:border-slate-800">
-                            <h4 className="font-bold text-2xl dark:text-white mb-4">Is your infrastructure holding you back?</h4>
-                            <p className="text-slate-600 dark:text-slate-400 mb-6">Let's audit your current setup and identify areas to improve security, lower costs, and increase velocity.</p>
-                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:border-primary transition-colors">
+                        <div className="p-8 bg-slate-50 rounded-3xl border border-slate-200">
+                            <h4 className="font-bold text-2xl mb-4">Is your infrastructure holding you back?</h4>
+                            <p className="text-slate-600 mb-6">Let's audit your current setup and identify areas to improve security, lower costs, and increase velocity.</p>
+                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold hover:border-primary transition-colors">
                                 Schedule Audit <span className="material-symbols-outlined text-sm">arrow_forward</span>
                             </Link>
                         </div>

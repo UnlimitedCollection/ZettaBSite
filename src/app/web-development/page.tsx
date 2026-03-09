@@ -39,56 +39,56 @@ export default function WebDevelopmentPage() {
             </section>
 
             {/* Service Details Main Content */}
-            <section className="py-24 bg-white dark:bg-slate-900">
+            <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-16">
 
                     {/* Left Content (Text) */}
                     <div className="lg:col-span-7 space-y-12">
                         <div>
-                            <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-6">Overview</h2>
-                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            <h2 className="text-3xl font-black text-slate-900 mb-6">Overview</h2>
+                            <p className="text-lg text-slate-600 leading-relaxed mb-6">
                                 Your website is often the first interaction a prospect has with your business. We believe it should be fast, accessible, and strategically designed to guide users toward a clear conversion goal.
                             </p>
-                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                            <p className="text-lg text-slate-600 leading-relaxed">
                                 We utilize modern frameworks like Next.js and React to build dynamic, SEO-optimized web experiences that scale effortlessly from a few hundred visitors to millions.
                             </p>
                         </div>
 
                         <div>
-                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Capabilities</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-6">Core Capabilities</h3>
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {offerings.map((item) => (
-                                    <div key={item.title} className="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                    <div key={item.title} className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                                         <span className="material-symbols-outlined text-primary text-3xl mb-4">language</span>
-                                        <h4 className="font-bold dark:text-white mb-2">{item.title}</h4>
-                                        <p className="text-sm text-slate-600 dark:text-slate-400">{item.desc}</p>
+                                        <h4 className="font-bold mb-2">{item.title}</h4>
+                                        <p className="text-sm text-slate-600">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
                         </div>
 
                         <div>
-                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Our Process</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-6">Our Process</h3>
                             <ul className="space-y-6">
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">1</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">Requirements & Architecture</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Defining data models, selecting the appropriate CMS, and outlining the Technical Architecture.</p>
+                                        <h4 className="font-bold text-lg mb-1">Requirements & Architecture</h4>
+                                        <p className="text-slate-600">Defining data models, selecting the appropriate CMS, and outlining the Technical Architecture.</p>
                                     </div>
                                 </li>
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">2</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">Frontend Engineering</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Translating designs into responsive, accessible, and performant React components.</p>
+                                        <h4 className="font-bold text-lg mb-1">Frontend Engineering</h4>
+                                        <p className="text-slate-600">Translating designs into responsive, accessible, and performant React components.</p>
                                     </div>
                                 </li>
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">3</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">Backend Integration & Launch</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Connecting APIs, configuring databases, and deploying via automated CI/CD pipelines.</p>
+                                        <h4 className="font-bold text-lg mb-1">Backend Integration & Launch</h4>
+                                        <p className="text-slate-600">Connecting APIs, configuring databases, and deploying via automated CI/CD pipelines.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -116,10 +116,10 @@ export default function WebDevelopmentPage() {
                         </div>
 
                         {/* Contact CTA Box */}
-                        <div className="p-8 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-200 dark:border-slate-800">
-                            <h4 className="font-bold text-2xl dark:text-white mb-4">Planning a web project?</h4>
-                            <p className="text-slate-600 dark:text-slate-400 mb-6">Speak with our technical team to determine the best approach for an upcoming build.</p>
-                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:border-primary transition-colors">
+                        <div className="p-8 bg-slate-50 rounded-3xl border border-slate-200">
+                            <h4 className="font-bold text-2xl mb-4">Planning a web project?</h4>
+                            <p className="text-slate-600 mb-6">Speak with our technical team to determine the best approach for an upcoming build.</p>
+                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold hover:border-primary transition-colors">
                                 Schedule Call <span className="material-symbols-outlined text-sm">arrow_forward</span>
                             </Link>
                         </div>

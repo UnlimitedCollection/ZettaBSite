@@ -37,56 +37,56 @@ export default function MobileApplicationsPage() {
             </section>
 
             {/* Service Details Main Content */}
-            <section className="py-24 bg-white dark:bg-slate-900">
+            <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-16">
 
                     {/* Left Content (Text) */}
                     <div className="lg:col-span-7 space-y-12">
                         <div>
-                            <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-6">Overview</h2>
-                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            <h2 className="text-3xl font-black text-slate-900 mb-6">Overview</h2>
+                            <p className="text-lg text-slate-600 leading-relaxed mb-6">
                                 The mobile standard is incredibly high. Users expect apps to load instantly, animate smoothly at 60fps, and function flawlessly regardless of network conditions. We build mobile applications that meet and exceed these expectations.
                             </p>
-                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                            <p className="text-lg text-slate-600 leading-relaxed">
                                 Whether we are building natively with Swift and Kotlin, or deploying cross-platform solutions using React Native, our approach focuses heavily on performance optimization, robust state management, and secure API architecture.
                             </p>
                         </div>
 
                         <div>
-                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Capabilities</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-6">Core Capabilities</h3>
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {offerings.map((item) => (
-                                    <div key={item.title} className="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                    <div key={item.title} className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                                         <span className="material-symbols-outlined text-primary text-3xl mb-4">smartphone</span>
-                                        <h4 className="font-bold dark:text-white mb-2">{item.title}</h4>
-                                        <p className="text-sm text-slate-600 dark:text-slate-400">{item.desc}</p>
+                                        <h4 className="font-bold mb-2">{item.title}</h4>
+                                        <p className="text-sm text-slate-600">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
                         </div>
 
                         <div>
-                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Our Process</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-6">Our Process</h3>
                             <ul className="space-y-6">
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">1</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">Architecture & Tech Stack Choice</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Evaluating your requirements to determine whether a native or cross-platform approach offers the best ROI and performance.</p>
+                                        <h4 className="font-bold text-lg mb-1">Architecture & Tech Stack Choice</h4>
+                                        <p className="text-slate-600">Evaluating your requirements to determine whether a native or cross-platform approach offers the best ROI and performance.</p>
                                     </div>
                                 </li>
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">2</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">Iterative Sprints</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Delivering testable builds frequently via TestFlight or App Distribution, keeping you involved at every stage.</p>
+                                        <h4 className="font-bold text-lg mb-1">Iterative Sprints</h4>
+                                        <p className="text-slate-600">Delivering testable builds frequently via TestFlight or App Distribution, keeping you involved at every stage.</p>
                                     </div>
                                 </li>
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">3</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">Testing & App Store Launch</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Rigorous device testing, performance profiling, and managing the entire submission and approval process.</p>
+                                        <h4 className="font-bold text-lg mb-1">Testing & App Store Launch</h4>
+                                        <p className="text-slate-600">Rigorous device testing, performance profiling, and managing the entire submission and approval process.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -117,10 +117,10 @@ export default function MobileApplicationsPage() {
                         </div>
 
                         {/* Contact CTA Box */}
-                        <div className="p-8 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-200 dark:border-slate-800">
-                            <h4 className="font-bold text-2xl dark:text-white mb-4">Need to build a mobile product?</h4>
-                            <p className="text-slate-600 dark:text-slate-400 mb-6">Let's discuss the technical requirements and plot the roadmap to v1.0.</p>
-                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:border-primary transition-colors">
+                        <div className="p-8 bg-slate-50 rounded-3xl border border-slate-200">
+                            <h4 className="font-bold text-2xl mb-4">Need to build a mobile product?</h4>
+                            <p className="text-slate-600 mb-6">Let's discuss the technical requirements and plot the roadmap to v1.0.</p>
+                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold hover:border-primary transition-colors">
                                 Schedule Call <span className="material-symbols-outlined text-sm">arrow_forward</span>
                             </Link>
                         </div>

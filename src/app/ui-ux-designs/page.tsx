@@ -37,30 +37,30 @@ export default function UIUXDesignsPage() {
             </section>
 
             {/* Service Details Main Content */}
-            <section className="py-24 bg-white dark:bg-slate-900">
+            <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-16">
 
                     {/* Left Content (Text) */}
                     <div className="lg:col-span-7 space-y-12">
                         <div>
-                            <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-6">Overview</h2>
-                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            <h2 className="text-3xl font-black text-slate-900 mb-6">Overview</h2>
+                            <p className="text-lg text-slate-600 leading-relaxed mb-6">
                                 Great design isn't just about aesthetics; it's a strategic tool for user retention and conversion. We build digital products that feel intuitive, accessible, and polished from the very first interaction.
                             </p>
-                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                            <p className="text-lg text-slate-600 leading-relaxed">
                                 Our design team bridges the gap between user needs and technical capabilities, ensuring everything we design can be seamlessly implemented by engineering teams.
                             </p>
                         </div>
 
                         <div>
-                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Capabilities</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-6">Core Capabilities</h3>
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {process.map((item) => (
-                                    <div key={item.step} className="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800 relative overflow-hidden group">
-                                        <div className="absolute -right-6 -top-6 text-9xl font-black text-slate-100 dark:text-slate-800/50 group-hover:scale-110 transition-transform duration-500 pointer-events-none">{item.step}</div>
+                                    <div key={item.step} className="p-6 bg-slate-50 rounded-2xl border border-slate-100 relative overflow-hidden group">
+                                        <div className="absolute -right-6 -top-6 text-9xl font-black text-slate-100 group-hover:scale-110 transition-transform duration-500 pointer-events-none">{item.step}</div>
                                         <div className="relative z-10">
-                                            <h4 className="font-bold dark:text-white mb-2">{item.title}</h4>
-                                            <p className="text-sm text-slate-600 dark:text-slate-400">{item.desc}</p>
+                                            <h4 className="font-bold mb-2">{item.title}</h4>
+                                            <p className="text-sm text-slate-600">{item.desc}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -68,27 +68,27 @@ export default function UIUXDesignsPage() {
                         </div>
 
                         <div>
-                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Our Process</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-6">Our Process</h3>
                             <ul className="space-y-6">
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">1</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">Discovery & Research</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Understanding your business goals, target audience, and competitive landscape through stakeholder interviews and market analysis.</p>
+                                        <h4 className="font-bold text-lg mb-1">Discovery & Research</h4>
+                                        <p className="text-slate-600">Understanding your business goals, target audience, and competitive landscape through stakeholder interviews and market analysis.</p>
                                     </div>
                                 </li>
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">2</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">Wireframing & Prototyping</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Mapping out user journeys and laying out low-fidelity wireframes to rapidly validate structural concepts.</p>
+                                        <h4 className="font-bold text-lg mb-1">Wireframing & Prototyping</h4>
+                                        <p className="text-slate-600">Mapping out user journeys and laying out low-fidelity wireframes to rapidly validate structural concepts.</p>
                                     </div>
                                 </li>
                                 <li className="flex gap-4">
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">3</div>
                                     <div>
-                                        <h4 className="font-bold text-lg dark:text-white mb-1">High-Fidelity UI & Handoff</h4>
-                                        <p className="text-slate-600 dark:text-slate-400">Applying your brand's visual identity, creating a scalable design system, and providing developers with perfectly documented assets.</p>
+                                        <h4 className="font-bold text-lg mb-1">High-Fidelity UI & Handoff</h4>
+                                        <p className="text-slate-600">Applying your brand's visual identity, creating a scalable design system, and providing developers with perfectly documented assets.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -119,10 +119,10 @@ export default function UIUXDesignsPage() {
                         </div>
 
                         {/* Contact CTA Box */}
-                        <div className="p-8 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-200 dark:border-slate-800">
-                            <h4 className="font-bold text-2xl dark:text-white mb-4">Ready to elevate your product?</h4>
-                            <p className="text-slate-600 dark:text-slate-400 mb-6">Let's audit your current interface or start mapping out your next big launch.</p>
-                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:border-primary transition-colors">
+                        <div className="p-8 bg-slate-50 rounded-3xl border border-slate-200">
+                            <h4 className="font-bold text-2xl mb-4">Ready to elevate your product?</h4>
+                            <p className="text-slate-600 mb-6">Let's audit your current interface or start mapping out your next big launch.</p>
+                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold hover:border-primary transition-colors">
                                 Schedule Call <span className="material-symbols-outlined text-sm">arrow_forward</span>
                             </Link>
                         </div>
