@@ -191,6 +191,121 @@ export default function ServicesPage() {
                                 <img alt="Web Development" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200" />
                             </div>
                         </div>
+
+                        {/* Service Item 4 - Mobile Applications */}
+                        <div className="grid lg:grid-cols-2 gap-16 items-center">
+                            <div>
+                                <img alt="Mobile Application Development" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200" />
+                            </div>
+                            <div>
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold w-fit mb-6">
+                                    <span className="material-symbols-outlined text-sm">smartphone</span>
+                                    Mobile Applications
+                                </div>
+                                <h2 className="text-4xl font-black text-slate-900 mb-6">Native and cross-platform apps users love.</h2>
+                                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                                    Mobile is where your customers live. We craft high-performance iOS and Android applications — both native and cross-platform via React Native — with exceptional UX at the core. From MVP to enterprise-grade apps, we build products that earn 5-star reviews.
+                                </p>
+                                <ul className="space-y-4 mb-8">
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">iOS &amp; Android native development (Swift, Kotlin)</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">React Native cross-platform solutions</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">Offline-first architecture &amp; push notifications</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">App Store &amp; Google Play submission support</span>
+                                    </li>
+                                </ul>
+                                <Link href="/mobile-applications" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
+                                    Explore mobile development <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Service Item 5 - UI/UX Design */}
+                        <div className="grid lg:grid-cols-2 gap-16 items-center">
+                            <div className="order-2 lg:order-1">
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold w-fit mb-6">
+                                    <span className="material-symbols-outlined text-sm">design_services</span>
+                                    UI/UX Design
+                                </div>
+                                <h2 className="text-4xl font-black text-slate-900 mb-6">Human-centred design that drives real outcomes.</h2>
+                                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                                    Great design is invisible — it simply works. Our UX team combines rigorous user research, behavioural data, and visual craft to create interfaces that reduce friction, increase retention, and convert visitors into loyal customers.
+                                </p>
+                                <ul className="space-y-4 mb-8">
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">User research, personas &amp; journey mapping</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">Wireframing, prototyping &amp; usability testing</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">Scalable design systems in Figma</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">WCAG 2.1 AA accessibility audits</span>
+                                    </li>
+                                </ul>
+                                <Link href="/ui-ux-designs" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
+                                    See our design process <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                </Link>
+                            </div>
+                            <div className="order-1 lg:order-2">
+                                <img alt="UI/UX Design" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=1200" />
+                            </div>
+                        </div>
+
+                        {/* Service Item 6 - Digital Marketing */}
+                        <div className="grid lg:grid-cols-2 gap-16 items-center">
+                            <div>
+                                <img alt="Digital Marketing" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&q=80&w=1200" />
+                            </div>
+                            <div>
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold w-fit mb-6">
+                                    <span className="material-symbols-outlined text-sm">campaign</span>
+                                    Digital Marketing
+                                </div>
+                                <h2 className="text-4xl font-black text-slate-900 mb-6">Data-driven growth tied directly to revenue.</h2>
+                                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                                    Traffic without conversions is just noise. Our growth team uses full-funnel data analysis to identify the highest-value levers across SEO, paid media, and content — delivering campaigns that generate measurable, attributable returns.
+                                </p>
+                                <ul className="space-y-4 mb-8">
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">Technical SEO &amp; content strategy</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">Google &amp; Meta paid advertising (PPC)</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">Social media management &amp; brand building</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700">Analytics, attribution &amp; performance reporting</span>
+                                    </li>
+                                </ul>
+                                <Link href="/digital-marketing" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
+                                    Grow your audience <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                </Link>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
