@@ -30,9 +30,9 @@ export function Header() {
         <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-slate-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
-                    <div className="flex items-center">
+                    <Link href="/" className="flex items-center">
                         <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain" priority />
-                    </div>
+                    </Link>
                     <nav className="hidden md:flex items-center gap-8">
                         <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/">Home</Link>
                         <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/about">About</Link>
