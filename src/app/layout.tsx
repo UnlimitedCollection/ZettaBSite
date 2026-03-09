@@ -20,8 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${manrope.variable} antialiased font-sans flex flex-col min-h-screen`}>
+    <html lang="en" className="light">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+        />
+      </head>
+      <body className={`${manrope.variable} antialiased font-sans flex flex-col min-h-screen bg-white text-slate-900`}>
         <Header />
         <main className="flex-1">
           {children}
@@ -31,3 +37,4 @@ export default function RootLayout({
     </html>
   );
 }
+

@@ -83,17 +83,17 @@ export default function HomePage() {
                 <span className="material-symbols-outlined text-sm">verified</span>
                 Next-Gen Tech Solutions
               </div>
-              <h1 className="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900 dark:text-white">
+              <h1 className="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900">
                 Scalable Digital Products <span className="text-primary">Built for Growth</span>
               </h1>
-              <p className="text-lg lg:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl">
+              <p className="text-lg lg:text-xl text-slate-600 leading-relaxed max-w-xl">
                 We empower businesses with premium innovation and cutting-edge software solutions tailored for global scale and high-performance engineering.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-xl shadow-primary/30 text-center">
                   Start Your Project
                 </Link>
-                <Link href="/services" className="px-8 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors text-center">
+                <Link href="/services" className="px-8 py-4 bg-white border border-slate-200 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors text-center">
                   View Solutions
                 </Link>
               </div>
@@ -109,7 +109,7 @@ export default function HomePage() {
       </section>
 
       {/* KPI Section */}
-      <section className="py-12 bg-white dark:bg-slate-900 border-y border-primary/5">
+      <section className="py-12 bg-white border-y border-primary/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
@@ -156,10 +156,10 @@ export default function HomePage() {
             </div>
             <div className="lg:w-1/2">
               <h2 className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Premium Innovation Partner</h2>
-              <h3 className="text-4xl lg:text-5xl font-black text-slate-900 dark:text-white mb-6 leading-tight">
+              <h3 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 leading-tight">
                 Your Strategic Engineering Ally in the Digital Age
               </h3>
-              <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                 ZettaB.io is a global digital solutions provider dedicated to transforming complex business challenges into seamless digital experiences through strategic engineering. We don't just build software; we build the future of your enterprise.
               </p>
               <Link href="/about" className="group flex items-center gap-3 text-primary font-bold text-lg">
@@ -172,73 +172,73 @@ export default function HomePage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 bg-slate-50 dark:bg-slate-950/50">
+      <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-black text-slate-900 dark:text-white mb-4">Comprehensive Solutions</h2>
-            <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+            <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-4">Comprehensive Solutions</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto text-lg">
               End-to-end technology services designed to propel your business forward.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">developer_mode</span>
               </div>
-              <h4 className="text-xl font-bold mb-3 dark:text-white">Custom Software</h4>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Bespoke software solutions tailored to your unique business logic and operational needs.</p>
+              <h4 className="text-xl font-bold mb-3">Custom Software</h4>
+              <p className="text-slate-600 text-sm leading-relaxed">Bespoke software solutions tailored to your unique business logic and operational needs.</p>
             </div>
 
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">cloud_queue</span>
               </div>
-              <h4 className="text-xl font-bold mb-3 dark:text-white">Cloud Deployments</h4>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Scalable cloud infrastructure design and automated deployment pipelines for maximum uptime.</p>
+              <h4 className="text-xl font-bold mb-3">Cloud Deployments</h4>
+              <p className="text-slate-600 text-sm leading-relaxed">Scalable cloud infrastructure design and automated deployment pipelines for maximum uptime.</p>
             </div>
 
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">language</span>
               </div>
-              <h4 className="text-xl font-bold mb-3 dark:text-white">Web Development</h4>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">High-performance, responsive web applications built with modern frameworks like React and Vue.</p>
+              <h4 className="text-xl font-bold mb-3">Web Development</h4>
+              <p className="text-slate-600 text-sm leading-relaxed">High-performance, responsive web applications built with modern frameworks like React and Vue.</p>
             </div>
 
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">phone_iphone</span>
               </div>
-              <h4 className="text-xl font-bold mb-3 dark:text-white">Mobile Applications</h4>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Native and cross-platform mobile apps that provide exceptional user experiences on the go.</p>
+              <h4 className="text-xl font-bold mb-3">Mobile Applications</h4>
+              <p className="text-slate-600 text-sm leading-relaxed">Native and cross-platform mobile apps that provide exceptional user experiences on the go.</p>
             </div>
 
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">ads_click</span>
               </div>
-              <h4 className="text-xl font-bold mb-3 dark:text-white">Digital Marketing</h4>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Data-driven growth strategies, SEO, and targeted campaigns to boost your online presence.</p>
+              <h4 className="text-xl font-bold mb-3">Digital Marketing</h4>
+              <p className="text-slate-600 text-sm leading-relaxed">Data-driven growth strategies, SEO, and targeted campaigns to boost your online presence.</p>
             </div>
 
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">palette</span>
               </div>
-              <h4 className="text-xl font-bold mb-3 dark:text-white">UI/UX Design</h4>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">User-centric design systems that balance aesthetic beauty with functional simplicity.</p>
+              <h4 className="text-xl font-bold mb-3">UI/UX Design</h4>
+              <p className="text-slate-600 text-sm leading-relaxed">User-centric design systems that balance aesthetic beauty with functional simplicity.</p>
             </div>
 
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">settings_suggest</span>
               </div>
-              <h4 className="text-xl font-bold mb-3 dark:text-white">Software Maintenance</h4>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Continuous monitoring, security updates, and performance tuning for your digital assets.</p>
+              <h4 className="text-xl font-bold mb-3">Software Maintenance</h4>
+              <p className="text-slate-600 text-sm leading-relaxed">Continuous monitoring, security updates, and performance tuning for your digital assets.</p>
             </div>
 
-            <div className="p-8 rounded-2xl border-2 border-dashed border-slate-200 dark:border-slate-800 flex flex-col items-center justify-center text-center">
-              <p className="font-bold mb-4 dark:text-white">Need something custom?</p>
+            <div className="p-8 rounded-2xl border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center">
+              <p className="font-bold mb-4">Need something custom?</p>
               <Link href="/contact" className="text-primary font-bold flex items-center gap-2">Contact Sales <span className="material-symbols-outlined text-sm">open_in_new</span></Link>
             </div>
           </div>
@@ -250,15 +250,15 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 dark:text-white mb-8">Why leading brands trust us</h2>
+              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-8">Why leading brands trust us</h2>
               <div className="space-y-12">
                 <div className="flex gap-6">
                   <div className="shrink-0 size-12 bg-primary rounded-lg flex items-center justify-center text-white">
                     <span className="material-symbols-outlined">handshake</span>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold mb-2 dark:text-white">Strategic Partnership</h4>
-                    <p className="text-slate-600 dark:text-slate-400">We don't just take orders; we act as your technology consultant to ensure long-term ROI.</p>
+                    <h4 className="text-xl font-bold mb-2">Strategic Partnership</h4>
+                    <p className="text-slate-600">We don't just take orders; we act as your technology consultant to ensure long-term ROI.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
@@ -266,8 +266,8 @@ export default function HomePage() {
                     <span className="material-symbols-outlined">bolt</span>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold mb-2 dark:text-white">Agile Methodology</h4>
-                    <p className="text-slate-600 dark:text-slate-400">Rapid iterations and transparent communication ensure we deliver value every single week.</p>
+                    <h4 className="text-xl font-bold mb-2">Agile Methodology</h4>
+                    <p className="text-slate-600">Rapid iterations and transparent communication ensure we deliver value every single week.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
@@ -275,8 +275,8 @@ export default function HomePage() {
                     <span className="material-symbols-outlined">groups</span>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold mb-2 dark:text-white">Expert Talent</h4>
-                    <p className="text-slate-600 dark:text-slate-400">Our team consists of senior engineers and designers with experience in global tech giants.</p>
+                    <h4 className="text-xl font-bold mb-2">Expert Talent</h4>
+                    <p className="text-slate-600">Our team consists of senior engineers and designers with experience in global tech giants.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
@@ -284,8 +284,8 @@ export default function HomePage() {
                     <span className="material-symbols-outlined">support_agent</span>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold mb-2 dark:text-white">Long-term Support</h4>
-                    <p className="text-slate-600 dark:text-slate-400">We stay with you long after the launch to ensure your product evolves with your business.</p>
+                    <h4 className="text-xl font-bold mb-2">Long-term Support</h4>
+                    <p className="text-slate-600">We stay with you long after the launch to ensure your product evolves with your business.</p>
                   </div>
                 </div>
               </div>
@@ -312,48 +312,22 @@ export default function HomePage() {
           <div className="relative">
             <div className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-primary/30 -translate-y-1/2"></div>
             <div className="grid lg:grid-cols-6 gap-8 relative">
-              <div className="flex flex-col items-center text-center group">
-                <div className="size-16 bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 relative z-10 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-white">search</span>
+              {[
+                { icon: "search", label: "Discovery", desc: "Understanding requirements and market needs." },
+                { icon: "architecture", label: "Planning", desc: "Defining architecture and development roadmap." },
+                { icon: "draw", label: "Design", desc: "Crafting intuitive and engaging user interfaces." },
+                { icon: "code", label: "Development", desc: "Writing clean, robust, and scalable code." },
+                { icon: "rocket", label: "Deployment", desc: "Launch to production with CI/CD pipelines." },
+                { icon: "headset_mic", label: "Support", desc: "Ongoing maintenance and future updates." },
+              ].map((step) => (
+                <div key={step.label} className="flex flex-col items-center text-center group">
+                  <div className="size-16 bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 relative z-10 group-hover:bg-primary transition-colors">
+                    <span className="material-symbols-outlined text-white">{step.icon}</span>
+                  </div>
+                  <h5 className="text-lg font-bold mb-2">{step.label}</h5>
+                  <p className="text-slate-400 text-xs px-2">{step.desc}</p>
                 </div>
-                <h5 className="text-lg font-bold mb-2">Discovery</h5>
-                <p className="text-slate-400 text-xs px-2">Understanding requirements and market needs.</p>
-              </div>
-              <div className="flex flex-col items-center text-center group">
-                <div className="size-16 bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 relative z-10 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-white">architecture</span>
-                </div>
-                <h5 className="text-lg font-bold mb-2">Planning</h5>
-                <p className="text-slate-400 text-xs px-2">Defining architecture and development roadmap.</p>
-              </div>
-              <div className="flex flex-col items-center text-center group">
-                <div className="size-16 bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 relative z-10 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-white">draw</span>
-                </div>
-                <h5 className="text-lg font-bold mb-2">Design</h5>
-                <p className="text-slate-400 text-xs px-2">Crafting intuitive and engaging user interfaces.</p>
-              </div>
-              <div className="flex flex-col items-center text-center group">
-                <div className="size-16 bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 relative z-10 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-white">code</span>
-                </div>
-                <h5 className="text-lg font-bold mb-2">Development</h5>
-                <p className="text-slate-400 text-xs px-2">Writing clean, robust, and scalable code.</p>
-              </div>
-              <div className="flex flex-col items-center text-center group">
-                <div className="size-16 bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 relative z-10 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-white">rocket</span>
-                </div>
-                <h5 className="text-lg font-bold mb-2">Deployment</h5>
-                <p className="text-slate-400 text-xs px-2">Launch to production with CI/CD pipelines.</p>
-              </div>
-              <div className="flex flex-col items-center text-center group">
-                <div className="size-16 bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 relative z-10 group-hover:bg-primary transition-colors">
-                  <span className="material-symbols-outlined text-white">headset_mic</span>
-                </div>
-                <h5 className="text-lg font-bold mb-2">Support</h5>
-                <p className="text-slate-400 text-xs px-2">Ongoing maintenance and future updates.</p>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -363,64 +337,64 @@ export default function HomePage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-4">Verticals We Empower</h2>
-            <p className="text-slate-600 dark:text-slate-400">Deep domain expertise across various industries.</p>
+            <h2 className="text-4xl font-black text-slate-900 mb-4">Verticals We Empower</h2>
+            <p className="text-slate-600">Deep domain expertise across various industries.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
+              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
                 <span className="material-symbols-outlined text-4xl">shopping_cart</span>
               </div>
-              <span className="font-bold dark:text-white">Retail</span>
+              <span className="font-bold">Retail</span>
             </div>
             <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
+              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
                 <span className="material-symbols-outlined text-4xl">medical_services</span>
               </div>
-              <span className="font-bold dark:text-white">Healthcare</span>
+              <span className="font-bold">Healthcare</span>
             </div>
             <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
+              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
                 <span className="material-symbols-outlined text-4xl">local_shipping</span>
               </div>
-              <span className="font-bold dark:text-white">Logistics</span>
+              <span className="font-bold">Logistics</span>
             </div>
             <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
+              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
                 <span className="material-symbols-outlined text-4xl">school</span>
               </div>
-              <span className="font-bold dark:text-white">Education</span>
+              <span className="font-bold">Education</span>
             </div>
             <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
+              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
                 <span className="material-symbols-outlined text-4xl">cloud</span>
               </div>
-              <span className="font-bold dark:text-white">SaaS</span>
+              <span className="font-bold">SaaS</span>
             </div>
             <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
+              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
                 <span className="material-symbols-outlined text-4xl">business</span>
               </div>
-              <span className="font-bold dark:text-white">Enterprise</span>
+              <span className="font-bold">Enterprise</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Case Studies */}
-      <section className="py-24 bg-slate-50 dark:bg-slate-950/50" id="portfolio">
+      <section className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-end mb-16">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 dark:text-white mb-4">Featured Success</h2>
-              <p className="text-slate-600 dark:text-slate-400">Real-world results delivered to our clients.</p>
+              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-4">Featured Success</h2>
+              <p className="text-slate-600">Real-world results delivered to our clients.</p>
             </div>
             <Link href="/case-study-ecommerce-redesign" className="hidden md:flex items-center gap-2 text-primary font-bold">
               View All Projects <span className="material-symbols-outlined">east</span>
             </Link>
           </div>
           <div className="grid lg:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800 group">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 border border-slate-100 group">
               <div className="h-64 overflow-hidden relative">
                 <img alt="FinTech" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsxJTTiRTo6CAYNLSu0H6F464bNcvn2-B8w0gjIiFwBv-4e3WuwkJk3JrtPSKI8q7wx7UdBfSbnR9Zkl2sfCsTdH1-h54hqNSOFb9Ji8DICZYET5orq09KHsWnKo6syNh8OYdOox86AIlM-DT-bS54Gh52zx2eGLXvDEm4OZl7udJCYdh1u6-pc5p2YB0NQqTkHyw4mpBaFQPlaXKf0xHURN6O8s3qkhftyqN2XOgdwGwp1uKAVCeBr3yYswYtAwDfzWMkmmo6YJc" />
                 <div className="absolute top-4 left-4 flex gap-2">
@@ -428,13 +402,13 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="p-8">
-                <h4 className="text-2xl font-black mb-4 dark:text-white">NextGen Banking App</h4>
-                <p className="text-slate-600 dark:text-slate-400 mb-6 text-sm">Reduced transaction times by 40% with a mobile-first banking platform serving 2M users.</p>
+                <h4 className="text-2xl font-black mb-4">NextGen Banking App</h4>
+                <p className="text-slate-600 mb-6 text-sm">Reduced transaction times by 40% with a mobile-first banking platform serving 2M users.</p>
                 <Link href="/case-study-ecommerce-redesign" className="text-primary font-bold flex items-center gap-2">View Case Study <span className="material-symbols-outlined text-sm">arrow_outward</span></Link>
               </div>
             </div>
 
-            <div className="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800 group">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 border border-slate-100 group">
               <div className="h-64 overflow-hidden relative">
                 <img alt="Retail" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmsVzabyDT9L0yDxUZWzeCmtX3EspGebsRbZeX5UK7dmMbJB4A4KqO1oo3N84bOWS9lGRaGbJFxT90SRqL4XAmDb_tMAKObHk37L9iOvKfDMjZ-ShCdHoL1B_MyMOAChXMpv_gJEgypj1UBXmstj_Rt15I5NOaGt-IDcRisjJeyIjjayczi0xRXrVgyQJvOLGrl7X1fytx_R3pi9c6CWBBJpuTuTvM81fzbWLflAetVyMnqFTSXSik-eRDKQOsbMvWNcg65tTc4qw" />
                 <div className="absolute top-4 left-4 flex gap-2">
@@ -442,13 +416,13 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="p-8">
-                <h4 className="text-2xl font-black mb-4 dark:text-white">Omni-Channel Retail</h4>
-                <p className="text-slate-600 dark:text-slate-400 mb-6 text-sm">Unified inventory management across 50+ locations integrated with a seamless web experience.</p>
+                <h4 className="text-2xl font-black mb-4">Omni-Channel Retail</h4>
+                <p className="text-slate-600 mb-6 text-sm">Unified inventory management across 50+ locations integrated with a seamless web experience.</p>
                 <Link href="/case-study-ecommerce-redesign" className="text-primary font-bold flex items-center gap-2">View Case Study <span className="material-symbols-outlined text-sm">arrow_outward</span></Link>
               </div>
             </div>
 
-            <div className="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800 group">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 border border-slate-100 group">
               <div className="h-64 overflow-hidden relative">
                 <img alt="Cloud" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7sypI2eIoNIpox5zY4JMIodSTlYO_yfznTn2Msg8Cq5ta7J1Z6USSc41K5OrOYgRS32VaX5XzBomXOHTjwXElLnbhM7wwRHYi-KM7X5dFdT346_oSYnFeSxdlyn1woLm-bRruoCkPd6lOm8WM78TlXRzQ5Q5cMUqZHUxqxBmhj7ztAh5qn8wpzobpNsYeWA16DeC2-1QDhxi9vfXZIShSrEGqH6VV-TfjuSWg6Cwvze768taUDMGzOIPOgot_Cd5GZEP0ZvN7eDg" />
                 <div className="absolute top-4 left-4 flex gap-2">
@@ -456,8 +430,8 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="p-8">
-                <h4 className="text-2xl font-black mb-4 dark:text-white">Global Cloud Migration</h4>
-                <p className="text-slate-600 dark:text-slate-400 mb-6 text-sm">Migrated legacy infrastructure to a secure multi-cloud environment saving $500k/year.</p>
+                <h4 className="text-2xl font-black mb-4">Global Cloud Migration</h4>
+                <p className="text-slate-600 mb-6 text-sm">Migrated legacy infrastructure to a secure multi-cloud environment saving $500k/year.</p>
                 <Link href="/case-study-ecommerce-redesign" className="text-primary font-bold flex items-center gap-2">View Case Study <span className="material-symbols-outlined text-sm">arrow_outward</span></Link>
               </div>
             </div>
@@ -466,15 +440,15 @@ export default function HomePage() {
       </section>
 
       {/* Logo Cloud / Partners */}
-      <section className="py-16 border-y border-slate-100 dark:border-slate-800">
+      <section className="py-16 border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-slate-500 font-semibold uppercase tracking-widest text-xs mb-10">Strategic Technology Partners</p>
           <div className="flex flex-wrap justify-center items-center gap-12 lg:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all">
-            <span className="text-2xl font-bold dark:text-white">AWS</span>
-            <span className="text-2xl font-bold dark:text-white">Google Cloud</span>
-            <span className="text-2xl font-bold dark:text-white">Azure</span>
-            <span className="text-2xl font-bold dark:text-white">Salesforce</span>
-            <span className="text-2xl font-bold dark:text-white">Kubernetes</span>
+            <span className="text-2xl font-bold">AWS</span>
+            <span className="text-2xl font-bold">Google Cloud</span>
+            <span className="text-2xl font-bold">Azure</span>
+            <span className="text-2xl font-bold">Salesforce</span>
+            <span className="text-2xl font-bold">Kubernetes</span>
           </div>
         </div>
       </section>
