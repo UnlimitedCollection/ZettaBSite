@@ -139,7 +139,7 @@ export default function HomePage() {
             <div className="lg:w-1/2 grid grid-cols-2 gap-4">
               <div className="space-y-4 pt-8">
                 <div className="h-48 sm:h-64 rounded-2xl bg-slate-200 overflow-hidden">
-                  <img alt="Team" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLtEZCwCpIRJCltEfeMJFm83AclUL2fOS25mPqz8SQjdIocsuzNFvVDkJRukLdqX_03_9kb9OOGgT1bnNZZvuy92GAdlQta1DvuO9mV0Uc3yosMaCHp_dIsDzJn7uOoCrMRvzgkg2dW_JKYl5WkHjorXj-o0NpYbWH7ahPMbgVah0skGbBvkuTEl9641yHHPafZsaakJfm8LXRWkgVxte-prbe9vnf_-9FQK7elh28k0s2Z6_X6ptzI0G-g2CCfDBjKKmVqs85L-o" />
+                  <img alt="Team" className="w-full h-full object-cover" src="/team-meeting.png" />
                 </div>
                 <div className="h-48 rounded-2xl bg-primary/10 flex items-center justify-center p-8">
                   <span className="material-symbols-outlined text-6xl text-primary">diversity_3</span>
@@ -291,7 +291,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="relative rounded-3xl overflow-hidden min-h-[500px]">
-              <img alt="Collaboration" className="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjVMf-wQhipRpJzm5inSveAvMO4obRo0eNKoScXoHPMo7KowmFHwnt0I_0XA5aWkKvr0UUF4ET615bjQ-A4esgFhwRnAc5NYZP6lCyx7CjjhLpjMeON_veCYnP6RYdQZoKILOyBu_seXIC5mb-z25OtXrtSO4UlVc9a4LtgUyTTyFb73rbeWqt11j52G-w1s6LTt2DQzbDuJpipPy4EY7idbQ8ruVcxd3q3Uo9V7kPWepNkJbCI7yTpYBr4D-O3LP1AfolDcfQdF8" />
+              <img alt="Collaboration" className="absolute inset-0 w-full h-full object-cover" src="/tech-bg.png" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
               <div className="absolute bottom-10 left-10 right-10 p-8 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
                 <p className="text-white text-lg font-medium italic">"ZettaB changed how we look at software. They aren't just developers, they are innovators."</p>
