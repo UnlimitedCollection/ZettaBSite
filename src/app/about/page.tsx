@@ -35,7 +35,7 @@ export default function AboutPage() {
                     <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-primary/10 translate-x-4 translate-y-4 rounded-3xl -z-10"></div>
-                            <img alt="Our Workspace" className="rounded-3xl object-cover w-full h-64 lg:h-[500px] shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMbylQ67P3J-JshQY2_IfnZ1A1YcO42G62d18J5ZshV7pL-52xR9j-C6S9uFItXlsQ26bTjW931oD7-c10kFnttU7L4XyqKEDF9cQ7370F-b-1f0fQZ1J9eUfF5Z_0g4N1Z3oE5A8s1Z_yO5F-mY_4hD7j-Vw9X-A-B-z-0WbA_Q" />
+                            <img alt="Our Workspace" className="rounded-3xl object-cover w-full h-64 lg:h-[500px] shadow-2xl" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200" />
                         </div>
                         <div>
                             <h2 className="text-4xl font-black text-slate-900 mb-6">Born from a desire to do things <span className="text-primary italic">right</span>.</h2>
@@ -133,7 +133,7 @@ export default function AboutPage() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div className="group">
                             <div className="rounded-3xl overflow-hidden mb-6 relative aspect-[3/4]">
-                                <img alt="CEO" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMsMIsLwT9Xz7U6_Y3V6T89m_c0_S363JpUqI1eR_-K9r3c3kHJUQ8-I5Z_O7s8qD6R_v4W-Xq-KQQ5dY-O1S_T8r5p-O6x8qQ1e8z7_Kk-g_y9F_zB-G0K-tA-4O5N2L6bF2n1w8gL8qV9-K_I-P_G9aB_X4lKqX-G_5QoT8n6L_F5-mF_7fP_uT_6Y" />
+                                <img alt="CEO" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" />
                             </div>
                             <h4 className="text-xl font-bold">Elena Rostova</h4>
                             <p className="text-primary font-bold text-sm mb-3">Founder & CEO</p>
@@ -141,7 +141,7 @@ export default function AboutPage() {
                         </div>
                         <div className="group">
                             <div className="rounded-3xl overflow-hidden mb-6 relative aspect-[3/4]">
-                                <img alt="CTO" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-R5T9T2D0F_rG3n8M4-V6T2z1L-3P2G9E2r_I3f5O_O7T8q-M_x-W3_7H_L3P0s7E9s_O8E8P4GZ7d-O5E-P9N2_Q6g3F-C3d4t6_O5F2-O3G4J7e5A9P_x8P6m1z4M2q9T_z-n0B9L3d_A8w-L4G9-M-xX_h7N0x_F4J_Z6n2I8t-K-Z9_v_4" />
+                                <img alt="CTO" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" />
                             </div>
                             <h4 className="text-xl font-bold">Marcus Vance</h4>
                             <p className="text-primary font-bold text-sm mb-3">Chief Technology Officer</p>
@@ -149,7 +149,7 @@ export default function AboutPage() {
                         </div>
                         <div className="group">
                             <div className="rounded-3xl overflow-hidden mb-6 relative aspect-[3/4]">
-                                <img alt="Design Director" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-w8N-C3l3F-t6Q1G8E5R9-W3k0N3T8q-L1e3n4S5e_g5t-Z1m5_S8Q2g-M6P2J2G-C-X1o7R-M-E1Z9T1F-z_w2M2G8B9m-t-Y5Q8i2K1m8z2P-j-Y6R_L3B1g3J7X9P4w0E-M9G6t-I3_q2_S5w6Q3m_O4k-P9G9H_T8Y4K_j4F-U1i_t-z5Q8h-" />
+                                <img alt="Design Director" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400" />
                             </div>
                             <h4 className="text-xl font-bold">Sarah Jenkins</h4>
                             <p className="text-primary font-bold text-sm mb-3">Head of Design</p>
@@ -157,7 +157,7 @@ export default function AboutPage() {
                         </div>
                         <div className="group">
                             <div className="rounded-3xl overflow-hidden mb-6 relative aspect-[3/4]">
-                                <img alt="Delivery" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Z1F3h-O3m-P6e-V8k6T3_Q4t-E8h-C2e_X4f3t4I_G4g-w8o2A-R8j3H-K4N3O9x7j7k5C_M-q-R4H3K8A6Y_z2D8t8m_U3A4Z8X3s5I-t_B6Z-E0d6V5q8L-I8o2Y4G0g8t_E7p7R3H-A8C5s4U9r1X6K3D1r-W-G6V1m9d8B6O1N-D_I_b-Y_a" />
+                                <img alt="Delivery" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400" />
                             </div>
                             <h4 className="text-xl font-bold">David Chen</h4>
                             <p className="text-primary font-bold text-sm mb-3">Head of Delivery</p>
@@ -208,12 +208,12 @@ export default function AboutPage() {
                         </div>
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-4">
-                                <img alt="Office Culture" className="rounded-3xl object-cover h-64 w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-K8J7i_l-H6v4R_X9E5G-L4P2t1-S6a3Q_m3S2d8A-r-A5Q1n4O_X_O3I-o-J4F3E_S1I8N2g5D8R3o0e5A2W5f-U6b4L9I8Q6u2W1U7x7I_b_j5G8I8D2M_H-Z3M_D4T-Y9g6e_Q1O7C_P6z9V7H-T4c8V8S6Z0T5F0H4m_S_P0A5w2g-k-U9l-X" />
-                                <img alt="Team Event" className="rounded-3xl object-cover h-48 w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0v4D-R3S_Q-C7F1a6I8B1J7z3R9E6G9y4L3W1F0Z_m_X2N5F0M3y-I1s7O5Q6T6O8L7Q3v_I_Y4E-i2B3G-a3E-X5U8Y8k-E4u6X6N8X6k5q1K5R0-L-F-R8R-b6R8X2U_g5Z_R1H-C3I_U4P_g0E5D4G5q_e_I-C2G4Q_N0B7U1j-U8z1z_V9b-W5s-C" />
+                                <img alt="Office Culture" className="rounded-3xl object-cover h-64 w-full" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200" />
+                                <img alt="Team Event" className="rounded-3xl object-cover h-48 w-full" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200" />
                             </div>
                             <div className="space-y-4 pt-10">
-                                <img alt="Coding" className="rounded-3xl object-cover h-48 w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMsMIsLwT9Xz7U6_Y3V6T89m_c0_S363JpUqI1eR_-K9r3c3kHJUQ8-I5Z_O7s8qD6R_v4W-Xq-KQQ5dY-O1S_T8r5p-O6x8qQ1e8z7_Kk-g_y9F_zB-G0K-tA-4O5N2L6bF2n1w8gL8qV9-K_I-P_G9aB_X4lKqX-G_5QoT8n6L_F5-mF_7fP_uT_6Y" />
-                                <img alt="Meeting" className="rounded-3xl object-cover h-64 w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-w8N-C3l3F-t6Q1G8E5R9-W3k0N3T8q-L1e3n4S5e_g5t-Z1m5_S8Q2g-M6P2J2G-C-X1o7R-M-E1Z9T1F-z_w2M2G8B9m-t-Y5Q8i2K1m8z2P-j-Y6R_L3B1g3J7X9P4w0E-M9G6t-I3_q2_S5w6Q3m_O4k-P9G9H_T8Y4K_j4F-U1i_t-z5Q8h-" />
+                                <img alt="Coding" className="rounded-3xl object-cover h-48 w-full" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200" />
+                                <img alt="Meeting" className="rounded-3xl object-cover h-64 w-full" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200" />
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { WhitepaperCTA } from "@/components/WhitepaperCTA";
 
 export const metadata: Metadata = {
     title: "Mobile Applications | ZettaB",
@@ -97,7 +98,7 @@ export default function MobileApplicationsPage() {
                     <div className="lg:col-span-5 space-y-8">
                         {/* Featured Image */}
                         <div className="rounded-3xl overflow-hidden shadow-2xl">
-                            <img alt="Mobile App Development" className="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpYjF-lO4l01f1U2dktJm2B23XQ8Fp2V03u7Qf21o4t0K8M3O_H8T6P6o_V8q_Q6E2F6w_l3i0g_J0o_S5W0J8l_e0k2D9f2G7V0L7w2O-k8r_Y5I-E8k4z_f9Y_e3F6C2q8j4Q5Q4k7C3J8b5L6w2B8w6B3E9n4j0U7m0V9_M2v6X7s5q_x8-D8R3B8I6x4I-V8M7" />
+                            <img alt="Mobile App Development" className="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1200" />
                         </div>
 
                         {/* Tech Stack Box */}
@@ -128,6 +129,13 @@ export default function MobileApplicationsPage() {
 
                 </div>
             </section>
+
+            {/* Whitepaper Download Section */}
+            <WhitepaperCTA
+                title="The Mobile App Strategy Playbook"
+                description="Download our comprehensive whitepaper on choosing between React Native, Kotlin, and Swift—and how to plan a mobile roadmap that aligns with business growth."
+                pdfUrl="/whitepapers/Mobile-app-development.pdf"
+            />
 
             {/* Related Case Study / Banner */}
             <section className="py-24 bg-primary text-white text-center">

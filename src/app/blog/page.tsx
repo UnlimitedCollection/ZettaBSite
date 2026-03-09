@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { NewsletterForm } from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
     title: "Blog | ZettaB — Digital Insights & Trends",
@@ -79,8 +80,8 @@ export default function BlogPage() {
                         <button
                             key={tag}
                             className={`flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${tag === "All"
-                                    ? "bg-primary text-white"
-                                    : "bg-gray-100 text-gray-600 hover:bg-primary/10 hover:text-primary"
+                                ? "bg-primary text-white"
+                                : "bg-gray-100 text-gray-600 hover:bg-primary/10 hover:text-primary"
                                 }`}
                         >
                             {tag}
@@ -132,10 +133,7 @@ export default function BlogPage() {
                 <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold text-white mb-4">Get insights delivered to your inbox</h2>
                     <p className="text-blue-200 mb-8">Practical articles on tech, design, and growth. No filler. Published twice a month.</p>
-                    <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-                        <input type="email" placeholder="Enter your email" className="flex-1 h-11 px-4 rounded-md text-sm bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-white" />
-                        <button type="submit" className="h-11 px-6 rounded-md bg-white text-primary text-sm font-semibold hover:bg-gray-50 transition-colors flex-shrink-0">Subscribe</button>
-                    </form>
+                    <NewsletterForm />
                 </div>
             </section>
         </>

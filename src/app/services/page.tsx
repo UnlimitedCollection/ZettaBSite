@@ -112,14 +112,14 @@ export default function ServicesPage() {
                                 </Link>
                             </div>
                             <div className="order-1 lg:order-2">
-                                <img alt="Custom Software" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpYjF-lO4l01f1U2dktJm2B23XQ8Fp2V03u7Qf21o4t0K8M3O_H8T6P6o_V8q_Q6E2F6w_l3i0g_J0o_S5W0J8l_e0k2D9f2G7V0L7w2O-k8r_Y5I-E8k4z_f9Y_e3F6C2q8j4Q5Q4k7C3J8b5L6w2B8w6B3E9n4j0U7m0V9_M2v6X7s5q_x8-D8R3B8I6x4I-V8M7" />
+                                <img alt="Custom Software" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1200" />
                             </div>
                         </div>
 
                         {/* Service Item 2 */}
                         <div className="grid lg:grid-cols-2 gap-16 items-center">
                             <div>
-                                <img alt="Cloud Infrastructure" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0E3u-K5q_k3H3W1t-o0s3C7j5W-a_T0j4L3q2c5U2a7_P0Y1q_W0g-C7w8X7K6G5s9X5R_5c2O6q3V0S8g2G5A6s_T5n2P0R2c8J-Y2U8K6s-G2H9P_c_W2z_G0i5j1j_u2Y9i-O4_s0_R3d5M6_c5q5F_i5o3O-J1z9y3o_E0b5Q9s9w8T-S_j4L4K2B8P_u9K_q5C8p-N3y2h" />
+                                <img alt="Cloud Infrastructure" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" />
                             </div>
                             <div>
                                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold w-fit mb-6">
@@ -188,7 +188,7 @@ export default function ServicesPage() {
                                 </Link>
                             </div>
                             <div className="order-1 lg:order-2">
-                                <img alt="Web Development" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_p6z_p5K8j6h8d0i2F6s8L2q5E7Y9I1y5X7x8W7r3K_h5E6u5M_V_k5K_k_H6X_Z8D8m8L6W_F3K5g9s6c3X5g2o9d1u_T_d4i5U7l5v8i6i3B5w8B2_c4H2V0M_Z8A1E7V9q9H_Y5T4s_t-A4D2n7a5V8l-a_u_U_h8E9O2e5Z4W_p6y1_D3G7" />
+                                <img alt="Web Development" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200" />
                             </div>
                         </div>
                     </div>

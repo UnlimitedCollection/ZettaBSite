@@ -1,9 +1,18 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
+    const [isSubscribed, setIsSubscribed] = useState(false);
+
+    const handleSubscribe = (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubscribed(true);
+        setTimeout(() => setIsSubscribed(false), 3000);
+    };
 
     return (
         <footer className="bg-slate-900 text-slate-400 pt-24 pb-12">
@@ -57,16 +66,24 @@ export function Footer() {
                     <div className="lg:col-span-4">
                         <h5 className="text-white font-bold mb-8">Subscribe to our newsletter</h5>
                         <p className="mb-6 text-sm">Stay updated with the latest in tech and innovation.</p>
-                        <div className="flex gap-2">
-                            <input
-                                type="email"
-                                placeholder="Your email"
-                                className="bg-slate-800 border-none rounded-xl px-4 py-3 flex-1 text-white focus:ring-2 focus:ring-primary outline-none"
-                            />
-                            <button className="bg-primary text-white p-3 rounded-xl hover:opacity-90 transition-opacity">
-                                <span className="material-symbols-outlined">send</span>
-                            </button>
-                        </div>
+                        {isSubscribed ? (
+                            <div className="bg-green-500/20 text-green-400 p-4 rounded-xl flex items-center gap-2 border border-green-500/30">
+                                <span className="material-symbols-outlined text-xl">check_circle</span>
+                                <span className="text-sm font-medium">Thanks for subscribing!</span>
+                            </div>
+                        ) : (
+                            <form className="flex gap-2" onSubmit={handleSubscribe}>
+                                <input
+                                    type="email"
+                                    required
+                                    placeholder="Your email"
+                                    className="bg-slate-800 border-none rounded-xl px-4 py-3 flex-1 text-white focus:ring-2 focus:ring-primary outline-none"
+                                />
+                                <button type="submit" className="bg-primary text-white p-3 rounded-xl hover:opacity-90 transition-opacity">
+                                    <span className="material-symbols-outlined">send</span>
+                                </button>
+                            </form>
+                        )}
                     </div>
                 </div>
 
