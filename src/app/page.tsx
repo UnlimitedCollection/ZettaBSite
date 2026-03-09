@@ -75,7 +75,7 @@ export default function HomePage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative pt-12 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
+      <section className="relative pt-20 pb-16 lg:pt-24 lg:pb-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col gap-8">
@@ -83,7 +83,7 @@ export default function HomePage() {
                 <span className="material-symbols-outlined text-sm">verified</span>
                 Next-Gen Tech Solutions
               </div>
-              <h1 className="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900">
                 Scalable Digital Products <span className="text-primary">Built for Growth</span>
               </h1>
               <p className="text-lg lg:text-xl text-slate-600 leading-relaxed max-w-xl">
@@ -135,10 +135,10 @@ export default function HomePage() {
       {/* About Preview */}
       <section className="py-24" id="about">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="lg:w-1/2 grid grid-cols-2 gap-4">
               <div className="space-y-4 pt-8">
-                <div className="h-64 rounded-2xl bg-slate-200 overflow-hidden">
+                <div className="h-48 sm:h-64 rounded-2xl bg-slate-200 overflow-hidden">
                   <img alt="Team" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLtEZCwCpIRJCltEfeMJFm83AclUL2fOS25mPqz8SQjdIocsuzNFvVDkJRukLdqX_03_9kb9OOGgT1bnNZZvuy92GAdlQta1DvuO9mV0Uc3yosMaCHp_dIsDzJn7uOoCrMRvzgkg2dW_JKYl5WkHjorXj-o0NpYbWH7ahPMbgVah0skGbBvkuTEl9641yHHPafZsaakJfm8LXRWkgVxte-prbe9vnf_-9FQK7elh28k0s2Z6_X6ptzI0G-g2CCfDBjKKmVqs85L-o" />
                 </div>
                 <div className="h-48 rounded-2xl bg-primary/10 flex items-center justify-center p-8">
@@ -146,10 +146,10 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="space-y-4">
-                <div className="h-64 rounded-2xl bg-slate-900 flex items-center justify-center p-8">
+                <div className="h-48 sm:h-64 rounded-2xl bg-slate-900 flex items-center justify-center p-8">
                   <span className="material-symbols-outlined text-6xl text-white">psychology</span>
                 </div>
-                <div className="h-48 rounded-2xl bg-slate-200 overflow-hidden">
+                <div className="h-40 sm:h-48 rounded-2xl bg-slate-200 overflow-hidden">
                   <img alt="Tech" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1CJTAct-7bxyebZCS8TlmTSrpgfi5UviiIYbU1LHPtn2AD3E8dluyFn7ourPcBlDd6BqnZg68MQt-l_JfvebgLplsujhR37N5Vz__GnuNVY5MZ6-IuOPVyqZTv7zB9IFVqLr2TPVJq7NhMcY0RJs1EZs13KfvHD9Mdf8wJLSfI6rA4mQRUkg1ZYFGvE5kt3RwnCWIdE6784cyc2tEvRcz9C1vbEv8v14iLQMsAqTher-7bo75o4-uvCkWMcb4WXNT6RJoBPjRako" />
                 </div>
               </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
       {/* Why Choose Us */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
             <div>
               <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-8">Why leading brands trust us</h2>
               <div className="space-y-12">
@@ -311,7 +311,7 @@ export default function HomePage() {
           </div>
           <div className="relative">
             <div className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-primary/30 -translate-y-1/2"></div>
-            <div className="grid lg:grid-cols-6 gap-8 relative">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 relative">
               {[
                 { icon: "search", label: "Discovery", desc: "Understanding requirements and market needs." },
                 { icon: "architecture", label: "Planning", desc: "Defining architecture and development roadmap." },

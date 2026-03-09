@@ -20,7 +20,7 @@ export default function AboutPage() {
             <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our Mission & Vision</p>
-                    <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
                         Engineering the Future,<br />One Product at a Time.
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
@@ -32,10 +32,10 @@ export default function AboutPage() {
             {/* Two Column Intro */}
             <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                    <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-primary/10 translate-x-4 translate-y-4 rounded-3xl -z-10"></div>
-                            <img alt="Our Workspace" className="rounded-3xl object-cover w-full h-[500px] shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMbylQ67P3J-JshQY2_IfnZ1A1YcO42G62d18J5ZshV7pL-52xR9j-C6S9uFItXlsQ26bTjW931oD7-c10kFnttU7L4XyqKEDF9cQ7370F-b-1f0fQZ1J9eUfF5Z_0g4N1Z3oE5A8s1Z_yO5F-mY_4hD7j-Vw9X-A-B-z-0WbA_Q" />
+                            <img alt="Our Workspace" className="rounded-3xl object-cover w-full h-64 lg:h-[500px] shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMbylQ67P3J-JshQY2_IfnZ1A1YcO42G62d18J5ZshV7pL-52xR9j-C6S9uFItXlsQ26bTjW931oD7-c10kFnttU7L4XyqKEDF9cQ7370F-b-1f0fQZ1J9eUfF5Z_0g4N1Z3oE5A8s1Z_yO5F-mY_4hD7j-Vw9X-A-B-z-0WbA_Q" />
                         </div>
                         <div>
                             <h2 className="text-4xl font-black text-slate-900 mb-6">Born from a desire to do things <span className="text-primary italic">right</span>.</h2>
@@ -51,7 +51,7 @@ export default function AboutPage() {
                                 </p>
                             </div>
 
-                            <div className="mt-10 grid grid-cols-3 gap-6 pt-10 border-t border-slate-100">
+                            <div className="mt-10 grid grid-cols-3 gap-4 pt-10 border-t border-slate-100">
                                 <div>
                                     <div className="text-3xl font-black text-primary mb-1">2016</div>
                                     <div className="text-sm font-semibold uppercase text-slate-500">Founded</div>
@@ -173,7 +173,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "32px 32px" }}></div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+                    <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                         <div>
                             <h2 className="text-4xl lg:text-5xl font-black mb-8">A culture built on innovation and trust.</h2>
                             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
