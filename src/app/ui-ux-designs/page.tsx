@@ -17,64 +17,130 @@ const process = [
 
 export default function UIUXDesignsPage() {
     return (
-        <>
-            <section className="pt-32 pb-20 bg-gradient-to-b from-[#0B0D12] to-gray-900">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">UI/UX Design</p>
-                    <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 leading-tight">Engaging Experiences</h1>
-                    <p className="text-xl text-gray-400 leading-relaxed">Design that isn't just beautiful — it's strategic. Every choice is backed by research and tied to a business outcome.</p>
-                    <div className="mt-10">
-                        <Link href="/contact" className="inline-flex items-center justify-center rounded-md text-sm font-semibold h-11 px-6 bg-primary text-white hover:bg-primary-hover transition-colors">Start a Design Project</Link>
+        <main>
+            {/* Header / Hero */}
+            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Service</p>
+                    <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+                        UI/UX Design that<br />converts beautifully.
+                    </h1>
+                    <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
+                        Human-centred design strategies that solve complex user problems, build brand trust, and drive measurable business outcomes.
+                    </p>
+                    <div className="flex justify-center gap-4">
+                        <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:bg-white hover:text-slate-900 transition-colors shadow-lg shadow-primary/30">
+                            Discuss Your Project
+                        </Link>
                     </div>
                 </div>
             </section>
 
-            <section className="py-24 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-2xl mx-auto mb-16">
-                        <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Our Process</p>
-                        <h2 className="text-4xl font-bold text-gray-900">Design from research to reality</h2>
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {process.map((item) => (
-                            <div key={item.step} className="p-7 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-lg transition-all duration-300">
-                                <span className="text-5xl font-black text-gray-100 leading-none block mb-3">{item.step}</span>
-                                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            {/* Service Details Main Content */}
+            <section className="py-24 bg-white dark:bg-slate-900">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-16">
 
-            <section className="py-24 bg-bg-light">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    {/* Left Content (Text) */}
+                    <div className="lg:col-span-7 space-y-12">
                         <div>
-                            <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Why Design Matters</p>
-                            <h2 className="text-4xl font-bold text-gray-900 mb-6">Great design is a competitive advantage</h2>
-                            <p className="text-gray-500 text-lg mb-6 leading-relaxed">Users judge your product in milliseconds. A polished, intuitive interface builds trust instantly. Poor UX loses customers before they ever see your value proposition.</p>
-                            <p className="text-gray-500 text-lg leading-relaxed">We design products that feel effortless to use — because that is one of the hardest things to get right, and one of the most commercially impactful.</p>
+                            <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-6">Overview</h2>
+                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                                Great design isn't just about aesthetics; it's a strategic tool for user retention and conversion. We build digital products that feel intuitive, accessible, and polished from the very first interaction.
+                            </p>
+                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Our design team bridges the gap between user needs and technical capabilities, ensuring everything we design can be seamlessly implemented by engineering teams.
+                            </p>
                         </div>
-                        <div className="flex flex-col gap-4">
-                            {[{ v: "88%", l: "Of users won't return after a bad experience" }, { v: "200%", l: "Better conversion on well-designed CTAs" }, { v: "$100", l: "Saved in dev for every $1 spent on UX" }].map(s => (
-                                <div key={s.l} className="flex items-center gap-6 p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
-                                    <div className="text-3xl font-bold text-primary flex-shrink-0">{s.v}</div>
-                                    <div className="text-sm text-gray-600">{s.l}</div>
-                                </div>
-                            ))}
+
+                        <div>
+                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Capabilities</h3>
+                            <div className="grid sm:grid-cols-2 gap-6">
+                                {process.map((item) => (
+                                    <div key={item.step} className="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800 relative overflow-hidden group">
+                                        <div className="absolute -right-6 -top-6 text-9xl font-black text-slate-100 dark:text-slate-800/50 group-hover:scale-110 transition-transform duration-500 pointer-events-none">{item.step}</div>
+                                        <div className="relative z-10">
+                                            <h4 className="font-bold dark:text-white mb-2">{item.title}</h4>
+                                            <p className="text-sm text-slate-600 dark:text-slate-400">{item.desc}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Our Process</h3>
+                            <ul className="space-y-6">
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">1</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">Discovery & Research</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Understanding your business goals, target audience, and competitive landscape through stakeholder interviews and market analysis.</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">2</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">Wireframing & Prototyping</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Mapping out user journeys and laying out low-fidelity wireframes to rapidly validate structural concepts.</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">3</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">High-Fidelity UI & Handoff</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Applying your brand's visual identity, creating a scalable design system, and providing developers with perfectly documented assets.</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+
+                    {/* Right Content (Sidebar / Tech Stack / CTA) */}
+                    <div className="lg:col-span-5 space-y-8">
+                        {/* Featured Image */}
+                        <div className="rounded-3xl overflow-hidden shadow-2xl">
+                            <img alt="UI/UX Design App" className="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpYjF-lO4l01f1U2dktJm2B23XQ8Fp2V03u7Qf21o4t0K8M3O_H8T6P6o_V8q_Q6E2F6w_l3i0g_J0o_S5W0J8l_e0k2D9f2G7V0L7w2O-k8r_Y5I-E8k4z_f9Y_e3F6C2q8j4Q5Q4k7C3J8b5L6w2B8w6B3E9n4j0U7m0V9_M2v6X7s5q_x8-D8R3B8I6x4I-V8M7" />
+                        </div>
+
+                        {/* Tech Stack Box */}
+                        <div className="p-8 bg-slate-900 rounded-3xl text-white">
+                            <h4 className="font-bold text-xl mb-6 flex items-center gap-2">
+                                <span className="material-symbols-outlined text-primary">design_services</span>
+                                Design Arsenal
+                            </h4>
+                            <div className="flex flex-wrap gap-3">
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Figma</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Framer</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Adobe Creative Suite</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Miro</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Maze</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Storybook (Tokens)</span>
+                            </div>
+                        </div>
+
+                        {/* Contact CTA Box */}
+                        <div className="p-8 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-200 dark:border-slate-800">
+                            <h4 className="font-bold text-2xl dark:text-white mb-4">Ready to elevate your product?</h4>
+                            <p className="text-slate-600 dark:text-slate-400 mb-6">Let's audit your current interface or start mapping out your next big launch.</p>
+                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:border-primary transition-colors">
+                                Schedule Call <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                            </Link>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
-            <section className="py-24 bg-gradient-to-r from-primary to-[#0e45b5]">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">Let's design something your users will love</h2>
-                    <p className="text-blue-200 text-lg mb-10">Share your vision and we'll show you what we can build together.</p>
-                    <Link href="/contact" className="inline-flex items-center justify-center rounded-md text-base font-semibold h-12 px-8 bg-white text-primary hover:bg-gray-50 transition-colors shadow-lg">Get a Design Quote</Link>
+            {/* Related Case Study / Banner */}
+            <section className="py-24 bg-primary text-white text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <span className="material-symbols-outlined text-5xl mb-6 opacity-80">insights</span>
+                    <h2 className="text-3xl md:text-5xl font-black mb-6">See how a UX redesign increased cart conversion by 45%.</h2>
+                    <Link href="/case-studies" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg">
+                        Read Case Study
+                    </Link>
                 </div>
             </section>
-        </>
+        </main>
     );
 }

@@ -17,54 +17,128 @@ const pillars = [
 
 export default function CloudDeploymentsPage() {
     return (
-        <>
-            <section className="pt-32 pb-20 bg-gradient-to-b from-[#0B0D12] to-gray-900">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Cloud Deployments</p>
-                    <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 leading-tight">Secure. Scalable.<br />Always On.</h1>
-                    <p className="text-xl text-gray-400 leading-relaxed">Enterprise-grade cloud infrastructure built for reliability, performance, and growth without the headache.</p>
-                    <div className="mt-10">
-                        <Link href="/contact" className="inline-flex items-center justify-center rounded-md text-sm font-semibold h-11 px-6 bg-primary text-white hover:bg-primary-hover transition-colors">Request Infrastructure Review</Link>
+        <main>
+            {/* Header / Hero */}
+            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Service</p>
+                    <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+                        Cloud Deployments<br />& DevOps.
+                    </h1>
+                    <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
+                        Scalable, secure, and resilient cloud infrastructure designed for high availability and rapid iteration.
+                    </p>
+                    <div className="flex justify-center gap-4">
+                        <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:bg-white hover:text-slate-900 transition-colors shadow-lg shadow-primary/30">
+                            Discuss Your Infrastructure
+                        </Link>
                     </div>
                 </div>
             </section>
 
-            <section className="py-24 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-2xl mx-auto mb-16">
-                        <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Solution Pillars</p>
-                        <h2 className="text-4xl font-bold text-gray-900">What we deliver</h2>
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {pillars.map((item) => (
-                            <div key={item.title} className="p-7 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-lg transition-all duration-300">
-                                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+            {/* Service Details Main Content */}
+            <section className="py-24 bg-white dark:bg-slate-900">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-16">
+
+                    {/* Left Content (Text) */}
+                    <div className="lg:col-span-7 space-y-12">
+                        <div>
+                            <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-6">Overview</h2>
+                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                                Modern software requires modern infrastructure. We architect cloud environments that automate deployments, scale dynamically with traffic spikes, and provide deep observability into system health.
+                            </p>
+                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Our DevOps philosophy treats infrastructure as code (IaC), eliminating manual configuration drift and ensuring that environments are reproducible, secure, and easily auditable.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Capabilities</h3>
+                            <div className="grid sm:grid-cols-2 gap-6">
+                                {pillars.map((item) => (
+                                    <div key={item.title} className="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">cloud</span>
+                                        <h4 className="font-bold dark:text-white mb-2">{item.title}</h4>
+                                        <p className="text-sm text-slate-600 dark:text-slate-400">{item.desc}</p>
+                                    </div>
+                                ))}
                             </div>
-                        ))}
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Our Process</h3>
+                            <ul className="space-y-6">
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">1</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">Audit & Architecture Design</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Reviewing existing systems, identifying bottlenecks, and designing an target architecture optimised for cost and performance.</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">2</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">Infrastructure as Code (IaC)</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Writing Terraform or CloudFormation scripts to provision resources deterministically across all environments.</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">3</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">CI/CD & Monitoring Setup</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Implementing automated pipelines for zero-downtime deployments and configuring comprehensive observability stacks.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+
+                    {/* Right Content (Sidebar / Tech Stack / CTA) */}
+                    <div className="lg:col-span-5 space-y-8">
+                        {/* Featured Image */}
+                        <div className="rounded-3xl overflow-hidden shadow-2xl">
+                            <img alt="Cloud & DevOps Infrastructure" className="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpYjF-lO4l01f1U2dktJm2B23XQ8Fp2V03u7Qf21o4t0K8M3O_H8T6P6o_V8q_Q6E2F6w_l3i0g_J0o_S5W0J8l_e0k2D9f2G7V0L7w2O-k8r_Y5I-E8k4z_f9Y_e3F6C2q8j4Q5Q4k7C3J8b5L6w2B8w6B3E9n4j0U7m0V9_M2v6X7s5q_x8-D8R3B8I6x4I-V8M7" />
+                        </div>
+
+                        {/* Tech Stack Box */}
+                        <div className="p-8 bg-slate-900 rounded-3xl text-white">
+                            <h4 className="font-bold text-xl mb-6 flex items-center gap-2">
+                                <span className="material-symbols-outlined text-primary">cloud_sync</span>
+                                Technologies
+                            </h4>
+                            <div className="flex flex-wrap gap-3">
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">AWS / GCP / Azure</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Kubernetes</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Docker</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Terraform</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">GitHub Actions</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Datadog / Prometheus</span>
+                            </div>
+                        </div>
+
+                        {/* Contact CTA Box */}
+                        <div className="p-8 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-200 dark:border-slate-800">
+                            <h4 className="font-bold text-2xl dark:text-white mb-4">Is your infrastructure holding you back?</h4>
+                            <p className="text-slate-600 dark:text-slate-400 mb-6">Let's audit your current setup and identify areas to improve security, lower costs, and increase velocity.</p>
+                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:border-primary transition-colors">
+                                Schedule Audit <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                            </Link>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
-            <section className="py-24 bg-bg-light">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Supported Platforms</p>
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Multi-cloud expertise</h2>
-                    <div className="flex flex-wrap gap-4 justify-center mt-8">
-                        {["AWS", "Google Cloud", "Microsoft Azure", "Vercel", "Cloudflare", "Heroku", "DigitalOcean", "Kubernetes"].map((p) => (
-                            <span key={p} className="px-5 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 shadow-sm">{p}</span>
-                        ))}
-                    </div>
+            {/* Related Case Study / Banner */}
+            <section className="py-24 bg-primary text-white text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <span className="material-symbols-outlined text-5xl mb-6 opacity-80">insights</span>
+                    <h2 className="text-3xl md:text-5xl font-black mb-6">Read how we reduced AWS costs by 40% for a SaaS provider.</h2>
+                    <Link href="/case-studies" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg">
+                        Read Case Study
+                    </Link>
                 </div>
             </section>
-
-            <section className="py-24 bg-gradient-to-r from-primary to-[#0e45b5]">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">Ready for infrastructure that scales with you?</h2>
-                    <p className="text-blue-200 text-lg mb-10">We'll review your current setup and identify exactly where to optimise.</p>
-                    <Link href="/contact" className="inline-flex items-center justify-center rounded-md text-base font-semibold h-12 px-8 bg-white text-primary hover:bg-gray-50 transition-colors shadow-lg">Book a Free Review</Link>
-                </div>
-            </section>
-        </>
+        </main>
     );
 }

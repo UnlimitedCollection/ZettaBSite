@@ -17,61 +17,129 @@ const categories = [
 
 export default function SoftwareDevelopmentPage() {
     return (
-        <>
-            <section className="pt-32 pb-20 bg-gradient-to-b from-[#0B0D12] to-gray-900">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Software Development</p>
-                    <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 leading-tight">Custom Systems</h1>
-                    <p className="text-xl text-gray-400 leading-relaxed">Built for reliability, security, and long-term maintainability by engineers who take pride in their craft.</p>
-                    <div className="mt-10">
-                        <Link href="/contact" className="inline-flex items-center justify-center rounded-md text-sm font-semibold h-11 px-6 bg-primary text-white hover:bg-primary-hover transition-colors">Discuss Your Requirements</Link>
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-24 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-2xl mx-auto mb-16">
-                        <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">What We Build</p>
-                        <h2 className="text-4xl font-bold text-gray-900">Custom software categories</h2>
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {categories.map((item) => (
-                            <div key={item.title} className="p-7 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-lg transition-all duration-300">
-                                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-24 bg-bg-light">
+        <main>
+            {/* Header / Hero */}
+            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Engineering Standards</p>
-                        <h2 className="text-4xl font-bold text-gray-900">How we write code</h2>
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        {["Comprehensive test coverage (unit, integration, e2e)", "Code reviews on every pull request", "Documentation first approach", "CI/CD from day one", "Semantic versioning and changelogs", "Security scanning in the build pipeline"].map(item => (
-                            <div key={item} className="flex items-center gap-3 p-5 bg-white border border-gray-100 rounded-xl shadow-sm">
-                                <div className="p-1.5 bg-primary/10 rounded-full text-primary flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                                </div>
-                                <span className="text-sm text-gray-700">{item}</span>
-                            </div>
-                        ))}
+                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Service</p>
+                    <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+                        Software Development<br />built for scale.
+                    </h1>
+                    <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
+                        Custom systems, complex integrations, and enterprise platforms engineered with clean architecture and long-term maintainability.
+                    </p>
+                    <div className="flex justify-center gap-4">
+                        <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:bg-white hover:text-slate-900 transition-colors shadow-lg shadow-primary/30">
+                            Discuss Your Project
+                        </Link>
                     </div>
                 </div>
             </section>
 
-            <section className="py-24 bg-gradient-to-r from-primary to-[#0e45b5]">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">Have a complex system to build?</h2>
-                    <p className="text-blue-200 text-lg mb-10">We love a challenging brief. Tell us about your requirements and we'll tell you how we'd build it.</p>
-                    <Link href="/contact" className="inline-flex items-center justify-center rounded-md text-base font-semibold h-12 px-8 bg-white text-primary hover:bg-gray-50 transition-colors shadow-lg">Send Us Your Brief</Link>
+            {/* Service Details Main Content */}
+            <section className="py-24 bg-white dark:bg-slate-900">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-16">
+
+                    {/* Left Content (Text) */}
+                    <div className="lg:col-span-7 space-y-12">
+                        <div>
+                            <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-6">Overview</h2>
+                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                                Quality software is the backbone of modern business. We design and build bespoke software solutions that move the needle, whether it's automating critical workflows, migrating legacy systems to the cloud, or launching an entirely new product.
+                            </p>
+                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Our engineering culture prioritizes robust automated testing, CI/CD pipelines, and creating clean, self-documenting code bases that internal teams love to inherit.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Capabilities</h3>
+                            <div className="grid sm:grid-cols-2 gap-6">
+                                {categories.map((item) => (
+                                    <div key={item.title} className="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">terminal</span>
+                                        <h4 className="font-bold dark:text-white mb-2">{item.title}</h4>
+                                        <p className="text-sm text-slate-600 dark:text-slate-400">{item.desc}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Our Process</h3>
+                            <ul className="space-y-6">
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">1</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">Architecture & Planning</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Defining system models, choosing the right stack, and creating technical documentation.</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">2</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">Agile Development</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Iterative sprints with regular demos, ensuring the product continuously aligns with your vision.</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">3</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">Automated QA & Deployment</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Rigorous testing via CI/CD pipelines before pushing robust code to production environments.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Right Content (Sidebar / Tech Stack / CTA) */}
+                    <div className="lg:col-span-5 space-y-8">
+                        {/* Featured Image */}
+                        <div className="rounded-3xl overflow-hidden shadow-2xl">
+                            <img alt="Software Engineering" className="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpYjF-lO4l01f1U2dktJm2B23XQ8Fp2V03u7Qf21o4t0K8M3O_H8T6P6o_V8q_Q6E2F6w_l3i0g_J0o_S5W0J8l_e0k2D9f2G7V0L7w2O-k8r_Y5I-E8k4z_f9Y_e3F6C2q8j4Q5Q4k7C3J8b5L6w2B8w6B3E9n4j0U7m0V9_M2v6X7s5q_x8-D8R3B8I6x4I-V8M7" />
+                        </div>
+
+                        {/* Tech Stack Box */}
+                        <div className="p-8 bg-slate-900 rounded-3xl text-white">
+                            <h4 className="font-bold text-xl mb-6 flex items-center gap-2">
+                                <span className="material-symbols-outlined text-primary">code</span>
+                                Core Technologies
+                            </h4>
+                            <div className="flex flex-wrap gap-3">
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Node.js</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Python</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Go</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">PostgreSQL</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">MongoDB</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Redis</span>
+                                <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Docker</span>
+                            </div>
+                        </div>
+
+                        {/* Contact CTA Box */}
+                        <div className="p-8 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-200 dark:border-slate-800">
+                            <h4 className="font-bold text-2xl dark:text-white mb-4">Have specific technical requirements?</h4>
+                            <p className="text-slate-600 dark:text-slate-400 mb-6">Speak directly with an architect. We'll outline exactly how we'd approach building your system.</p>
+                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:border-primary transition-colors">
+                                Schedule Call <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                            </Link>
+                        </div>
+                    </div>
+
                 </div>
             </section>
-        </>
+
+            {/* Related Case Study / Banner */}
+            <section className="py-24 bg-primary text-white text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <span className="material-symbols-outlined text-5xl mb-6 opacity-80">insights</span>
+                    <h2 className="text-3xl md:text-5xl font-black mb-6">See how we scaled a trading platform to 50k transactions/sec.</h2>
+                    <Link href="/case-studies" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg">
+                        Read Case Study
+                    </Link>
+                </div>
+            </section>
+        </main>
     );
 }

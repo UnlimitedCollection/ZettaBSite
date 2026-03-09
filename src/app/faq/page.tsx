@@ -41,28 +41,22 @@ const faqs = [
 function FAQItem({ question, answer }: { question: string; answer: string }) {
     const [open, setOpen] = useState(false);
     return (
-        <div className="border-b border-gray-100 last:border-0">
+        <div className={`p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border ${open ? 'border-primary shadow-lg shadow-primary/5' : 'border-slate-100 dark:border-slate-800'} transition-all`}>
             <button
                 onClick={() => setOpen(!open)}
-                className="w-full flex items-start justify-between gap-4 py-5 text-left"
+                className="w-full flex items-start justify-between gap-4 text-left"
                 aria-expanded={open}
             >
-                <span className="text-gray-900 font-medium text-sm pr-4">{question}</span>
-                <svg
-                    className={`w-5 h-5 text-primary flex-shrink-0 mt-0.5 transition-transform ${open ? "rotate-180" : ""}`}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                >
-                    <polyline points="6 9 12 15 18 9" />
-                </svg>
+                <div className="flex gap-4">
+                    <span className="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-1">help</span>
+                    <h3 className="text-lg font-bold text-slate-900 dark:text-white pr-4">{question}</h3>
+                </div>
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${open ? 'bg-primary text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400'}`}>
+                    <span className={`material-symbols-outlined text-sm transition-transform ${open ? "rotate-180" : ""}`}>expand_more</span>
+                </div>
             </button>
             {open && (
-                <div className="pb-5 text-gray-500 text-sm leading-relaxed pr-10">
+                <div className="mt-4 pl-10 pr-12 text-slate-600 dark:text-slate-400 leading-relaxed">
                     {answer}
                 </div>
             )}
@@ -72,27 +66,32 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 
 export default function FAQPage() {
     return (
-        <>
-            <section className="pt-32 pb-20 bg-gradient-to-b from-[#0B0D12] to-gray-900">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">FAQ</p>
-                    <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6">Common Questions</h1>
-                    <p className="text-xl text-gray-400 leading-relaxed">
-                        Everything you need to know about working with ZettaB.
+        <main>
+            {/* Header / Hero */}
+            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
+                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Support</p>
+                    <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+                        Frequently Asked<br />Questions.
+                    </h1>
+                    <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
+                        Everything you need to know about working with ZettaB, our pricing, and how we build software.
                     </p>
                 </div>
             </section>
 
-            <section className="py-24 bg-white">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col gap-12">
+            {/* FAQ Content */}
+            <section className="py-24 bg-white dark:bg-slate-900">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="space-y-16">
                         {faqs.map((section) => (
                             <div key={section.category}>
-                                <h2 className="text-xl font-bold text-gray-900 mb-1 flex items-center gap-2">
-                                    <span className="w-1 h-5 bg-primary rounded-full inline-block" />
-                                    {section.category}
-                                </h2>
-                                <div className="mt-4 bg-white border border-gray-100 rounded-2xl px-6">
+                                <div className="flex items-center gap-4 mb-8">
+                                    <div className="h-px bg-slate-200 dark:bg-slate-800 flex-grow"></div>
+                                    <h2 className="text-2xl font-black text-slate-900 dark:text-white uppercase tracking-wider">{section.category}</h2>
+                                    <div className="h-px bg-slate-200 dark:bg-slate-800 flex-grow"></div>
+                                </div>
+                                <div className="space-y-4">
                                     {section.questions.map((item) => (
                                         <FAQItem key={item.q} question={item.q} answer={item.a} />
                                     ))}
@@ -101,15 +100,23 @@ export default function FAQPage() {
                         ))}
                     </div>
 
-                    <div className="mt-16 p-8 rounded-2xl bg-bg-light border border-gray-100 text-center">
-                        <h3 className="text-lg font-bold text-gray-900 mb-2">Still have questions?</h3>
-                        <p className="text-gray-500 text-sm mb-6">Can't find the answer you're looking for? Just reach out — we typically reply within a few hours.</p>
-                        <Link href="/contact" className="inline-flex items-center justify-center rounded-md h-11 px-6 text-sm font-semibold bg-primary text-white hover:bg-primary-hover transition-colors">
-                            Contact Us
-                        </Link>
+                    {/* Still need help CTA */}
+                    <div className="mt-20 p-8 sm:p-12 bg-primary rounded-3xl text-center text-white relative overflow-hidden">
+                        {/* Decorative Background */}
+                        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(#fff 1px, transparent 1px)", backgroundSize: "24px 24px" }}></div>
+
+                        <div className="relative z-10 max-w-2xl mx-auto">
+                            <span className="material-symbols-outlined text-5xl mb-6">support_agent</span>
+                            <h3 className="text-3xl font-black mb-4">Still have questions?</h3>
+                            <p className="text-blue-100 text-lg mb-8 leading-relaxed">Can't find the answer you're looking for? Reach out to our team directly and we'll get back to you shortly.</p>
+                            <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-slate-900 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg">
+                                Contact Support
+                            </Link>
+                        </div>
                     </div>
+
                 </div>
             </section>
-        </>
+        </main>
     );
 }

@@ -59,61 +59,172 @@ const services = [
 
 export default function ServicesPage() {
     return (
-        <>
-            {/* Hero */}
-            <section className="pt-32 pb-20 bg-gradient-to-b from-[#0B0D12] to-gray-900">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Our Services</p>
-                    <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6">Our Expertise</h1>
-                    <p className="text-xl text-gray-400 leading-relaxed">
-                        Six core service lines. One strategic partner. Every solution is tailored to your goals and built to grow.
+        <main>
+            {/* Header / Hero */}
+            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our Services</p>
+                    <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+                        Comprehensive Digital<br />Engineering Solutions.
+                    </h1>
+                    <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+                        We provide end-to-end technology services designed to propel your business forward, from initial strategy to deployment and beyond.
                     </p>
                 </div>
             </section>
 
-            {/* Services Grid */}
-            <section className="py-24 bg-white">
+            {/* Services Detailed Breakdown */}
+            <section className="py-24 bg-white dark:bg-slate-900">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {services.map((service) => (
-                            <Link
-                                key={service.title}
-                                href={service.href}
-                                className="group flex flex-col p-8 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 bg-white"
-                            >
-                                <div className={`p-3 rounded-xl bg-gradient-to-br ${service.color} text-white w-fit mb-6 group-hover:scale-110 transition-transform`}>
-                                    {service.icon}
+                    <div className="space-y-32">
+
+                        {/* Service Item 1 */}
+                        <div className="grid lg:grid-cols-2 gap-16 items-center">
+                            <div className="order-2 lg:order-1">
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold w-fit mb-6">
+                                    <span className="material-symbols-outlined text-sm">developer_mode</span>
+                                    Custom Software
                                 </div>
-                                <h2 className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors mb-3">{service.title}</h2>
-                                <p className="text-gray-500 text-sm leading-relaxed mb-6">{service.desc}</p>
-                                <ul className="flex flex-col gap-2 mt-auto">
-                                    {service.features.map((f) => (
-                                        <li key={f} className="flex items-center gap-2 text-xs text-gray-400">
-                                            <span className="w-1 h-1 bg-primary rounded-full flex-shrink-0" />
-                                            {f}
-                                        </li>
-                                    ))}
+                                <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-6">Bespoke systems built for complex operations.</h2>
+                                <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                                    Off-the-shelf software often forces you to adapt your business to the tool. We build custom software that adapts to your business. From internal ERP systems to customer-facing portals, we engineer solutions that streamline workflows and create competitive advantages.
+                                </p>
+                                <ul className="space-y-4 mb-8">
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">Enterprise Resource Planning (ERP) integrations</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">Custom CRM development</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">Legacy system modernization</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">API development & third-party integrations</span>
+                                    </li>
                                 </ul>
-                                <div className="flex items-center gap-1 text-primary text-sm font-medium mt-6">
-                                    Learn more
-                                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                                <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
+                                    Discuss your custom project <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                </Link>
+                            </div>
+                            <div className="order-1 lg:order-2">
+                                <img alt="Custom Software" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpYjF-lO4l01f1U2dktJm2B23XQ8Fp2V03u7Qf21o4t0K8M3O_H8T6P6o_V8q_Q6E2F6w_l3i0g_J0o_S5W0J8l_e0k2D9f2G7V0L7w2O-k8r_Y5I-E8k4z_f9Y_e3F6C2q8j4Q5Q4k7C3J8b5L6w2B8w6B3E9n4j0U7m0V9_M2v6X7s5q_x8-D8R3B8I6x4I-V8M7" />
+                            </div>
+                        </div>
+
+                        {/* Service Item 2 */}
+                        <div className="grid lg:grid-cols-2 gap-16 items-center">
+                            <div>
+                                <img alt="Cloud Infrastructure" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0E3u-K5q_k3H3W1t-o0s3C7j5W-a_T0j4L3q2c5U2a7_P0Y1q_W0g-C7w8X7K6G5s9X5R_5c2O6q3V0S8g2G5A6s_T5n2P0R2c8J-Y2U8K6s-G2H9P_c_W2z_G0i5j1j_u2Y9i-O4_s0_R3d5M6_c5q5F_i5o3O-J1z9y3o_E0b5Q9s9w8T-S_j4L4K2B8P_u9K_q5C8p-N3y2h" />
+                            </div>
+                            <div>
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold w-fit mb-6">
+                                    <span className="material-symbols-outlined text-sm">cloud_queue</span>
+                                    Cloud Architecture
                                 </div>
-                            </Link>
-                        ))}
+                                <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-6">Secure, scalable, and highly available infrastructure.</h2>
+                                <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                                    Downtime is not an option. We design and deploy robust cloud architectures on AWS, Google Cloud, and Azure that ensure your applications remain fast and accessible, even under extreme load.
+                                </p>
+                                <ul className="space-y-4 mb-8">
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">Cloud migration & strategy</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">Serverless architecture</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">Container orchestration (Kubernetes)</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">CI/CD pipeline automation</span>
+                                    </li>
+                                </ul>
+                                <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
+                                    Scale your infrastructure <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Service Item 3 */}
+                        <div className="grid lg:grid-cols-2 gap-16 items-center">
+                            <div className="order-2 lg:order-1">
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold w-fit mb-6">
+                                    <span className="material-symbols-outlined text-sm">language</span>
+                                    Web Development
+                                </div>
+                                <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-6">High-performance web experiences that convert.</h2>
+                                <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                                    Your website is your best salesperson. We build lightning-fast, SEO-optimized, and highly interactive web applications using modern frameworks like Next.js and React to drive engagement and revenue.
+                                </p>
+                                <ul className="space-y-4 mb-8">
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">Performant corporate websites</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">Complex e-commerce platforms</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">Interactive SaaS dashboards</span>
+                                    </li>
+                                    <li className="flex items-start gap-3">
+                                        <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span className="text-slate-700 dark:text-slate-300">Headless CMS implementation</span>
+                                    </li>
+                                </ul>
+                                <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-bold hover:underline">
+                                    Upgrade your web presence <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                </Link>
+                            </div>
+                            <div className="order-1 lg:order-2">
+                                <img alt="Web Development" className="rounded-3xl shadow-2xl object-cover w-full h-[400px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_p6z_p5K8j6h8d0i2F6s8L2q5E7Y9I1y5X7x8W7r3K_h5E6u5M_V_k5K_k_H6X_Z8D8m8L6W_F3K5g9s6c3X5g2o9d1u_T_d4i5U7l5v8i6i3B5w8B2_c4H2V0M_Z8A1E7V9q9H_Y5T4s_t-A4D2n7a5V8l-a_u_U_h8E9O2e5Z4W_p6y1_D3G7" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Tech Stack Banner */}
+            <section className="py-20 bg-slate-50 dark:bg-slate-950/50 border-y border-slate-100 dark:border-slate-800">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-10">Powered by modern technologies</h3>
+                    <div className="flex flex-wrap justify-center gap-6 opacity-60">
+                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">React / Next.js</span>
+                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">Node.js</span>
+                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">TypeScript</span>
+                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">Python</span>
+                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">PostgreSQL</span>
+                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">AWS / GCP</span>
+                        <span className="px-6 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full font-semibold dark:text-slate-300 shadow-sm">Kubernetes</span>
                     </div>
                 </div>
             </section>
 
             {/* CTA */}
-            <section className="py-24 bg-gradient-to-r from-primary to-[#0e45b5]">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">Not sure which service fits?</h2>
-                    <p className="text-blue-200 text-lg mb-10">Let's have a free discovery call. We'll ask the right questions and recommend the best approach.</p>
-                    <Link href="/contact" className="inline-flex items-center justify-center rounded-md text-base font-semibold h-12 px-8 bg-white text-primary hover:bg-gray-50 transition-colors shadow-lg">
-                        Book Discovery Call
-                    </Link>
+            <section className="py-24 bg-primary text-white text-center">
+                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-4xl lg:text-5xl font-black mb-6">Need a custom solution not listed here?</h2>
+                    <p className="text-xl text-primary-light mb-10 opacity-90">
+                        Our engineering team thrives on unique challenges. Let's discuss your specific requirements.
+                    </p>
+                    <div className="flex flex-wrap justify-center gap-4">
+                        <Link href="/contact" className="px-8 py-4 bg-white text-primary rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-lg">
+                            Get in Touch
+                        </Link>
+                    </div>
                 </div>
             </section>
-        </>
+        </main>
     );
 }

@@ -5,170 +5,142 @@ export const metadata: Metadata = {
     title: "Contact ZettaB | Start Your Project",
     description: "Ready to build something great? Contact ZettaB and we'll get back to you within 1 business day.",
 };
-
 export default function ContactPage() {
     return (
-        <>
-            {/* Hero */}
-            <section className="pt-32 pb-20 bg-gradient-to-b from-[#0B0D12] to-gray-900">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Get In Touch</p>
-                    <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6">Start Your Journey</h1>
-                    <p className="text-xl text-gray-400 leading-relaxed">
-                        Tell us about your project. We respond to every enquiry within 1 business day.
+        <main>
+            {/* Header / Hero */}
+            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Get In Touch</p>
+                    <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+                        Let's build something<br />exceptional together.
+                    </h1>
+                    <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+                        Whether you have a fully scoped project or just a raw idea, our engineering team is ready to help you execute.
                     </p>
                 </div>
             </section>
 
-            {/* Contact Grid */}
-            <section className="py-24 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                        {/* Form */}
-                        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8 lg:p-10">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-2">Send us a message</h2>
-                            <p className="text-gray-500 mb-8 text-sm">Fill in the form and we'll be in touch shortly.</p>
-                            <form className="flex flex-col gap-6" action="#" method="POST">
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                    <div className="flex flex-col gap-1.5">
-                                        <label htmlFor="firstName" className="text-sm font-medium text-gray-700">First Name</label>
-                                        <input
-                                            id="firstName"
-                                            name="firstName"
-                                            type="text"
-                                            required
-                                            placeholder="Jane"
-                                            className="h-11 px-4 rounded-md border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
-                                        />
-                                    </div>
-                                    <div className="flex flex-col gap-1.5">
-                                        <label htmlFor="lastName" className="text-sm font-medium text-gray-700">Last Name</label>
-                                        <input
-                                            id="lastName"
-                                            name="lastName"
-                                            type="text"
-                                            required
-                                            placeholder="Smith"
-                                            className="h-11 px-4 rounded-md border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="flex flex-col gap-1.5">
-                                    <label htmlFor="email" className="text-sm font-medium text-gray-700">Email Address</label>
-                                    <input
-                                        id="email"
-                                        name="email"
-                                        type="email"
-                                        required
-                                        placeholder="jane@company.com"
-                                        className="h-11 px-4 rounded-md border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
-                                    />
-                                </div>
-                                <div className="flex flex-col gap-1.5">
-                                    <label htmlFor="company" className="text-sm font-medium text-gray-700">Company <span className="text-gray-400">(optional)</span></label>
-                                    <input
-                                        id="company"
-                                        name="company"
-                                        type="text"
-                                        placeholder="Acme Inc."
-                                        className="h-11 px-4 rounded-md border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
-                                    />
-                                </div>
-                                <div className="flex flex-col gap-1.5">
-                                    <label htmlFor="service" className="text-sm font-medium text-gray-700">Service of Interest</label>
-                                    <select
-                                        id="service"
-                                        name="service"
-                                        className="h-11 px-4 rounded-md border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors bg-white"
-                                    >
-                                        <option value="">Select a service...</option>
-                                        <option>Web Development</option>
-                                        <option>Mobile Applications</option>
-                                        <option>Cloud Deployments</option>
-                                        <option>Digital Marketing</option>
-                                        <option>UI/UX Design</option>
-                                        <option>Software Development</option>
-                                        <option>Multiple / Not sure</option>
-                                    </select>
-                                </div>
-                                <div className="flex flex-col gap-1.5">
-                                    <label htmlFor="message" className="text-sm font-medium text-gray-700">Message</label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        required
-                                        rows={5}
-                                        placeholder="Tell us about your project, goals, timeline, and budget..."
-                                        className="px-4 py-3 rounded-md border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors resize-none"
-                                    />
-                                </div>
-                                <button
-                                    type="submit"
-                                    className="w-full h-11 bg-primary text-white rounded-md text-sm font-semibold hover:bg-primary-hover transition-colors shadow-sm hover:shadow"
-                                >
-                                    Send Message
-                                </button>
-                            </form>
-                        </div>
+            {/* Contact Layout */}
+            <section className="py-24 bg-white dark:bg-slate-900 relative overflow-hidden">
+                {/* Decorative Background grid */}
+                <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.02]" style={{ backgroundImage: "radial-gradient(#000 1px, transparent 1px)", backgroundSize: "32px 32px" }}></div>
 
-                        {/* Info */}
-                        <div className="flex flex-col gap-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div className="grid lg:grid-cols-5 gap-16">
+
+                        {/* Contact Information (Left Col) */}
+                        <div className="lg:col-span-2 space-y-12">
                             <div>
-                                <h2 className="text-2xl font-bold text-gray-900 mb-4">Other ways to reach us</h2>
-                                <p className="text-gray-500 leading-relaxed">
-                                    Whether you have a specific project in mind or just want to explore what's possible, we're happy to talk.
+                                <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-4">Contact Information</h2>
+                                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    Fill out the form and our technical discovery team will get back to you within 24 hours to schedule an introductory call.
                                 </p>
                             </div>
 
-                            <div className="flex flex-col gap-6">
-                                {[
-                                    {
-                                        icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>,
-                                        label: "Email",
-                                        value: "hello@zettab.io",
-                                        href: "mailto:hello@zettab.io",
-                                    },
-                                    {
-                                        icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>,
-                                        label: "Phone",
-                                        value: "+1 (555) 000-0000",
-                                        href: "tel:+15550000000",
-                                    },
-                                    {
-                                        icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>,
-                                        label: "Location",
-                                        value: "Global — working with clients worldwide",
-                                        href: "#",
-                                    },
-                                ].map((item) => (
-                                    <a key={item.label} href={item.href} className="flex items-center gap-4 group">
-                                        <div className="p-3 bg-primary/10 rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-colors flex-shrink-0">
-                                            {item.icon}
-                                        </div>
-                                        <div>
-                                            <div className="text-xs text-gray-400 uppercase tracking-wider">{item.label}</div>
-                                            <div className="text-sm font-medium text-gray-900 group-hover:text-primary transition-colors">{item.value}</div>
-                                        </div>
-                                    </a>
-                                ))}
+                            <div className="space-y-8">
+                                <div className="flex gap-4 items-start">
+                                    <span className="material-symbols-outlined text-primary text-3xl">mail</span>
+                                    <div>
+                                        <h4 className="text-lg font-bold dark:text-white mb-1">Email Us</h4>
+                                        <a href="mailto:hello@zettab.io" className="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors">hello@zettab.io</a>
+                                    </div>
+                                </div>
+
+                                <div className="flex gap-4 items-start">
+                                    <span className="material-symbols-outlined text-primary text-3xl">location_on</span>
+                                    <div>
+                                        <h4 className="text-lg font-bold dark:text-white mb-1">HQ Location</h4>
+                                        <address className="text-slate-600 dark:text-slate-400 not-italic">
+                                            120 Tech Boulevard, Suite 400<br />
+                                            London, UK EC1A 1BB
+                                        </address>
+                                    </div>
+                                </div>
+
+                                <div className="flex gap-4 items-start">
+                                    <span className="material-symbols-outlined text-primary text-3xl">schedule</span>
+                                    <div>
+                                        <h4 className="text-lg font-bold dark:text-white mb-1">Working Hours</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Monday - Friday: 9am - 6pm (GMT)</p>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div className="p-6 rounded-2xl bg-bg-light border border-gray-100">
-                                <h3 className="text-sm font-semibold text-gray-900 mb-2">Response time commitment</h3>
-                                <p className="text-sm text-gray-500">Every message is reviewed by a senior team member. We respond within 1 business day and aim for same-day on enquiries sent before 3pm.</p>
-                            </div>
-
-                            <div className="p-6 rounded-2xl bg-bg-light border border-gray-100">
-                                <h3 className="text-sm font-semibold text-gray-900 mb-2">Have a quick question?</h3>
-                                <p className="text-sm text-gray-500 mb-4">Check our FAQ — it covers common questions on process, pricing, timelines, and working with us.</p>
-                                <Link href="/faq" className="text-sm font-medium text-primary hover:underline">
-                                    Visit FAQ →
+                            {/* FAQ Link */}
+                            <div className="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                <h4 className="font-bold dark:text-white mb-2">Have a quick question?</h4>
+                                <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">Check out our frequently asked questions regarding pricing, timelines, and our development process.</p>
+                                <Link href="/faq" className="text-primary font-bold text-sm hover:underline flex items-center gap-1">
+                                    View FAQ <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                 </Link>
+                            </div>
+                        </div>
+
+                        {/* Contact Form (Right Col) */}
+                        <div className="lg:col-span-3">
+                            <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 sm:p-12 shadow-2xl border border-slate-100 dark:border-slate-800 relative">
+                                {/* Decorative badge */}
+                                <div className="absolute top-0 right-8 -translate-y-1/2 bg-primary text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow-lg">
+                                    Response in 24h
+                                </div>
+
+                                <form className="space-y-6">
+                                    <div className="grid sm:grid-cols-2 gap-6">
+                                        <div className="space-y-2">
+                                            <label htmlFor="firstName" className="block text-sm font-bold text-slate-700 dark:text-slate-300">First Name *</label>
+                                            <input type="text" id="firstName" required className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white" placeholder="Jane" />
+                                        </div>
+                                        <div className="space-y-2">
+                                            <label htmlFor="lastName" className="block text-sm font-bold text-slate-700 dark:text-slate-300">Last Name *</label>
+                                            <input type="text" id="lastName" required className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white" placeholder="Doe" />
+                                        </div>
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <label htmlFor="email" className="block text-sm font-bold text-slate-700 dark:text-slate-300">Work Email *</label>
+                                        <input type="email" id="email" required className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white" placeholder="jane@company.com" />
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <label htmlFor="company" className="block text-sm font-bold text-slate-700 dark:text-slate-300">Company / Organization</label>
+                                        <input type="text" id="company" className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all dark:text-white" placeholder="Acme Corp" />
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <label htmlFor="service" className="block text-sm font-bold text-slate-700 dark:text-slate-300">Primary Interest *</label>
+                                        <div className="relative">
+                                            <select id="service" required className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all appearance-none dark:text-white">
+                                                <option value="" disabled selected>Select an option...</option>
+                                                <option value="custom">Custom Software Development</option>
+                                                <option value="cloud">Cloud Infrastructure & DevOps</option>
+                                                <option value="web">Web Application Development</option>
+                                                <option value="mobile">Mobile Application Development</option>
+                                                <option value="other">Other / Not Sure Yet</option>
+                                            </select>
+                                            <span className="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none">expand_more</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <label htmlFor="message" className="block text-sm font-bold text-slate-700 dark:text-slate-300">Project Details *</label>
+                                        <textarea id="message" rows={5} required className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all resize-y dark:text-white" placeholder="Tell us about your goals, timeline, and any specific technical constraints..."></textarea>
+                                    </div>
+
+                                    <button type="submit" className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-slate-800 dark:hover:bg-white dark:hover:text-slate-900 transition-colors shadow-lg shadow-primary/30 flex justify-center items-center gap-2 group">
+                                        Send Message
+                                        <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+                                    </button>
+
+                                    <p className="text-xs text-center text-slate-500 mt-4">
+                                        By submitting this form, you agree to our <a href="/privacy-policy" className="underline hover:text-primary">Privacy Policy</a>.
+                                    </p>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </>
+        </main>
     );
 }

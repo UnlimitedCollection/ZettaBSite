@@ -8,18 +8,24 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
     return (
-        <>
-            <section className="pt-32 pb-16 bg-gradient-to-b from-[#0B0D12] to-gray-900">
+        <main>
+            {/* Header / Hero */}
+            <section className="pt-32 pb-16 bg-slate-50 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 text-center">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Legal</p>
-                    <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Privacy Policy</h1>
-                    <p className="text-gray-400 text-sm">Effective Date: 1 January 2025 · Last updated: 1 March 2026</p>
+                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Legal</p>
+                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-6">
+                        Privacy Policy
+                    </h1>
+                    <p className="text-slate-500 dark:text-slate-400 font-medium">
+                        Effective Date: 1 January 2025 &middot; Last updated: 1 March 2026
+                    </p>
                 </div>
             </section>
 
-            <section className="py-16 bg-white">
+            {/* Privacy Content */}
+            <section className="py-16 bg-white dark:bg-slate-950">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="prose prose-gray max-w-none text-gray-600 leading-relaxed">
+                    <div className="space-y-12">
                         {[
                             {
                                 heading: "1. Who We Are",
@@ -66,26 +72,32 @@ export default function PrivacyPolicyPage() {
                                 content: "For privacy-related questions, email us at privacy@zettab.io or use the contact form on our website.",
                             },
                         ].map((section) => (
-                            <div key={section.heading} className="mb-10">
-                                <h2 className="text-xl font-bold text-gray-900 mb-3">{section.heading}</h2>
-                                <p className="text-gray-500 leading-relaxed">{section.content}</p>
+                            <div key={section.heading}>
+                                <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-4">{section.heading}</h2>
+                                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    {section.content}
+                                </p>
                             </div>
                         ))}
                     </div>
 
-                    <div className="mt-10 p-6 rounded-2xl bg-bg-light border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                        <div className="flex-1">
-                            <h3 className="text-sm font-semibold text-gray-900">Questions about this policy?</h3>
-                            <p className="text-xs text-gray-500 mt-1">We're happy to clarify anything. Just get in touch.</p>
+                    {/* Contact Box */}
+                    <div className="mt-16 p-8 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6">
+                        <div>
+                            <h3 className="font-bold text-slate-900 dark:text-white mb-2">Questions about this policy?</h3>
+                            <p className="text-slate-600 dark:text-slate-400 text-sm">We're happy to clarify anything. Just get in touch.</p>
                         </div>
-                        <Link href="/contact" className="flex-shrink-0 inline-flex items-center justify-center rounded-md h-10 px-5 text-sm font-medium bg-primary text-white hover:bg-primary-hover transition-colors">Contact Us</Link>
+                        <Link href="/contact" className="w-full sm:w-auto px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:border-primary transition-colors text-center shadow-sm">
+                            Contact Us
+                        </Link>
                     </div>
 
-                    <div className="mt-6 text-sm text-gray-400">
-                        Related: <Link href="/terms-conditions" className="text-primary hover:underline">Terms & Conditions</Link>
+                    <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800 flex items-center gap-2 text-slate-500 dark:text-slate-400 font-medium">
+                        <span className="material-symbols-outlined text-sm">link</span>
+                        Related: <Link href="/terms-conditions" className="text-primary hover:underline transition-all">Terms & Conditions</Link>
                     </div>
                 </div>
             </section>
-        </>
+        </main>
     );
 }

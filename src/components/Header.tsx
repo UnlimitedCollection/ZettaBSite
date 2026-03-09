@@ -27,88 +27,55 @@ export function Header() {
     ];
 
     return (
-        <header
-            className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled
-                ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 py-3"
-                : "bg-transparent py-5"
-                }`}
-        >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-                {/* Logo */}
-                <Link href="/" className="flex items-center gap-3 group">
-                    <Image src="/logo.webp" alt="ZettaB Logo" width={40} height={40} className="w-8 h-8 md:w-10 md:h-10 transition-transform group-hover:scale-105" priority />
-                    <span className="text-xl font-bold tracking-tight text-gray-900">ZettaB</span>
-                </Link>
-
-                {/* Desktop Nav */}
-                <nav className="hidden md:flex items-center gap-8">
-                    {navLinks.map((link) => (
-                        <Link
-                            key={link.name}
-                            href={link.href}
-                            className={`text-sm font-medium transition-colors hover:text-primary ${pathname === link.href ? "text-primary" : "text-gray-600"
-                                }`}
-                        >
-                            {link.name}
+        <header className="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex items-center justify-between h-20">
+                    <div className="flex items-center gap-2">
+                        <div className="size-10 bg-primary rounded-lg flex items-center justify-center text-white relative overflow-hidden">
+                            <Image src="/logo.webp" alt="ZettaB Logo" fill className="object-cover" />
+                        </div>
+                        <span className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">ZettaB<span className="text-primary">.io</span></span>
+                    </div>
+                    <nav className="hidden md:flex items-center gap-8">
+                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/">Home</Link>
+                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/about">About</Link>
+                        <div className="relative group">
+                            <Link className="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/services">
+                                Services <span className="material-symbols-outlined text-sm">expand_more</span>
+                            </Link>
+                        </div>
+                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/case-study-ecommerce-redesign">Portfolio</Link>
+                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/blog">Blog</Link>
+                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900 dark:text-white" href="/contact">Contact</Link>
+                    </nav>
+                    <div className="flex items-center gap-4">
+                        <Link href="/contact" className="hidden lg:flex items-center justify-center px-6 py-2.5 bg-primary text-white rounded-xl font-bold text-sm hover:opacity-90 transition-all shadow-lg shadow-primary/20">
+                            Get Started
                         </Link>
-                    ))}
-                </nav>
-
-                {/* CTA & Mobile Toggle */}
-                <div className="flex items-center gap-4">
-                    <Link
-                        href="/contact"
-                        className="hidden md:inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary h-10 px-5 py-2 bg-primary text-white hover:bg-primary-hover shadow-sm hover:shadow"
-                    >
-                        Start Your Project
-                    </Link>
-
-                    <button
-                        className="md:hidden p-2 text-gray-600 hover:text-primary transition-colors"
-                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                        aria-label="Toggle Menu"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
+                        <button
+                            className="md:hidden text-slate-900 dark:text-white"
+                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         >
-                            {mobileMenuOpen ? (
-                                <path d="M18 6L6 18M6 6l12 12" />
-                            ) : (
-                                <path d="M3 12h18M3 6h18M3 18h18" />
-                            )}
-                        </svg>
-                    </button>
+                            <span className="material-symbols-outlined text-3xl">{mobileMenuOpen ? 'close' : 'menu'}</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg py-4 px-4 flex flex-col gap-4">
-                    {navLinks.map((link) => (
-                        <Link
-                            key={link.name}
-                            href={link.href}
-                            className={`block text-base font-medium transition-colors hover:text-primary ${pathname === link.href ? "text-primary" : "text-gray-600"
-                                }`}
-                            onClick={() => setMobileMenuOpen(false)}
-                        >
-                            {link.name}
-                        </Link>
-                    ))}
+                <div className="md:hidden absolute top-full left-0 w-full bg-background-light dark:bg-background-dark border-b border-primary/10 shadow-lg py-4 px-4 flex flex-col gap-4">
+                    <Link href="/" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+                    <Link href="/about" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>About</Link>
+                    <Link href="/services" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+                    <Link href="/case-study-ecommerce-redesign" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Portfolio</Link>
+                    <Link href="/blog" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+                    <Link href="/contact" className="text-base font-semibold text-slate-900 dark:text-white hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                     <Link
                         href="/contact"
-                        className="flex items-center justify-center rounded-md text-sm font-medium h-11 bg-primary text-white w-full mt-2"
+                        className="flex items-center justify-center px-6 py-3 mt-2 bg-primary text-white rounded-xl font-bold text-sm shadow-md"
                         onClick={() => setMobileMenuOpen(false)}
                     >
-                        Start Your Project
+                        Get Started
                     </Link>
                 </div>
             )}

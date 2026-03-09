@@ -19,58 +19,125 @@ const stack = ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "Tailw
 
 export default function WebDevelopmentPage() {
     return (
-        <>
-            <section className="pt-32 pb-20 bg-gradient-to-b from-[#0B0D12] to-gray-900">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Web Development</p>
-                    <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 leading-tight">Scalable Web Apps</h1>
-                    <p className="text-xl text-gray-400 leading-relaxed">
-                        We build web experiences that perform as well as they look — optimised for speed, SEO, and conversion.
+        <main>
+            {/* Header / Hero */}
+            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Service</p>
+                    <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+                        Web Platforms<br />built to perform.
+                    </h1>
+                    <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
+                        High-converting marketing sites, complex web applications, and robust e-commerce platforms engineered with modern web standards.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-                        <Link href="/contact" className="inline-flex items-center justify-center rounded-md text-sm font-semibold h-11 px-6 bg-primary text-white hover:bg-primary-hover transition-colors">Start a Project</Link>
-                        <Link href="/case-study-ecommerce-redesign" className="inline-flex items-center justify-center rounded-md text-sm font-medium h-11 px-6 border border-white/20 text-white hover:bg-white/10 transition-colors">View Case Study</Link>
+                    <div className="flex justify-center gap-4">
+                        <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:bg-white hover:text-slate-900 transition-colors shadow-lg shadow-primary/30">
+                            Discuss Your Project
+                        </Link>
                     </div>
                 </div>
             </section>
 
-            <section className="py-24 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-2xl mx-auto mb-16">
-                        <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">What We Build</p>
-                        <h2 className="text-4xl font-bold text-gray-900">Our Web Development Offerings</h2>
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {offerings.map((item) => (
-                            <div key={item.title} className="p-7 rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-lg transition-all duration-300">
-                                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+            {/* Service Details Main Content */}
+            <section className="py-24 bg-white dark:bg-slate-900">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-16">
+
+                    {/* Left Content (Text) */}
+                    <div className="lg:col-span-7 space-y-12">
+                        <div>
+                            <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-6">Overview</h2>
+                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                                Your website is often the first interaction a prospect has with your business. We believe it should be fast, accessible, and strategically designed to guide users toward a clear conversion goal.
+                            </p>
+                            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                                We utilize modern frameworks like Next.js and React to build dynamic, SEO-optimized web experiences that scale effortlessly from a few hundred visitors to millions.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Capabilities</h3>
+                            <div className="grid sm:grid-cols-2 gap-6">
+                                {offerings.map((item) => (
+                                    <div key={item.title} className="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800">
+                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">language</span>
+                                        <h4 className="font-bold dark:text-white mb-2">{item.title}</h4>
+                                        <p className="text-sm text-slate-600 dark:text-slate-400">{item.desc}</p>
+                                    </div>
+                                ))}
                             </div>
-                        ))}
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Our Process</h3>
+                            <ul className="space-y-6">
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">1</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">Requirements & Architecture</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Defining data models, selecting the appropriate CMS, and outlining the Technical Architecture.</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">2</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">Frontend Engineering</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Translating designs into responsive, accessible, and performant React components.</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">3</div>
+                                    <div>
+                                        <h4 className="font-bold text-lg dark:text-white mb-1">Backend Integration & Launch</h4>
+                                        <p className="text-slate-600 dark:text-slate-400">Connecting APIs, configuring databases, and deploying via automated CI/CD pipelines.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+
+                    {/* Right Content (Sidebar / Tech Stack / CTA) */}
+                    <div className="lg:col-span-5 space-y-8">
+                        {/* Featured Image */}
+                        <div className="rounded-3xl overflow-hidden shadow-2xl">
+                            <img alt="Web Development" className="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpYjF-lO4l01f1U2dktJm2B23XQ8Fp2V03u7Qf21o4t0K8M3O_H8T6P6o_V8q_Q6E2F6w_l3i0g_J0o_S5W0J8l_e0k2D9f2G7V0L7w2O-k8r_Y5I-E8k4z_f9Y_e3F6C2q8j4Q5Q4k7C3J8b5L6w2B8w6B3E9n4j0U7m0V9_M2v6X7s5q_x8-D8R3B8I6x4I-V8M7" />
+                        </div>
+
+                        {/* Tech Stack Box */}
+                        <div className="p-8 bg-slate-900 rounded-3xl text-white">
+                            <h4 className="font-bold text-xl mb-6 flex items-center gap-2">
+                                <span className="material-symbols-outlined text-primary">webhook</span>
+                                Web Stack
+                            </h4>
+                            <div className="flex flex-wrap gap-3">
+                                {stack.map((tech) => (
+                                    <span key={tech} className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">{tech}</span>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Contact CTA Box */}
+                        <div className="p-8 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-200 dark:border-slate-800">
+                            <h4 className="font-bold text-2xl dark:text-white mb-4">Planning a web project?</h4>
+                            <p className="text-slate-600 dark:text-slate-400 mb-6">Speak with our technical team to determine the best approach for an upcoming build.</p>
+                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 rounded-xl font-bold hover:border-primary transition-colors">
+                                Schedule Call <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                            </Link>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
-            <section className="py-24 bg-bg-light">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Technology</p>
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Modern Stack</h2>
-                    <p className="text-gray-500 mb-12">We use proven, modern technologies chosen for performance, developer experience, and long-term maintainability.</p>
-                    <div className="flex flex-wrap gap-3 justify-center">
-                        {stack.map((tech) => (
-                            <span key={tech} className="px-4 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 shadow-sm hover:border-primary hover:text-primary transition-colors">{tech}</span>
-                        ))}
-                    </div>
+            {/* Related Case Study / Banner */}
+            <section className="py-24 bg-primary text-white text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <span className="material-symbols-outlined text-5xl mb-6 opacity-80">insights</span>
+                    <h2 className="text-3xl md:text-5xl font-black mb-6">See how we rebuilt an enterprise SaaS dashboard in Next.js.</h2>
+                    <Link href="/case-studies" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg">
+                        Read Case Study
+                    </Link>
                 </div>
             </section>
-
-            <section className="py-24 bg-gradient-to-r from-primary to-[#0e45b5]">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">Ready to launch your next web project?</h2>
-                    <p className="text-blue-200 text-lg mb-10">Let's scope it out together. Free discovery call, no commitment.</p>
-                    <Link href="/contact" className="inline-flex items-center justify-center rounded-md text-base font-semibold h-12 px-8 bg-white text-primary hover:bg-gray-50 transition-colors shadow-lg">Get Started</Link>
-                </div>
-            </section>
-        </>
+        </main>
     );
 }
