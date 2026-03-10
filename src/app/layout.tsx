@@ -29,7 +29,7 @@ export default function RootLayout({
       </head>
       <body className={`${manrope.variable} antialiased font-sans flex flex-col min-h-screen bg-white text-slate-900`}>
         <Header />
-        <main className="flex-1">
+        <main className="flex-1 pt-20">
           {children}
         </main>
         <Footer />
