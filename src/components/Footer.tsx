@@ -17,8 +17,8 @@ export function Footer() {
     return (
         <footer className="bg-slate-900 text-slate-400 pt-12 pb-6">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-12 gap-8 mb-10">
-                    <div className="lg:col-span-4">
+                <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-8 mb-10">
+                    <div className="md:col-span-4 lg:col-span-4">
                         <div className="mb-4">
                             <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain brightness-200" />
                         </div>
@@ -28,7 +28,7 @@ export function Footer() {
 
                     </div>
 
-                    <div className="lg:col-span-2">
+                    <div className="md:col-span-2 lg:col-span-2">
                         <h5 className="text-white font-bold mb-4">Services</h5>
                         <ul className="space-y-2 text-sm">
                             <li><Link href="/web-development" className="hover:text-primary transition-colors">Web Development</Link></li>
@@ -39,7 +39,7 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    <div className="lg:col-span-2">
+                    <div className="md:col-span-2 lg:col-span-2">
                         <h5 className="text-white font-bold mb-4">Company</h5>
                         <ul className="space-y-2 text-sm">
                             <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
@@ -50,7 +50,7 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    <div className="lg:col-span-4">
+                    <div className="md:col-span-4 lg:col-span-4">
                         <h5 className="text-white font-bold mb-3">Subscribe to our newsletter</h5>
                         <p className="mb-4 text-sm">Stay updated with the latest in tech and innovation.</p>
                         {isSubscribed ? (
@@ -74,19 +74,23 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div className="pt-6 border-t border-slate-800 flex flex-wrap items-center gap-4 text-sm">
-                    {/* Location */}
-                    <div className="flex items-center gap-2">
-                        <span className="material-symbols-outlined text-sm text-primary">location_on</span>
-                        <span>Kandy, Sri Lanka</span>
+                <div className="pt-6 border-t border-slate-800 flex flex-col xl:flex-row justify-between items-center gap-6 text-sm relative">
+                    {/* Location & Email Group */}
+                    <div className="flex flex-wrap justify-center items-center gap-6">
+                        <div className="flex items-center gap-2">
+                            <span className="material-symbols-outlined text-sm text-primary">location_on</span>
+                            <span className="whitespace-nowrap">Kandy, Sri Lanka</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <span className="material-symbols-outlined text-sm text-primary">mail</span>
+                            <a href="mailto:hello@zettab.io" className="hover:text-primary transition-colors whitespace-nowrap">hello@zettab.io</a>
+                        </div>
                     </div>
-                    {/* Email */}
-                    <div className="flex items-center gap-2">
-                        <span className="material-symbols-outlined text-sm text-primary">mail</span>
-                        <a href="mailto:hello@zettab.io" className="hover:text-primary transition-colors">hello@zettab.io</a>
-                    </div>
+
                     {/* Copyright — centred */}
-                    <p className="flex-1 text-center">© {currentYear} ZettaB.io. All rights reserved.</p>
+                    <p className="text-center xl:absolute xl:left-1/2 xl:-translate-x-1/2 whitespace-nowrap">
+                        © {currentYear} ZettaB.io. All rights reserved.
+                    </p>
                     {/* Social Icons */}
                     <div className="flex gap-2">
                         {/* LinkedIn */}
