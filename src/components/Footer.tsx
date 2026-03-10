@@ -15,22 +15,22 @@ export function Footer() {
     };
 
     return (
-        <footer className="bg-slate-900 text-slate-400 pt-24 pb-12">
+        <footer className="bg-slate-900 text-slate-400 pt-12 pb-6">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-12 gap-16 mb-20">
+                <div className="grid lg:grid-cols-12 gap-8 mb-10">
                     <div className="lg:col-span-4">
-                        <div className="mb-8">
+                        <div className="mb-4">
                             <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain brightness-200" />
                         </div>
-                        <p className="mb-8 leading-relaxed">
+                        <p className="mb-4 leading-relaxed text-sm">
                             Leading global innovation through high-end software development, cloud strategy, and digital transformation. Delivering Excellence from Kandy to the World.
                         </p>
 
                     </div>
 
                     <div className="lg:col-span-2">
-                        <h5 className="text-white font-bold mb-8">Services</h5>
-                        <ul className="space-y-4">
+                        <h5 className="text-white font-bold mb-4">Services</h5>
+                        <ul className="space-y-2 text-sm">
                             <li><Link href="/web-development" className="hover:text-primary transition-colors">Web Development</Link></li>
                             <li><Link href="/mobile-applications" className="hover:text-primary transition-colors">Mobile Apps</Link></li>
                             <li><Link href="/cloud-deployments" className="hover:text-primary transition-colors">Cloud Solutions</Link></li>
@@ -40,8 +40,8 @@ export function Footer() {
                     </div>
 
                     <div className="lg:col-span-2">
-                        <h5 className="text-white font-bold mb-8">Company</h5>
-                        <ul className="space-y-4">
+                        <h5 className="text-white font-bold mb-4">Company</h5>
+                        <ul className="space-y-2 text-sm">
                             <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
                             <li><Link href="/case-study-ecommerce-redesign" className="hover:text-primary transition-colors">Our Portfolio</Link></li>
                             <li><Link href="/careers" className="hover:text-primary transition-colors">Careers</Link></li>
@@ -51,8 +51,8 @@ export function Footer() {
                     </div>
 
                     <div className="lg:col-span-4">
-                        <h5 className="text-white font-bold mb-8">Subscribe to our newsletter</h5>
-                        <p className="mb-6 text-sm">Stay updated with the latest in tech and innovation.</p>
+                        <h5 className="text-white font-bold mb-3">Subscribe to our newsletter</h5>
+                        <p className="mb-4 text-sm">Stay updated with the latest in tech and innovation.</p>
                         {isSubscribed ? (
                             <div className="bg-green-500/20 text-green-400 p-4 rounded-xl flex items-center gap-2 border border-green-500/30">
                                 <span className="material-symbols-outlined text-xl">check_circle</span>
