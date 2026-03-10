@@ -25,17 +25,7 @@ export function Footer() {
                         <p className="mb-8 leading-relaxed">
                             Leading global innovation through high-end software development, cloud strategy, and digital transformation. Delivering Excellence from Kandy to the World.
                         </p>
-                        <div className="flex gap-4">
-                            <Link href="https://linkedin.com/company/zettab" target="_blank" rel="noopener noreferrer" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
-                                <span className="material-symbols-outlined">public</span>
-                            </Link>
-                            <Link href="mailto:hello@zettab.io" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
-                                <span className="material-symbols-outlined">alternate_email</span>
-                            </Link>
-                            <Link href="https://twitter.com/zettabio" target="_blank" rel="noopener noreferrer" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
-                                <span className="material-symbols-outlined">share</span>
-                            </Link>
-                        </div>
+
                     </div>
 
                     <div className="lg:col-span-2">
@@ -84,18 +74,34 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div className="pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-8">
-                    <div className="flex items-center gap-6 text-sm">
-                        <div className="flex items-center gap-2">
-                            <span className="material-symbols-outlined text-sm text-primary">location_on</span>
-                            <span>Kandy, Sri Lanka</span>
+                <div className="pt-12 border-t border-slate-800">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-6">
+                        <div className="flex items-center gap-6 text-sm">
+                            <div className="flex items-center gap-2">
+                                <span className="material-symbols-outlined text-sm text-primary">location_on</span>
+                                <span>Kandy, Sri Lanka</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <span className="material-symbols-outlined text-sm text-primary">mail</span>
+                                <a href="mailto:hello@zettab.io" className="hover:text-primary transition-colors">hello@zettab.io</a>
+                            </div>
                         </div>
-                        <div className="flex items-center gap-2">
-                            <span className="material-symbols-outlined text-sm text-primary">mail</span>
-                            <a href="mailto:hello@zettab.io" className="hover:text-primary transition-colors">hello@zettab.io</a>
+                        {/* Social Icons */}
+                        <div className="flex gap-3">
+                            <Link href="https://linkedin.com/company/zettab" target="_blank" rel="noopener noreferrer" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
+                                <span className="material-symbols-outlined">public</span>
+                            </Link>
+                            <Link href="mailto:hello@zettab.io" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
+                                <span className="material-symbols-outlined">alternate_email</span>
+                            </Link>
+                            <Link href="https://twitter.com/zettabio" target="_blank" rel="noopener noreferrer" className="size-10 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-primary transition-colors">
+                                <span className="material-symbols-outlined">share</span>
+                            </Link>
                         </div>
                     </div>
-                    <p className="text-sm">© {currentYear} ZettaB.io. All rights reserved.</p>
+                    <div className="border-t border-slate-800 pt-6 text-center">
+                        <p className="text-sm">© {currentYear} ZettaB.io. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
         </footer>
