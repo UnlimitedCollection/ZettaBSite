@@ -19,23 +19,7 @@ const process = [
 export default function UIUXDesignsPage() {
     return (
         <main>
-            {/* Header / Hero */}
-            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Service</p>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
-                        UI/UX Design that<br />converts beautifully.
-                    </h1>
-                    <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
-                        Human-centred design strategies that solve complex user problems, build brand trust, and drive measurable business outcomes.
-                    </p>
-                    <div className="flex justify-center gap-4">
-                        <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:bg-white hover:text-slate-900 transition-colors shadow-lg shadow-primary/30">
-                            Discuss Your Project
-                        </Link>
-                    </div>
-                </div>
-            </section>
+
 
             {/* Service Details Main Content */}
             <section className="py-24 bg-white">
