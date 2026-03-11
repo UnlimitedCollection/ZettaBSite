@@ -24,8 +24,14 @@ export default function CaseStudyPage() {
     return (
         <main>
             {/* Header / Hero */}
-            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="relative pt-32 pb-20 text-center overflow-hidden">
+                {/* Background Image with Black Overlay */}
+                <div className="absolute inset-0 z-0 bg-slate-900">
+                    <img src="/bg_case_studies_hero.png" alt="Case Studies Background" className="w-full h-full object-cover object-center opacity-80" />
+                    <div className="absolute inset-0 bg-black/40"></div>
+                </div>
+
+                <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our Work</p>
                     <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
                         Proven Results,<br />Not Just Promises.

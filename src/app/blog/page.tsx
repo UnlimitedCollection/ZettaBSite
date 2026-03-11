@@ -63,8 +63,14 @@ const tags = ["All", "Web Development", "UI/UX Design", "Cloud & DevOps", "Digit
 export default function BlogPage() {
     return (
         <>
-            <section className="pt-32 pb-20 bg-gradient-to-b from-[#0B0D12] to-gray-900">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <section className="relative pt-32 pb-20 overflow-hidden">
+                {/* Background Image with Black Overlay */}
+                <div className="absolute inset-0 z-0 bg-slate-900">
+                    <img src="/bg_blog_hero.png" alt="Blog Background" className="w-full h-full object-cover object-center opacity-80" />
+                    <div className="absolute inset-0 bg-black/40"></div>
+                </div>
+
+                <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Blog</p>
                     <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6">Digital Insights & Trends</h1>
                     <p className="text-xl text-gray-400 leading-relaxed">
