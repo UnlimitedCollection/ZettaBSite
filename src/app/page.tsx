@@ -187,9 +187,9 @@ export default function HomePage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-4">Comprehensive Solutions</h2>
             <p className="text-slate-600 max-w-2xl mx-auto text-lg">
               End-to-end technology services designed to propel your business forward.
@@ -528,9 +528,9 @@ export default function HomePage() {
       </section>
 
       {/* Logo Cloud / Partners */}
-      <section className="py-16 border-y border-slate-100">
+      <section className="py-10 border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-slate-500 font-semibold uppercase tracking-widest text-xs mb-10">Strategic Technology Partners</p>
+          <p className="text-center text-slate-500 font-semibold uppercase tracking-widest text-xs mb-6">Strategic Technology Partners</p>
           <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 md:gap-16 lg:gap-32 transition-all">
             {/* AWS */}
             <svg role="img" viewBox="0 0 24 24" className="w-10 sm:w-12 md:w-16 lg:w-20 h-auto" fill="#FF9900" xmlns="http://www.w3.org/2000/svg">
