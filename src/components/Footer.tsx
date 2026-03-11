@@ -26,7 +26,7 @@ export function Footer() {
                             Leading global innovation through high-end software development, cloud strategy, and digital transformation. Delivering Excellence from Kandy to the World.
                         </p>
                         <div className="flex items-center gap-4 text-sm font-medium">
-                            <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms & Conditions</Link>
+                            <Link href="/terms-conditions" className="hover:text-primary transition-colors">Terms & Conditions</Link>
                             <span className="text-slate-700">|</span>
                             <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
                         </div>
