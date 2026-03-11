@@ -16,7 +16,7 @@ export function WhitepaperCTA({
     buttonText = "Download Free Whitepaper"
 }: WhitepaperCTAProps) {
     return (
-        <section className="py-12 md:py-16 bg-gradient-to-br from-slate-900 via-slate-800 to-primary/40 relative overflow-hidden">
+        <section className="py-12 md:py-16 bg-slate-900 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
             {/* Background elements */}
             <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
