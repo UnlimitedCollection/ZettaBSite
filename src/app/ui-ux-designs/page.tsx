@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 };
 
 const process = [
-    { step: "01", title: "User Research", desc: "We talk to your users, map journeys and identify friction points before a pixel is drawn." },
-    { step: "02", title: "Information Architecture", desc: "Content hierarchy, navigation structure, and user flows that make sense intuitively." },
-    { step: "03", title: "Wireframing", desc: "Lo-fi prototypes that focus on layout and interaction logic without distraction." },
-    { step: "04", title: "Visual Design", desc: "Polished, brand-cohesive UI built with precision typography, colour, and spacing." },
-    { step: "05", title: "Prototype & Test", desc: "Interactive prototypes tested with real users before development begins." },
-    { step: "06", title: "Design System", desc: "Scalable, componentised design systems in Figma for your team to build on long-term." },
+    { step: "01", title: "User Research", desc: "We talk to your users, map journeys and identify friction points before a pixel is drawn.", icon: "group" },
+    { step: "02", title: "Information Architecture", desc: "Content hierarchy, navigation structure, and user flows that make sense intuitively.", icon: "account_tree" },
+    { step: "03", title: "Wireframing", desc: "Lo-fi prototypes that focus on layout and interaction logic without distraction.", icon: "view_quilt" },
+    { step: "04", title: "Visual Design", desc: "Polished, brand-cohesive UI built with precision typography, colour, and spacing.", icon: "palette" },
+    { step: "05", title: "Prototype & Test", desc: "Interactive prototypes tested with real users before development begins.", icon: "science" },
+    { step: "06", title: "Design System", desc: "Scalable, componentised design systems in Figma for your team to build on long-term.", icon: "widgets" },
 ];
 
 export default function UIUXDesignsPage() {
@@ -62,6 +62,7 @@ export default function UIUXDesignsPage() {
                                     <div key={item.step} className="p-6 bg-slate-50 rounded-2xl border border-slate-100 relative overflow-hidden group">
                                         <div className="absolute -right-6 -top-6 text-9xl font-black text-slate-100 group-hover:scale-110 transition-transform duration-500 pointer-events-none">{item.step}</div>
                                         <div className="relative z-10">
+                                            <span className="material-symbols-outlined text-primary text-3xl mb-4">{item.icon}</span>
                                             <h4 className="font-bold mb-2">{item.title}</h4>
                                             <p className="text-sm text-slate-600">{item.desc}</p>
                                         </div>

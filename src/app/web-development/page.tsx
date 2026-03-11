@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 };
 
 const offerings = [
-    { title: "Marketing Websites", desc: "Conversion-focused sites that communicate your brand and drive qualified leads." },
-    { title: "Web Applications", desc: "Complex, data-driven apps built for scale — from dashboards to full SaaS platforms." },
-    { title: "E-commerce Platforms", desc: "End-to-end online stores with seamless UX, fast checkout, and robust admin." },
-    { title: "Headless CMS Solutions", desc: "Content-first architecture with modern frontends and flexible content management." },
-    { title: "API & Backend Systems", desc: "Robust RESTful and GraphQL APIs powering your web and mobile frontends." },
-    { title: "Progressive Web Apps", desc: "PWAs delivering native-like experiences across all devices without app store friction." },
+    { title: "Marketing Websites", desc: "Conversion-focused sites that communicate your brand and drive qualified leads.", icon: "web" },
+    { title: "Web Applications", desc: "Complex, data-driven apps built for scale — from dashboards to full SaaS platforms.", icon: "web_asset" },
+    { title: "E-commerce Platforms", desc: "End-to-end online stores with seamless UX, fast checkout, and robust admin.", icon: "shopping_cart" },
+    { title: "Headless CMS Solutions", desc: "Content-first architecture with modern frontends and flexible content management.", icon: "dataset" },
+    { title: "API & Backend Systems", desc: "Robust RESTful and GraphQL APIs powering your web and mobile frontends.", icon: "api" },
+    { title: "Progressive Web Apps", desc: "PWAs delivering native-like experiences across all devices without app store friction.", icon: "app_shortcut" },
 ];
 
 const stack = ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS", "Vercel", "Supabase"];
@@ -62,7 +62,7 @@ export default function WebDevelopmentPage() {
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {offerings.map((item) => (
                                     <div key={item.title} className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">language</span>
+                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">{item.icon}</span>
                                         <h4 className="font-bold mb-2">{item.title}</h4>
                                         <p className="text-sm text-slate-600">{item.desc}</p>
                                     </div>

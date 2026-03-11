@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 };
 
 const services = [
-    { title: "SEO Strategy", desc: "Technical SEO, on-page optimisation, and content strategy to rank for the terms your buyers search." },
-    { title: "Paid Search & PPC", desc: "Google Ads campaigns engineered for maximum ROAS with continuous optimisation cycles." },
-    { title: "Social Media Marketing", desc: "Organic and paid social across LinkedIn, Meta, and X — content that converts." },
-    { title: "Content Marketing", desc: "Thought leadership, blog, and educational content that earns trust and drives organic traffic." },
-    { title: "Email Marketing", desc: "Nurture sequences and campaign campaigns with strong subject lines and data-driven segmentation." },
-    { title: "Analytics & Reporting", desc: "GA4, Looker Studio dashboards, and weekly performance reports tied to your business goals." },
+    { title: "SEO Strategy", desc: "Technical SEO, on-page optimisation, and content strategy to rank for the terms your buyers search.", icon: "manage_search" },
+    { title: "Paid Search & PPC", desc: "Google Ads campaigns engineered for maximum ROAS with continuous optimisation cycles.", icon: "ads_click" },
+    { title: "Social Media Marketing", desc: "Organic and paid social across LinkedIn, Meta, and X — content that converts.", icon: "share" },
+    { title: "Content Marketing", desc: "Thought leadership, blog, and educational content that earns trust and drives organic traffic.", icon: "article" },
+    { title: "Email Marketing", desc: "Nurture sequences and campaign campaigns with strong subject lines and data-driven segmentation.", icon: "mail" },
+    { title: "Analytics & Reporting", desc: "GA4, Looker Studio dashboards, and weekly performance reports tied to your business goals.", icon: "insights" },
 ];
 
 export default function DigitalMarketingPage() {
@@ -60,7 +60,7 @@ export default function DigitalMarketingPage() {
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {services.map((item) => (
                                     <div key={item.title} className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">monitoring</span>
+                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">{item.icon}</span>
                                         <h4 className="font-bold mb-2">{item.title}</h4>
                                         <p className="text-sm text-slate-600">{item.desc}</p>
                                     </div>

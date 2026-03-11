@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 };
 
 const categories = [
-    { title: "Custom Business Software", desc: "Bespoke desktop and web applications that replace costly off-the-shelf software with something that fits your exact workflow." },
-    { title: "API Development & Integration", desc: "RESTful and GraphQL APIs that connect your systems — and third-party services — cleanly and reliably." },
-    { title: "Database Architecture", desc: "Schema design, query optimisation, and data modelling for relational and NoSQL databases at any scale." },
-    { title: "Enterprise Platforms", desc: "Internal tooling, admin dashboards, and enterprise portals that give your teams real leverage." },
-    { title: "Legacy Modernisation", desc: "We refactor and migrate legacy codebases to modern architectures without service disruption." },
-    { title: "Technical Architecture", desc: "Hands-on technical leadership and architecture reviews to ensure your engineering foundation is solid." },
+    { title: "Custom Business Software", desc: "Bespoke desktop and web applications that replace costly off-the-shelf software with something that fits your exact workflow.", icon: "dashboard_customize" },
+    { title: "API Development & Integration", desc: "RESTful and GraphQL APIs that connect your systems — and third-party services — cleanly and reliably.", icon: "integration_instructions" },
+    { title: "Database Architecture", desc: "Schema design, query optimisation, and data modelling for relational and NoSQL databases at any scale.", icon: "database" },
+    { title: "Enterprise Platforms", desc: "Internal tooling, admin dashboards, and enterprise portals that give your teams real leverage.", icon: "domain" },
+    { title: "Legacy Modernisation", desc: "We refactor and migrate legacy codebases to modern architectures without service disruption.", icon: "upgrade" },
+    { title: "Technical Architecture", desc: "Hands-on technical leadership and architecture reviews to ensure your engineering foundation is solid.", icon: "architecture" },
 ];
 
 export default function SoftwareDevelopmentPage() {
@@ -60,7 +60,7 @@ export default function SoftwareDevelopmentPage() {
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {categories.map((item) => (
                                     <div key={item.title} className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">terminal</span>
+                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">{item.icon}</span>
                                         <h4 className="font-bold mb-2">{item.title}</h4>
                                         <p className="text-sm text-slate-600">{item.desc}</p>
                                     </div>

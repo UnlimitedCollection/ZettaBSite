@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 };
 
 const offerings = [
-    { title: "iOS App Development", desc: "Native Swift applications optimised for Apple's ecosystem and App Store guidelines." },
-    { title: "Android App Development", desc: "Kotlin-based Android apps designed for rich engagement across all device sizes." },
-    { title: "React Native Apps", desc: "Cross-platform apps from a single codebase without compromising on performance." },
-    { title: "App UX Design", desc: "User-centred mobile experiences designed to drive retention and conversion." },
-    { title: "App Store Submission", desc: "Full support through the App Store and Google Play launch process." },
-    { title: "Maintenance & Updates", desc: "Ongoing support, performance monitoring, and iterative feature development." },
+    { title: "iOS App Development", desc: "Native Swift applications optimised for Apple's ecosystem and App Store guidelines.", icon: "phone_iphone" },
+    { title: "Android App Development", desc: "Kotlin-based Android apps designed for rich engagement across all device sizes.", icon: "android" },
+    { title: "React Native Apps", desc: "Cross-platform apps from a single codebase without compromising on performance.", icon: "devices" },
+    { title: "App UX Design", desc: "User-centred mobile experiences designed to drive retention and conversion.", icon: "touch_app" },
+    { title: "App Store Submission", desc: "Full support through the App Store and Google Play launch process.", icon: "storefront" },
+    { title: "Maintenance & Updates", desc: "Ongoing support, performance monitoring, and iterative feature development.", icon: "update" },
 ];
 
 export default function MobileApplicationsPage() {
@@ -60,7 +60,7 @@ export default function MobileApplicationsPage() {
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {offerings.map((item) => (
                                     <div key={item.title} className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">smartphone</span>
+                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">{item.icon}</span>
                                         <h4 className="font-bold mb-2">{item.title}</h4>
                                         <p className="text-sm text-slate-600">{item.desc}</p>
                                     </div>
