@@ -101,7 +101,7 @@ export function Header() {
                     </nav>
                     <div className="flex items-center gap-4">
                         <Link href="/contact" className="hidden lg:flex items-center justify-center px-6 py-2.5 bg-primary text-white rounded-xl font-bold text-sm hover:opacity-90 transition-all shadow-lg shadow-primary/20">
-                            Get Started
+                            Get in Touch
                         </Link>
                         <button
                             className="md:hidden text-slate-900"
@@ -136,7 +136,7 @@ export function Header() {
                         className="flex items-center justify-center px-6 py-3 mt-2 bg-primary text-white rounded-xl font-bold text-sm shadow-md"
                         onClick={() => setMobileMenuOpen(false)}
                     >
-                        Get Started
+                        Get in Touch
                     </Link>
                 </div>
             )}
