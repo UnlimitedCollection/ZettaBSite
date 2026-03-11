@@ -17,7 +17,7 @@ export function Footer() {
     return (
         <footer className="bg-slate-900 text-slate-400 pt-12 pb-6">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-8 mb-10">
+                <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-8 mb-4">
                     <div className="md:col-span-4 lg:col-span-4">
                         <Link href="/" className="mb-6 inline-block bg-white px-2 py-0.5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                             <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain" />
@@ -79,7 +79,7 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div className="pt-6 border-t border-slate-800 flex flex-col xl:flex-row justify-between items-center gap-6 text-sm relative">
+                <div className="pt-4 border-t border-slate-800 flex flex-col xl:flex-row justify-between items-center gap-6 text-sm relative">
                     {/* Location & Email Group */}
                     <div className="flex flex-wrap justify-center items-center gap-6">
                         <div className="flex items-center gap-2">
