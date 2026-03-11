@@ -16,13 +16,13 @@ export function WhitepaperCTA({
     buttonText = "Download Free Whitepaper"
 }: WhitepaperCTAProps) {
     return (
-        <section className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-primary/40 relative overflow-hidden">
+        <section className="py-12 md:py-16 bg-gradient-to-br from-slate-900 via-slate-800 to-primary/40 relative overflow-hidden">
             {/* Background elements */}
             <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-10 shadow-2xl">
+                <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-6 md:p-10 lg:p-12 flex flex-col md:flex-row items-center gap-8 shadow-2xl">
 
                     {/* Icon / Graphic Side */}
                     <div className="hidden md:flex flex-shrink-0 w-48 h-64 bg-slate-800 rounded-xl relative shadow-inner overflow-hidden border border-white/10 group">
@@ -44,16 +44,16 @@ export function WhitepaperCTA({
 
                     {/* Content Side */}
                     <div className="flex-1 text-center md:text-left">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 text-blue-300 text-sm font-bold uppercase tracking-wider rounded-full mb-6 border border-primary/30">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 text-blue-300 text-sm font-bold uppercase tracking-wider rounded-full mb-4 border border-primary/30">
                             <span className="material-symbols-outlined text-sm">download</span>
                             Exclusive Insight
                         </div>
 
-                        <h2 className="text-3xl md:text-4xl font-black text-white mb-6 leading-tight">
+                        <h2 className="text-3xl md:text-4xl font-black text-white mb-4 leading-tight">
                             {title}
                         </h2>
 
-                        <p className="text-lg text-slate-300 mb-10 max-w-2xl leading-relaxed">
+                        <p className="text-lg text-slate-300 mb-8 max-w-2xl leading-relaxed">
                             {description}
                         </p>
 
