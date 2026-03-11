@@ -42,6 +42,13 @@ export default function ContactPage() {
 
                             <div className="space-y-8">
                                 <div className="flex gap-4 items-start">
+                                    <span className="material-symbols-outlined text-primary text-3xl">call</span>
+                                    <div>
+                                        <h4 className="text-lg font-bold mb-1">Call Us</h4>
+                                        <a href="tel:+94764228905" className="text-slate-600 hover:text-primary transition-colors">+94 764 228 905</a>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 items-start">
                                     <span className="material-symbols-outlined text-primary text-3xl">mail</span>
                                     <div>
                                         <h4 className="text-lg font-bold mb-1">Email Us</h4>
