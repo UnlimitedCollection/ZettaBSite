@@ -29,11 +29,7 @@ export default function CloudDeploymentsPage() {
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
                         Scalable, secure, and resilient cloud infrastructure designed for high availability and rapid iteration.
                     </p>
-                    <div className="flex justify-center gap-4">
-                        <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:bg-white hover:text-slate-900 transition-colors shadow-lg shadow-primary/30">
-                            Discuss Your Infrastructure
-                        </Link>
-                    </div>
+
                 </div>
             </section>
 
