@@ -67,8 +67,8 @@ export default function ContactPage() {
                                     <div>
                                         <h4 className="text-lg font-bold mb-1">HQ Location</h4>
                                         <address className="text-slate-600 not-italic">
-                                            120 Tech Boulevard, Suite 400<br />
-                                            London, UK EC1A 1BB
+                                            46/3B, Uduwawala,<br />
+                                            Kandy, Sri Lanka
                                         </address>
                                     </div>
                                 </div>
