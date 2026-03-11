@@ -7,56 +7,7 @@ export const metadata: Metadata = {
     description: "Thought leadership on software development, digital marketing, UX, and technology trends from the ZettaB team.",
 };
 
-const articles = [
-    {
-        tag: "Web Development",
-        title: "Why Core Web Vitals Matter More Than Ever in 2025",
-        excerpt: "Google's ranking signals are increasingly tied to real user experience. Here's what your tech team needs to know.",
-        date: "March 5, 2026",
-        readTime: "6 min read",
-        slug: "#",
-    },
-    {
-        tag: "UI/UX Design",
-        title: "The Hidden Cost of Bad UX — And How to Fix It",
-        excerpt: "Poor user experience costs companies billions annually. Most of it is avoidable. We break down the patterns to watch for.",
-        date: "February 20, 2026",
-        readTime: "8 min read",
-        slug: "#",
-    },
-    {
-        tag: "Cloud & DevOps",
-        title: "Scaling on AWS Without Breaking the Bank",
-        excerpt: "Cost optimisation strategies for startups growing into enterprise infrastructure — practical advice from the field.",
-        date: "February 11, 2026",
-        readTime: "10 min read",
-        slug: "#",
-    },
-    {
-        tag: "Digital Marketing",
-        title: "B2B SEO in 2025: What Actually Moves the Needle",
-        excerpt: "We analysed 50 B2B SaaS sites. Here are the SEO patterns that consistently drove growth — and the ones that wasted budget.",
-        date: "January 28, 2026",
-        readTime: "7 min read",
-        slug: "#",
-    },
-    {
-        tag: "Software Development",
-        title: "How to Choose Between a Monolith and Microservices",
-        excerpt: "Both architectures have valid use cases. We break down the decision framework we use with every new client.",
-        date: "January 15, 2026",
-        readTime: "9 min read",
-        slug: "#",
-    },
-    {
-        tag: "Mobile Apps",
-        title: "React Native vs. Native: A 2025 Decision Framework",
-        excerpt: "The cross-platform vs native debate has matured significantly. Here's how we approach the decision for our clients today.",
-        date: "January 4, 2026",
-        readTime: "11 min read",
-        slug: "#",
-    },
-];
+import { blogPosts } from "@/data/blog";
 
 const tags = ["All", "Web Development", "UI/UX Design", "Cloud & DevOps", "Digital Marketing", "Software Development", "Mobile Apps"];
 
@@ -100,7 +51,7 @@ export default function BlogPage() {
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {articles.map((article) => (
+                        {blogPosts.map((article) => (
                             <article
                                 key={article.title}
                                 className="group flex flex-col rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 overflow-hidden bg-white"
@@ -120,7 +71,7 @@ export default function BlogPage() {
                                     <div className="flex items-center justify-between border-t border-gray-50 pt-4">
                                         <span className="text-xs text-gray-400">{article.date}</span>
                                         <Link
-                                            href={article.slug}
+                                            href={`/blog/${article.slug}`}
                                             className="flex items-center gap-1 text-primary text-sm font-medium hover:gap-2 transition-all"
                                         >
                                             Read
