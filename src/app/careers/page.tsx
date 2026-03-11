@@ -62,32 +62,15 @@ export default function CareersPage() {
                         <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">Open Positions</p>
                         <h2 className="text-4xl font-bold text-gray-900">Current openings</h2>
                     </div>
-                    <div className="flex flex-col gap-4">
-                        {openRoles.map((role) => (
-                            <a
-                                key={role.title}
-                                href={role.href}
-                                className="group flex flex-col sm:flex-row sm:items-center justify-between p-6 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 hover:shadow-lg transition-all duration-300 gap-4"
-                            >
-                                <div>
-                                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors">{role.title}</h3>
-                                    <p className="text-sm text-gray-500 mt-1">{role.team} · {role.type}</p>
-                                </div>
-                                <div className="flex items-center gap-2 text-primary text-sm font-medium flex-shrink-0">
-                                    Apply Now
-                                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-                                </div>
-                            </a>
-                        ))}
-                    </div>
-
-                    {/* No role found block */}
-                    <div className="mt-12 p-8 rounded-2xl border border-dashed border-gray-200 text-center">
-                        <h3 className="text-lg font-bold text-gray-900 mb-2">Don't see a role for you?</h3>
-                        <p className="text-gray-500 text-sm mb-4">We're always open to great talent. Send us your CV and a note about what you'd bring to the team.</p>
-                        <Link href="/contact" className="inline-flex items-center justify-center rounded-md h-10 px-5 text-sm font-medium bg-primary text-white hover:bg-primary-hover transition-colors">
-                            Send an open application
-                        </Link>
+                    
+                    <div className="bg-white border border-gray-100 rounded-2xl p-10 text-center shadow-sm">
+                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-50 mb-6 border border-slate-100">
+                            <span className="material-symbols-outlined text-3xl text-primary">work_off</span>
+                        </div>
+                        <h3 className="text-2xl font-bold text-gray-900 mb-4">No open positions right now</h3>
+                        <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-8 text-lg">
+                            We currently don’t have any open positions, but we’re always on the lookout for talented individuals! If you’d like to be considered for future opportunities, please send your resume to <a href="mailto:careers@zettab.io" className="text-primary hover:underline font-medium">careers@zettab.io</a>. We’d love to hear from you!
+                        </p>
                     </div>
                 </div>
             </section>
