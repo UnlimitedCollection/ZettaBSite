@@ -19,7 +19,19 @@ const offerings = [
 export default function MobileApplicationsPage() {
     return (
         <main>
+            {/* Header / Hero */}
+            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Service</p>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+                        Mobile Applications<br />built natively.
+                    </h1>
+                    <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
+                        High-performance iOS and Android applications engineered for fluid user experiences, offline capabilities, and perfect hardware integration.
+                    </p>
 
+                </div>
+            </section>
 
             {/* Service Details Main Content */}
             <section className="py-24 bg-white">
