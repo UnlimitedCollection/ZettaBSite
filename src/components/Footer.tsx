@@ -20,7 +20,7 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-8 mb-10">
                     <div className="md:col-span-4 lg:col-span-4">
                         <div className="mb-4">
-                            <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain brightness-200" />
+                            <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain invert hue-rotate-180 brightness-110" />
                         </div>
                         <p className="mb-6 leading-relaxed text-sm">
                             Leading global innovation through high-end software development, cloud strategy, and digital transformation. Delivering Excellence from Kandy to the World.
