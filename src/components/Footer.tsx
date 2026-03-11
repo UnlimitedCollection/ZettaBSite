@@ -22,9 +22,14 @@ export function Footer() {
                         <div className="mb-4">
                             <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain brightness-200" />
                         </div>
-                        <p className="mb-4 leading-relaxed text-sm">
+                        <p className="mb-6 leading-relaxed text-sm">
                             Leading global innovation through high-end software development, cloud strategy, and digital transformation. Delivering Excellence from Kandy to the World.
                         </p>
+                        <div className="flex items-center gap-4 text-sm font-medium">
+                            <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms & Conditions</Link>
+                            <span className="text-slate-700">|</span>
+                            <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+                        </div>
 
                     </div>
 
