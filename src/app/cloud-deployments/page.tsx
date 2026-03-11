@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 };
 
 const pillars = [
-    { title: "Infrastructure as Code", desc: "Terraform, Pulumi, and CDK — your infrastructure is version-controlled, reproducible, and auditable." },
-    { title: "Container Orchestration", desc: "Docker and Kubernetes deployments built for zero-downtime releases and automatic scaling." },
-    { title: "CI/CD Pipelines", desc: "Automated test, build, and deploy pipelines so your team ships faster with confidence." },
-    { title: "Security & Compliance", desc: "IAM policies, secret management, WAF rules, and compliance frameworks (SOC2, GDPR) baked in." },
-    { title: "Monitoring & Alerting", desc: "Datadog, CloudWatch, and custom dashboards give you real-time visibility into your systems." },
-    { title: "Cost Optimisation", desc: "Right-sizing, Spot instances, and Reserved capacity strategies that cut your cloud bill substantially." },
+    { title: "Infrastructure as Code", desc: "Terraform, Pulumi, and CDK — your infrastructure is version-controlled, reproducible, and auditable.", icon: "architecture" },
+    { title: "Container Orchestration", desc: "Docker and Kubernetes deployments built for zero-downtime releases and automatic scaling.", icon: "widgets" },
+    { title: "CI/CD Pipelines", desc: "Automated test, build, and deploy pipelines so your team ships faster with confidence.", icon: "published_with_changes" },
+    { title: "Security & Compliance", desc: "IAM policies, secret management, WAF rules, and compliance frameworks (SOC2, GDPR) baked in.", icon: "admin_panel_settings" },
+    { title: "Monitoring & Alerting", desc: "Datadog, CloudWatch, and custom dashboards give you real-time visibility into your systems.", icon: "monitoring" },
+    { title: "Cost Optimisation", desc: "Right-sizing, Spot instances, and Reserved capacity strategies that cut your cloud bill substantially.", icon: "savings" },
 ];
 
 export default function CloudDeploymentsPage() {
@@ -60,7 +60,7 @@ export default function CloudDeploymentsPage() {
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {pillars.map((item) => (
                                     <div key={item.title} className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">cloud</span>
+                                        <span className="material-symbols-outlined text-primary text-3xl mb-4">{item.icon}</span>
                                         <h4 className="font-bold mb-2">{item.title}</h4>
                                         <p className="text-sm text-slate-600">{item.desc}</p>
                                     </div>
