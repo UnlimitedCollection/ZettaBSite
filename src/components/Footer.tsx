@@ -19,8 +19,10 @@ export function Footer() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-8 mb-4">
                     <div className="md:col-span-4 lg:col-span-4">
-                        <Link href="/" className="mb-6 inline-block bg-white px-2 py-0.5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                            <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain" />
+                        <Link href="/" className="mb-6 flex items-center justify-center bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden w-fit px-3 h-11">
+                            <div className="flex items-center justify-center h-24 w-32">
+                                <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={140} className="object-contain" priority />
+                            </div>
                         </Link>
                         <p className="mb-6 leading-relaxed text-sm">
                             Leading global innovation through high-end software development, cloud strategy, and digital transformation. Delivering Excellence from Kandy to the World.
