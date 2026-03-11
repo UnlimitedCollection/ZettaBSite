@@ -19,7 +19,7 @@ export function Footer() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-8 mb-10">
                     <div className="md:col-span-4 lg:col-span-4">
-                        <Link href="/" className="mb-6 inline-block bg-white p-2 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <Link href="/" className="mb-6 inline-block bg-white px-2 py-0.5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                             <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain" />
                         </Link>
                         <p className="mb-6 leading-relaxed text-sm">
