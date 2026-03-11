@@ -64,8 +64,8 @@ export default function ServicesPage() {
             <section className="relative pt-32 pb-20 text-center overflow-hidden">
                 {/* Background Image with Black Overlay */}
                 <div className="absolute inset-0 z-0 bg-slate-900">
-                    <img src="/services_hero_bg.png" alt="Services Background" className="w-full h-full object-cover object-center opacity-80" />
-                    <div className="absolute inset-0 bg-black/60"></div>
+                    <img src="/services_hero_bg_v2.png" alt="Services Background" className="w-full h-full object-cover object-center opacity-80" />
+                    <div className="absolute inset-0 bg-black/30"></div>
                 </div>
 
                 <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
