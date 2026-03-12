@@ -75,15 +75,16 @@ export default function CareersPage() {
                 </div>
             </section>
 
-            {/* CTA */}
-            <section className="py-24 bg-gradient-to-r from-primary to-[#0e45b5]">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">Ready to do the best work of your career?</h2>
-                    <p className="text-blue-200 text-lg mb-10">Join a team that takes craft seriously and builds things that matter.</p>
-                    <Link href="#contact-modal" className="group inline-flex items-center justify-center gap-2 font-bold text-xl text-white hover:text-blue-200 transition-colors">
-                        Get In Touch
-                        <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
-                    </Link>
+            {/* Global Contact CTA Box */}
+            <section className="py-24 bg-slate-50 border-t border-slate-200">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="p-12 md:p-16 bg-white rounded-3xl border border-slate-200 text-center shadow-sm">
+                        <h2 className="font-bold text-4xl text-slate-900 mb-4">Planning a web project?</h2>
+                        <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">Speak with our technical team to determine the best approach for an upcoming build.</p>
+                        <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold text-lg hover:border-primary transition-colors hover:shadow-md">
+                            Schedule Call <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                        </Link>
+                    </div>
                 </div>
             </section>
         </>
