@@ -47,7 +47,7 @@ export default function UIUXDesignsPage() {
                         <div>
                             <h2 className="text-3xl font-black text-slate-900 mb-6">Overview</h2>
                             <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                                Great design isn't just about aesthetics; it's a strategic tool for user retention and conversion. We build digital products that feel intuitive, accessible, and polished from the very first interaction.
+                                Great design isn&apos;t just about aesthetics; it&apos;s a strategic tool for user retention and conversion. We build digital products that feel intuitive, accessible, and polished from the very first interaction.
                             </p>
                             <p className="text-lg text-slate-600 leading-relaxed">
                                 Our design team bridges the gap between user needs and technical capabilities, ensuring everything we design can be seamlessly implemented by engineering teams.
@@ -91,7 +91,7 @@ export default function UIUXDesignsPage() {
                                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black">3</div>
                                     <div>
                                         <h4 className="font-bold text-lg mb-1">High-Fidelity UI & Handoff</h4>
-                                        <p className="text-slate-600">Applying your brand's visual identity, creating a scalable design system, and providing developers with perfectly documented assets.</p>
+                                        <p className="text-slate-600">Applying your brand&apos;s visual identity, creating a scalable design system, and providing developers with perfectly documented assets.</p>
                                     </div>
                                 </li>
                             </ul>

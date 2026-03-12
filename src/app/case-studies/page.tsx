@@ -44,7 +44,7 @@ export default function CaseStudiesPage() {
                         Client Success<br />Stories.
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
-                        See how we've helped businesses transform their digital presence, scale operations, and drive revenue.
+                        See how we&apos;ve helped businesses transform their digital presence, scale operations, and drive revenue.
                     </p>
                 </div>
             </section>

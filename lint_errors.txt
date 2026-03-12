@@ -1,0 +1,10 @@
+D:\Code Projects\ZettaB approved Website\ZettaBSite\src\app\about\page.tsx:102: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.
+D:\Code Projects\ZettaB approved Website\ZettaBSite\src\app\about\page.tsx:112: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.
+D:\Code Projects\ZettaB approved Website\ZettaBSite\src\app\case-study-ecommerce-redesign\page.tsx:198: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+D:\Code Projects\ZettaB approved Website\ZettaBSite\src\app\case-study-ecommerce-redesign\page.tsx:198: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.
+D:\Code Projects\ZettaB approved Website\ZettaBSite\src\app\case-study-ecommerce-redesign\page.tsx:198: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+D:\Code Projects\ZettaB approved Website\ZettaBSite\src\app\page.tsx:339: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+D:\Code Projects\ZettaB approved Website\ZettaBSite\src\app\page.tsx:339: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.
+D:\Code Projects\ZettaB approved Website\ZettaBSite\src\app\page.tsx:339: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+D:\Code Projects\ZettaB approved Website\ZettaBSite\src\app\page.tsx:607: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.
+D:\Code Projects\ZettaB approved Website\ZettaBSite\src\app\ui-ux-designs\page.tsx:94: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.

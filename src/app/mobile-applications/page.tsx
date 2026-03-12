@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const offerings = [
-    { title: "iOS App Development", desc: "Native Swift applications optimised for Apple's ecosystem and App Store guidelines.", icon: "phone_iphone" },
+    { title: "iOS App Development", desc: "Native Swift applications optimised for Apple&apos;s ecosystem and App Store guidelines.", icon: "phone_iphone" },
     { title: "Android App Development", desc: "Kotlin-based Android apps designed for rich engagement across all device sizes.", icon: "android" },
     { title: "React Native Apps", desc: "Cross-platform apps from a single codebase without compromising on performance.", icon: "devices" },
     { title: "App UX Design", desc: "User-centred mobile experiences designed to drive retention and conversion.", icon: "touch_app" },

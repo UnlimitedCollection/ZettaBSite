@@ -84,7 +84,7 @@ export default function PrivacyPolicyPage() {
                     <div className="mt-16 p-8 bg-slate-50 rounded-2xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-6">
                         <div>
                             <h3 className="font-bold text-slate-900 mb-2">Questions about this policy?</h3>
-                            <p className="text-slate-600 text-sm">We're happy to clarify anything. Just get in touch.</p>
+                            <p className="text-slate-600 text-sm">We&apos;re happy to clarify anything. Just get in touch.</p>
                         </div>
                         <Link href="/contact" className="w-full sm:w-auto px-6 py-3 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold hover:border-primary transition-colors text-center shadow-sm">
                             Contact Us

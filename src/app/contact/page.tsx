@@ -20,7 +20,7 @@ export default function ContactPage() {
 
                 <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 tracking-tight">
-                        Let's build something<br />exceptional together.
+                        Let&apos;s build something<br />exceptional together.
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
                         Whether you have a fully scoped project or just a raw idea, our engineering team is ready to help you execute.

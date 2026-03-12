@@ -47,7 +47,7 @@ export default function DigitalMarketingPage() {
                         <div>
                             <h2 className="text-3xl font-black text-slate-900 mb-6">Overview</h2>
                             <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                                In today's crowded digital landscape, generic campaigns don't cut it. Our digital marketing approach is heavily analytical, focusing on metrics that impact your bottom line—not just vanity metrics.
+                                In today&apos;s crowded digital landscape, generic campaigns don&apos;t cut it. Our digital marketing approach is heavily analytical, focusing on metrics that impact your bottom line—not just vanity metrics.
                             </p>
                             <p className="text-lg text-slate-600 leading-relaxed">
                                 We combine rigorous technical SEO, highly targeted paid media buying, and compelling content strategies to build sustainable growth engines for our clients.

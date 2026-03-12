@@ -36,7 +36,7 @@ export default function CaseStudyPage() {
                         Proven Results,<br />Not Just Promises.
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
-                        Explore how we've helped companies across industries overcome complex technical challenges and achieve rapid growth.
+                        Explore how we&apos;ve helped companies across industries overcome complex technical challenges and achieve rapid growth.
                     </p>
                 </div>
             </section>
@@ -195,7 +195,7 @@ export default function CaseStudyPage() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <span className="material-symbols-outlined text-6xl text-primary/20 mb-6 block">format_quote</span>
                     <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-8">
-                        "ZettaB didn't just build software; they challenged our assumptions, improved our processes, and delivered a product that genuinely transformed our business trajectory."
+                        &quot;ZettaB didn&apos;t just build software; they challenged our assumptions, improved our processes, and delivered a product that genuinely transformed our business trajectory.&quot;
                     </h2>
                     <div className="flex items-center justify-center gap-4">
                         <img alt="Client Avatar" className="w-16 h-16 rounded-full object-cover border-2 border-primary p-1" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" />

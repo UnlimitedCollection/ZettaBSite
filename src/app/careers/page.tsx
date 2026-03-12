@@ -31,7 +31,7 @@ export default function CareersPage() {
                     <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Careers</p>
                     <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 leading-tight">Join the Innovation</h1>
                     <p className="text-xl text-gray-400 leading-relaxed">
-                        We're a growing team of passionate builders. If you care deeply about craft and want to work on ambitious problems, we want to hear from you.
+                        We&apos;re a growing team of passionate builders. If you care deeply about craft and want to work on ambitious problems, we want to hear from you.
                     </p>
                 </div>
             </section>

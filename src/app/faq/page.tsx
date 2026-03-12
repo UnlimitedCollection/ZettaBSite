@@ -8,7 +8,7 @@ const faqs = [
         category: "Process",
         questions: [
             { q: "How does an engagement with ZettaB work?", a: "We start with a discovery call to understand your goals and requirements. From there we produce a scoped proposal with timeline and cost. Once agreed, we move through design, development, QA, and launch — with weekly check-ins throughout." },
-            { q: "How long does a typical project take?", a: "A standard marketing website takes 4–6 weeks. Web applications typically run 8–16 weeks depending on complexity. Mobile apps range from 10–20 weeks. We'll give you a precise timeline in your proposal." },
+            { q: "How long does a typical project take?", a: "A standard marketing website takes 4–6 weeks. Web applications typically run 8–16 weeks depending on complexity. Mobile apps range from 10–20 weeks. We&apos;ll give you a precise timeline in your proposal." },
             { q: "Can we work in agile sprints?", a: "Absolutely. For longer-running projects we strongly recommend a sprint-based approach with fortnightly demos so you see progress regularly and can adjust priorities." },
         ],
     },
@@ -16,7 +16,7 @@ const faqs = [
         category: "Pricing",
         questions: [
             { q: "How does ZettaB price its services?", a: "We offer both fixed-scope project pricing and dedicated team (time & materials) engagements. Fixed pricing gives you cost certainty; dedicated teams provide flexibility for evolving requirements. All pricing is discussed candidly upfront." },
-            { q: "What is the typical budget range for a web project?", a: "A high-quality marketing website typically starts from $8,000. Web applications start from $20,000 and scale with complexity. We tailor every proposal to your actual requirements — we don't use one-size-fits-all pricing." },
+            { q: "What is the typical budget range for a web project?", a: "A high-quality marketing website typically starts from $8,000. Web applications start from $20,000 and scale with complexity. We tailor every proposal to your actual requirements — we don&apos;t use one-size-fits-all pricing." },
             { q: "Do you offer payment plans?", a: "Yes. We typically structure projects with a deposit, milestone payments, and final balance. For longer engagements, monthly retainer billing is available." },
         ],
     },
@@ -33,7 +33,7 @@ const faqs = [
         questions: [
             { q: "Do you work with international clients?", a: "Yes — roughly half our clients are outside our timezone. We use async-first communication with regular video calls timed to overlap both teams." },
             { q: "Can you supplement our existing team?", a: "Yes. We frequently embed as an extension of in-house teams, providing specific expertise (e.g., a senior engineer, a UX designer) without requiring a full agency engagement." },
-            { q: "How do we get started?", a: "Simply send us a message via the Contact page. We'll respond within 1 business day to schedule a short discovery call at no cost or commitment." },
+            { q: "How do we get started?", a: "Simply send us a message via the Contact page. We&apos;ll respond within 1 business day to schedule a short discovery call at no cost or commitment." },
         ],
     },
 ];
@@ -107,7 +107,7 @@ export default function FAQPage() {
                         <div className="relative z-10 max-w-2xl mx-auto">
                             <span className="material-symbols-outlined text-5xl mb-6">support_agent</span>
                             <h3 className="text-3xl font-black mb-4">Still have questions?</h3>
-                            <p className="text-blue-100 text-lg mb-8 leading-relaxed">Can't find the answer you're looking for? Reach out to our team directly and we'll get back to you shortly.</p>
+                            <p className="text-blue-100 text-lg mb-8 leading-relaxed">Can&apos;t find the answer you&apos;re looking for? Reach out to our team directly and we&apos;ll get back to you shortly.</p>
                             <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-slate-900 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg">
                                 Contact Support
                             </Link>

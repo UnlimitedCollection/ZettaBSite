@@ -47,7 +47,7 @@ export default function SoftwareDevelopmentPage() {
                         <div>
                             <h2 className="text-3xl font-black text-slate-900 mb-6">Overview</h2>
                             <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                                Quality software is the backbone of modern business. We design and build bespoke software solutions that move the needle, whether it's automating critical workflows, migrating legacy systems to the cloud, or launching an entirely new product.
+                                Quality software is the backbone of modern business. We design and build bespoke software solutions that move the needle, whether it&apos;s automating critical workflows, migrating legacy systems to the cloud, or launching an entirely new product.
                             </p>
                             <p className="text-lg text-slate-600 leading-relaxed">
                                 Our engineering culture prioritizes robust automated testing, CI/CD pipelines, and creating clean, self-documenting code bases that internal teams love to inherit.

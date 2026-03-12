@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 const values = [
     { title: "Engineering Excellence", desc: "We hold ourselves to the highest technical standards. Clean code, robust architecture, and performance are non-negotiable." },
     { title: "Design with Intent", desc: "Every design decision serves a purpose — guiding users, communicating value, and driving conversion." },
-    { title: "Radical Transparency", desc: "We communicate openly. You always know where your project stands, what's coming next, and why decisions are made." },
-    { title: "Long-Term Partnership", desc: "We don't disappear after launch. We grow with you, iterate on what works, and help you navigate what comes next." },
+    { title: "Radical Transparency", desc: "We communicate openly. You always know where your project stands, what&apos;s coming next, and why decisions are made." },
+    { title: "Long-Term Partnership", desc: "We don&apos;t disappear after launch. We grow with you, iterate on what works, and help you navigate what comes next." },
 ];
 
 export default function AboutPage() {
@@ -89,7 +89,7 @@ export default function AboutPage() {
                         <div className="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
                             <span className="material-symbols-outlined text-4xl text-primary mb-6">workspace_premium</span>
                             <h3 className="text-xl font-bold mb-3">Uncompromising Quality</h3>
-                            <p className="text-slate-600 leading-relaxed">We believe in writing clean, maintainable, and thoroughly tested code. We don't cut corners because technical debt always costs more later.</p>
+                            <p className="text-slate-600 leading-relaxed">We believe in writing clean, maintainable, and thoroughly tested code. We don&apos;t cut corners because technical debt always costs more later.</p>
                         </div>
                         <div className="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
                             <span className="material-symbols-outlined text-4xl text-primary mb-6">handshake</span>
@@ -99,7 +99,7 @@ export default function AboutPage() {
                         <div className="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
                             <span className="material-symbols-outlined text-4xl text-primary mb-6">insights</span>
                             <h3 className="text-xl font-bold mb-3">Business Integration</h3>
-                            <p className="text-slate-600 leading-relaxed">We aren't just order-takers. We act as strategic advisors, questioning assumptions and aligning technology choices with your revenue goals.</p>
+                            <p className="text-slate-600 leading-relaxed">We aren&apos;t just order-takers. We act as strategic advisors, questioning assumptions and aligning technology choices with your revenue goals.</p>
                         </div>
                         <div className="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
                             <span className="material-symbols-outlined text-4xl text-primary mb-6">speed</span>
@@ -109,7 +109,7 @@ export default function AboutPage() {
                         <div className="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
                             <span className="material-symbols-outlined text-4xl text-primary mb-6">diversity_2</span>
                             <h3 className="text-xl font-bold mb-3">Continuous Learning</h3>
-                            <p className="text-slate-600 leading-relaxed">Technology moves fast, and so do we. We invest heavily in our team's growth, ensuring we always bring the most effective modern tools to your project.</p>
+                            <p className="text-slate-600 leading-relaxed">Technology moves fast, and so do we. We invest heavily in our team&apos;s growth, ensuring we always bring the most effective modern tools to your project.</p>
                         </div>
                         <div className="bg-white p-10 rounded-3xl shadow-sm border border-slate-100">
                             <span className="material-symbols-outlined text-4xl text-primary mb-6">verified_user</span>
@@ -182,7 +182,7 @@ export default function AboutPage() {
                         <div>
                             <h2 className="text-4xl lg:text-5xl font-black mb-8">A culture built on innovation and trust.</h2>
                             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-                                We've created an environment where top talent wants to stay. By fostering autonomy, continuous learning, and a strictly blameless post-mortem culture, we attract engineers who are passionate about their craft.
+                                We&apos;ve created an environment where top talent wants to stay. By fostering autonomy, continuous learning, and a strictly blameless post-mortem culture, we attract engineers who are passionate about their craft.
                             </p>
                             <ul className="space-y-6 mb-10">
                                 <li className="flex gap-4 items-start">

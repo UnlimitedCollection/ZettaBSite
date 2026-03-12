@@ -202,7 +202,7 @@ export default function HomePage() {
                 Your Strategic Engineering Ally in the Digital Age
               </h3>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                ZettaB.io is a global digital solutions provider dedicated to transforming complex business challenges into seamless digital experiences through strategic engineering. We don't just build software; we build the future of your enterprise.
+                ZettaB.io is a global digital solutions provider dedicated to transforming complex business challenges into seamless digital experiences through strategic engineering. We don&apos;t just build software; we build the future of your enterprise.
               </p>
               <Link href="/about" className="group flex items-center gap-3 text-primary font-bold text-lg">
                 Learn more about our mission
@@ -300,7 +300,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold mb-2">Strategic Partnership</h4>
-                    <p className="text-slate-600">We don't just take orders; we act as your technology consultant to ensure long-term ROI.</p>
+                    <p className="text-slate-600">We don&apos;t just take orders; we act as your technology consultant to ensure long-term ROI.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
@@ -336,7 +336,7 @@ export default function HomePage() {
               <img alt="Collaboration" className="absolute inset-0 w-full h-full object-cover" src="/tech-bg.png" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
               <div className="absolute bottom-10 left-10 right-10 p-8 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
-                <p className="text-white text-lg font-medium italic">"ZettaB changed how we look at software. They aren't just developers, they are innovators."</p>
+                <p className="text-white text-lg font-medium italic">&quot;ZettaB changed how we look at software. They aren&apos;t just developers, they are innovators.&quot;</p>
                 <p className="text-primary font-bold mt-4">— Sarah Chen, CEO of InnovateCorp</p>
               </div>
             </div>
@@ -604,7 +604,7 @@ export default function HomePage() {
             <div className="relative z-10">
               <h2 className="text-4xl lg:text-5xl font-black mb-6">Ready to scale your next big idea?</h2>
               <p className="text-cyan-50 text-lg sm:text-xl mb-12 max-w-2xl mx-auto drop-shadow-sm">
-                Join 85+ industry leaders who have accelerated their digital transformation with ZettaB.io's expert engineering.
+                Join 85+ industry leaders who have accelerated their digital transformation with ZettaB.io&apos;s expert engineering.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link href="/contact" className="px-8 py-4 sm:px-10 sm:py-5 bg-white text-cyan-700 rounded-2xl font-bold text-lg hover:scale-105 transition-transform shadow-lg shadow-black/10">
