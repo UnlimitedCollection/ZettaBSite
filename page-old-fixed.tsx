@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -74,46 +74,8 @@ const process = [
 export default function HomePage() {
   return (
     <main>
-      {/* New Video Top Session */}
-      <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden flex items-center min-h-[90vh] bg-slate-900">
-        {/* Background Video */}
-        <div className="absolute inset-0 w-full h-full z-0">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover opacity-80"
-          >
-            <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4" />
-          </video>
-          {/* Dark Overlay for Text Readability */}
-          <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-transparent to-slate-900/90"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center">
-          <div className="flex flex-col items-center justify-center gap-8 max-w-5xl mx-auto">
-            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[1.05] tracking-tight text-white drop-shadow-2xl">
-              Best-in-class <span className="text-cyan-400">design</span>, <br className="hidden lg:block"/> marketing and <span className="text-primary">technology</span>
-            </h1>
-            <p className="text-xl lg:text-2xl text-slate-200 leading-relaxed max-w-3xl drop-shadow-lg mx-auto">
-              We empower businesses with premium innovation and cutting-edge software solutions tailored for global scale and high-performance engineering.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 mt-6">
-              <Link href="/contact" className="px-10 py-5 bg-white text-slate-900 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-2xl shadow-black/50">
-                Start Your Project
-              </Link>
-              <Link href="/services" className="px-10 py-5 bg-transparent border-2 border-white/50 text-white rounded-2xl font-black text-xl hover:bg-white/10 hover:border-white transition-all backdrop-blur-sm">
-                View Solutions
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Original Hero Section */}
-      <section className="relative pt-20 pb-16 lg:pt-24 lg:pb-32 overflow-hidden bg-white">
+      {/* Hero Section */}
+      <section className="relative pt-20 pb-16 lg:pt-24 lg:pb-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col gap-8">
@@ -348,7 +310,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
               <div className="absolute bottom-10 left-10 right-10 p-8 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
                 <p className="text-white text-lg font-medium italic">"ZettaB changed how we look at software. They aren't just developers, they are innovators."</p>
-                <p className="text-primary font-bold mt-4">— Sarah Chen, CEO of InnovateCorp</p>
+                <p className="text-primary font-bold mt-4">ÔÇö Sarah Chen, CEO of InnovateCorp</p>
               </div>
             </div>
           </div>
@@ -518,7 +480,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-black text-lg shrink-0">A</div>
                 <div>
                   <div className="font-bold text-slate-900">Ahmed Al-Rashidi</div>
-                  <div className="text-sm text-slate-500">CTO, NovaTech Solutions — UAE</div>
+                  <div className="text-sm text-slate-500">CTO, NovaTech Solutions ÔÇö UAE</div>
                 </div>
               </div>
             </div>
@@ -531,13 +493,13 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="text-slate-300 leading-relaxed text-lg italic flex-1">
-                &ldquo;From UI/UX design to mobile app launch — ZettaB delivered on every promise and exceeded expectations. Our user retention jumped 68% within the first quarter.&rdquo;
+                &ldquo;From UI/UX design to mobile app launch ÔÇö ZettaB delivered on every promise and exceeded expectations. Our user retention jumped 68% within the first quarter.&rdquo;
               </p>
               <div className="flex items-center gap-4 mt-8 pt-6 border-t border-slate-700">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-blue-700 flex items-center justify-center text-white font-black text-lg shrink-0">S</div>
                 <div>
                   <div className="font-bold text-white">Sarah Mitchell</div>
-                  <div className="text-sm text-slate-400">CEO, Bloom Retail — Australia</div>
+                  <div className="text-sm text-slate-400">CEO, Bloom Retail ÔÇö Australia</div>
                 </div>
               </div>
             </div>
@@ -556,7 +518,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center text-white font-black text-lg shrink-0">R</div>
                 <div>
                   <div className="font-bold text-slate-900">Rajesh Patel</div>
-                  <div className="text-sm text-slate-500">Head of Engineering, Finova — Singapore</div>
+                  <div className="text-sm text-slate-500">Head of Engineering, Finova ÔÇö Singapore</div>
                 </div>
               </div>
             </div>
