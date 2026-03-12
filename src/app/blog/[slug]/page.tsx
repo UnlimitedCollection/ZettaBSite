@@ -90,17 +90,19 @@ export default async function BlogPostPage({ params }: Props) {
             </article>
 
             {/* CTA Section */}
-            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
-                <div className="bg-gradient-to-br from-primary to-indigo-600 rounded-3xl p-10 text-center text-white shadow-xl">
-                    <h3 className="text-3xl font-bold mb-4">Need help implementing this?</h3>
-                    <p className="text-primary-100 mb-8 max-w-lg mx-auto">
-                        Our engineering team can help you audit your current architecture or prototype your next big idea.
-                    </p>
-                    <Link href="/contact" className="inline-block px-8 py-4 bg-white text-primary rounded-xl font-bold hover:scale-105 transition-transform">
-                        Schedule a Strategy Route
-                    </Link>
+            <section className="py-24 bg-slate-50 border-t border-slate-200 mt-16">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="p-12 md:p-16 bg-white rounded-3xl border border-slate-200 text-center shadow-sm">
+                        <h2 className="font-bold text-4xl text-slate-900 mb-4">Need help implementing this?</h2>
+                        <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
+                            Our engineering team can help you audit your current architecture or prototype your next big idea.
+                        </p>
+                        <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold text-lg hover:border-primary transition-colors hover:shadow-md">
+                            Schedule a Strategy Route <span className="material-symbols-outlined text-sm">route</span>
+                        </Link>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
     );
 }

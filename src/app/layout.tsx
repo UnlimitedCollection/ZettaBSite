@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { GlobalContactModal } from "@/components/GlobalContactModal";
+import { BackToTop } from "@/components/BackToTop";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -35,6 +36,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <GlobalContactModal />
+        <BackToTop />
       </body>
     </html>
   );
