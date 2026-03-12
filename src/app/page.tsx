@@ -75,7 +75,7 @@ export default function HomePage() {
   return (
     <main>
       {/* New Video Top Session */}
-      <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden flex items-center min-h-[90vh] bg-slate-900">
+      <section className="relative pt-32 pb-16 lg:pt-48 lg:pb-24 overflow-hidden flex items-end min-h-[90vh] lg:min-h-screen bg-slate-900">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full z-0">
           <video
@@ -89,13 +89,13 @@ export default function HomePage() {
           </video>
           {/* Dark Overlay for Text Readability */}
           <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-transparent to-slate-900/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <div className="flex flex-col justify-center max-w-4xl">
-            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[1.05] tracking-tight text-white drop-shadow-2xl">
-              Best-in-class <span className="text-cyan-400">design</span>, <br className="hidden lg:block"/> marketing and <span className="text-primary">technology</span>
+          <div className="max-w-6xl">
+            <h1 className="text-5xl sm:text-6xl lg:text-[5.5rem] xl:text-[6.5rem] font-bold leading-[1.05] tracking-tight text-white drop-shadow-xl mb-4 sm:mb-8 lg:mb-12">
+              Best-in-class design,<br className="hidden sm:block"/> marketing and technology
             </h1>
           </div>
         </div>
