@@ -80,7 +80,7 @@ export default function CareersPage() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-4xl font-bold text-white mb-6">Ready to do the best work of your career?</h2>
                     <p className="text-blue-200 text-lg mb-10">Join a team that takes craft seriously and builds things that matter.</p>
-                    <Link href="/contact" className="group inline-flex items-center justify-center gap-2 font-bold text-xl text-white hover:text-blue-200 transition-colors">
+                    <Link href="#contact-modal" className="group inline-flex items-center justify-center gap-2 font-bold text-xl text-white hover:text-blue-200 transition-colors">
                         Get In Touch
                         <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
                     </Link>

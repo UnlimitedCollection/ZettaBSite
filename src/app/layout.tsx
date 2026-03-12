@@ -3,7 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
+import { GlobalContactModal } from "@/components/GlobalContactModal";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -34,7 +34,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <FloatingContact />
+        <GlobalContactModal />
       </body>
     </html>
   );
