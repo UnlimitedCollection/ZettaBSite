@@ -332,17 +332,14 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            {/* CTA */}
-            <section className="py-24 bg-primary text-white text-center">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-4xl lg:text-5xl font-black mb-6">Need a custom solution not listed here?</h2>
-                    <p className="text-xl text-primary-light mb-10 opacity-90">
-                        Our engineering team thrives on unique challenges. Let's discuss your specific requirements.
-                    </p>
-                    <div className="flex flex-wrap justify-center gap-4">
-                        <Link href="#contact-modal" className="group inline-flex items-center justify-center gap-2 font-bold text-xl text-white hover:text-blue-200 transition-colors">
-                            Get in Touch
-                            <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+            {/* Global Contact CTA Box */}
+            <section className="py-20 bg-white">
+                <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="p-8 md:p-10 bg-slate-50 rounded-3xl border border-slate-200">
+                        <h2 className="font-bold text-3xl text-slate-900 mb-4">Planning a web project?</h2>
+                        <p className="text-lg text-slate-600 mb-8">Speak with our technical team to determine the best approach for an upcoming build.</p>
+                        <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold hover:border-primary transition-colors">
+                            Schedule Call <span className="material-symbols-outlined text-sm">arrow_forward</span>
                         </Link>
                     </div>
                 </div>

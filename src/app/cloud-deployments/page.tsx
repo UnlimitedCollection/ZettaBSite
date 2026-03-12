@@ -117,15 +117,6 @@ export default function CloudDeploymentsPage() {
                                 <span className="px-4 py-2 bg-slate-800 rounded-full text-sm font-semibold">Datadog / Prometheus</span>
                             </div>
                         </div>
-
-                        {/* Contact CTA Box */}
-                        <div className="p-8 bg-slate-50 rounded-3xl border border-slate-200">
-                            <h4 className="font-bold text-2xl mb-4">Is your infrastructure holding you back?</h4>
-                            <p className="text-slate-600 mb-6">Let's audit your current setup and identify areas to improve security, lower costs, and increase velocity.</p>
-                            <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold hover:border-primary transition-colors">
-                                Schedule Audit <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                            </Link>
-                        </div>
                     </div>
 
                 </div>
@@ -138,14 +129,16 @@ export default function CloudDeploymentsPage() {
                 pdfUrl="/whitepapers/Cloud-Migration.pdf"
             />
 
-            {/* Related Case Study / Banner */}
-            <section className="py-24 bg-primary text-white text-center">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <span className="material-symbols-outlined text-5xl mb-6 opacity-80">insights</span>
-                    <h2 className="text-3xl md:text-5xl font-black mb-6">Read how we reduced AWS costs by 40% for a SaaS provider.</h2>
-                    <Link href="/case-studies" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg">
-                        Read Case Study
-                    </Link>
+            {/* Global Contact CTA Box */}
+            <section className="py-20 bg-white">
+                <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="p-8 md:p-10 bg-slate-50 rounded-3xl border border-slate-200">
+                        <h2 className="font-bold text-3xl text-slate-900 mb-4">Planning a web project?</h2>
+                        <p className="text-lg text-slate-600 mb-8">Speak with our technical team to determine the best approach for an upcoming build.</p>
+                        <Link href="/contact" className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold hover:border-primary transition-colors">
+                            Schedule Call <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                        </Link>
+                    </div>
                 </div>
             </section>
         </main>
