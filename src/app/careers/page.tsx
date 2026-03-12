@@ -28,7 +28,6 @@ export default function CareersPage() {
             {/* Hero */}
             <section className="pt-32 pb-20 bg-gradient-to-b from-[#0B0D12] to-gray-900">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-4">Careers</p>
                     <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 leading-tight">Join the Innovation</h1>
                     <p className="text-xl text-gray-400 leading-relaxed">
                         We&apos;re a growing team of passionate builders. If you care deeply about craft and want to work on ambitious problems, we want to hear from you.
