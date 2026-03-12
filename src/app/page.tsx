@@ -376,50 +376,63 @@ export default function HomePage() {
       </section>
 
       {/* Industries We Serve */}
-      <section className="py-24">
+      <section className="py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-black text-slate-900 mb-4">Verticals We Empower</h2>
             <p className="text-slate-600">Deep domain expertise across various industries.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
-                <span className="material-symbols-outlined text-4xl">shopping_cart</span>
+        </div>
+
+        {/* Marquee Container */}
+        <div className="relative w-full overflow-hidden flex whitespace-nowrap mask-image-linear-edges group">
+          <div className="flex animate-[marquee_30s_linear_infinite] group-hover:[animation-play-state:paused] w-max">
+            {/* First Set */}
+            {[
+              { icon: "shopping_cart", label: "Retail" },
+              { icon: "medical_services", label: "Healthcare" },
+              { icon: "local_shipping", label: "Logistics" },
+              { icon: "school", label: "Education" },
+              { icon: "cloud", label: "SaaS" },
+              { icon: "business", label: "Enterprise" },
+              { icon: "account_balance", label: "Finance" },
+              { icon: "real_estate_agent", label: "Real Estate" },
+              { icon: "restaurant", label: "Hospitality" },
+              { icon: "sports_esports", label: "Gaming" },
+            ].map((industry, index) => (
+              <div key={index} className="flex flex-col items-center gap-4 px-8 min-w-[200px] cursor-pointer">
+                <div className="size-24 rounded-3xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                  <span className="material-symbols-outlined text-5xl">{industry.icon}</span>
+                </div>
+                <span className="font-bold text-slate-700">{industry.label}</span>
               </div>
-              <span className="font-bold">Retail</span>
-            </div>
-            <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
-                <span className="material-symbols-outlined text-4xl">medical_services</span>
+            ))}
+            
+            {/* Second Set (Duplicate for smooth loop) */}
+            {[
+              { icon: "shopping_cart", label: "Retail" },
+              { icon: "medical_services", label: "Healthcare" },
+              { icon: "local_shipping", label: "Logistics" },
+              { icon: "school", label: "Education" },
+              { icon: "cloud", label: "SaaS" },
+              { icon: "business", label: "Enterprise" },
+              { icon: "account_balance", label: "Finance" },
+              { icon: "real_estate_agent", label: "Real Estate" },
+              { icon: "restaurant", label: "Hospitality" },
+              { icon: "sports_esports", label: "Gaming" },
+            ].map((industry, index) => (
+              <div key={`dup-${index}`} className="flex flex-col items-center gap-4 px-8 min-w-[200px] cursor-pointer">
+                <div className="size-24 rounded-3xl bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                  <span className="material-symbols-outlined text-5xl">{industry.icon}</span>
+                </div>
+                <span className="font-bold text-slate-700">{industry.label}</span>
               </div>
-              <span className="font-bold">Healthcare</span>
-            </div>
-            <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
-                <span className="material-symbols-outlined text-4xl">local_shipping</span>
-              </div>
-              <span className="font-bold">Logistics</span>
-            </div>
-            <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
-                <span className="material-symbols-outlined text-4xl">school</span>
-              </div>
-              <span className="font-bold">Education</span>
-            </div>
-            <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
-                <span className="material-symbols-outlined text-4xl">cloud</span>
-              </div>
-              <span className="font-bold">SaaS</span>
-            </div>
-            <div className="flex flex-col items-center gap-4 group cursor-default">
-              <div className="size-20 rounded-2xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all">
-                <span className="material-symbols-outlined text-4xl">business</span>
-              </div>
-              <span className="font-bold">Enterprise</span>
-            </div>
+            ))}
           </div>
+          
+          {/* Gradient Edges using Tailwind Arbitrary Values for Mask Image later or CSS */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent"></div>
         </div>
       </section>
 

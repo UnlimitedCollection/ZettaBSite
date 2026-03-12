@@ -10,6 +10,13 @@
   --color-surface-dark: #15181E;
   --color-surface-card: #1A1D24;
 
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
   --font-display: var(--font-manrope);
 
   --color-background: var(--background);

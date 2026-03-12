@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { PlanningCallCTA } from "@/components/PlanningCallCTA";
+import { NewsletterForm } from "@/components/NewsletterForm";
 
 export const metadata: Metadata = {
     title: "Blog | ZettaB — Digital Insights & Trends",
@@ -32,7 +31,16 @@ export default function BlogPage() {
 
             <BlogList initialPosts={blogPosts} tags={tags} />
 
-            <PlanningCallCTA />
+            {/* Newsletter CTA — white box style */}
+            <section className="py-24 bg-slate-50 border-t border-slate-200">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="p-12 md:p-16 bg-white rounded-3xl border border-slate-200 text-center shadow-sm">
+                        <h2 className="font-bold text-4xl text-slate-900 mb-4">Get insights delivered to your inbox</h2>
+                        <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">Practical articles on tech, design, and growth. No filler. Published twice a month.</p>
+                        <NewsletterForm />
+                    </div>
+                </div>
+            </section>
         </>
     );
 }
