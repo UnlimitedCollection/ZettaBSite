@@ -75,49 +75,42 @@ export default function HomePage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 lg:pt-24 lg:pb-32 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="flex flex-col gap-8">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-bold w-fit">
-                <span className="material-symbols-outlined text-sm">verified</span>
-                Next-Gen Tech Solutions
-              </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900">
-                Scalable Digital Products <span className="text-primary">Built for Growth</span>
-              </h1>
-              <p className="text-lg lg:text-xl text-slate-600 leading-relaxed max-w-xl">
-                We empower businesses with premium innovation and cutting-edge software solutions tailored for global scale and high-performance engineering.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-xl shadow-primary/30 text-center">
-                  Start Your Project
-                </Link>
-                <Link href="/services" className="px-8 py-4 bg-white border border-slate-200 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors text-center">
-                  View Solutions
-                </Link>
-              </div>
+      <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden flex items-center min-h-[90vh]">
+        {/* Background Video */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+          </video>
+          {/* Dark Overlay for Text Readability - Matching Surge aesthetic */}
+          <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-transparent to-slate-900/90"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center">
+          <div className="flex flex-col items-center justify-center gap-8 max-w-5xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md text-white text-sm font-bold w-fit shadow-xl shadow-black/20">
+              <span className="material-symbols-outlined text-sm">verified</span>
+              Next-Gen Tech Solutions
             </div>
-            <div className="relative">
-              <div className="absolute -top-20 -right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100">
-                <img
-                  alt="ZettaB Tech Team"
-                  className="w-full h-[520px] object-cover object-center"
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1400"
-                />
-                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
-              </div>
-              {/* Floating badge */}
-              <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
-                  <span className="material-symbols-outlined text-primary">rocket_launch</span>
-                </div>
-                <div>
-                  <div className="text-sm font-black text-slate-900">150+ Projects Delivered</div>
-                  <div className="text-xs text-slate-500">Across 30+ Countries</div>
-                </div>
-              </div>
+            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[1.05] tracking-tight text-white drop-shadow-2xl">
+              Scalable Digital Products <br className="hidden lg:block"/> <span className="text-white">Built for Growth</span>
+            </h1>
+            <p className="text-xl lg:text-2xl text-slate-200 leading-relaxed max-w-3xl drop-shadow-lg mx-auto">
+              We empower businesses with premium innovation and cutting-edge software solutions tailored for global scale and high-performance engineering.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 mt-6">
+              <Link href="/contact" className="px-10 py-5 bg-white text-slate-900 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-2xl shadow-black/50">
+                Start Your Project
+              </Link>
+              <Link href="/services" className="px-10 py-5 bg-transparent border-2 border-white/50 text-white rounded-2xl font-black text-xl hover:bg-white/10 hover:border-white transition-all backdrop-blur-sm">
+                View Solutions
+              </Link>
             </div>
           </div>
         </div>
