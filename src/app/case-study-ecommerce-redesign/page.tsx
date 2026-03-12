@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-
+import { PlanningCallCTA } from "@/components/PlanningCallCTA";
 export const metadata: Metadata = {
     title: "E-Commerce Redesign Case Study | ZettaB",
     description: "How ZettaB redesigned a struggling e-commerce platform, increasing conversions by 187% and cutting page load time by 60%.",
@@ -207,18 +207,7 @@ export default function CaseStudyPage() {
                 </div>
             </section>
 
-            {/* Call to Action */}
-            <section className="py-24 bg-primary text-white text-center">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-4xl md:text-5xl font-black mb-6">Ready to be our next success story?</h2>
-                    <p className="text-xl text-primary-light mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Whether you need to scale an existing system or build something entirely new, our engineering teams are ready to deliver.
-                    </p>
-                    <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-xl">
-                        Start a Conversation <span className="material-symbols-outlined">forum</span>
-                    </Link>
-                </div>
-            </section>
+            <PlanningCallCTA />
         </main>
     );
 }
