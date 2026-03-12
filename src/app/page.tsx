@@ -536,31 +536,31 @@ export default function HomePage() {
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" 
               alt="Amazon Web Services" 
-              className="h-10 sm:h-12 md:h-16 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
+              className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
             />
             {/* Google Cloud */}
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg" 
               alt="Google Cloud" 
-              className="h-10 sm:h-12 md:h-16 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
+              className="h-8 sm:h-10 md:h-12 lg:h-16 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
             />
             {/* Azure */}
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original-wordmark.svg" 
               alt="Microsoft Azure" 
-              className="h-10 sm:h-12 md:h-16 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
+              className="h-8 sm:h-10 md:h-12 lg:h-16 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
             />
             {/* Salesforce */}
             <img 
               src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" 
               alt="Salesforce" 
-              className="h-12 sm:h-16 md:h-20 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
+              className="h-5 sm:h-6 md:h-8 lg:h-9 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
             />
             {/* Kubernetes */}
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg" 
               alt="Kubernetes" 
-              className="h-10 sm:h-12 md:h-16 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
+              className="h-7 sm:h-9 md:h-11 lg:h-14 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
             />
           </div>
         </div>
