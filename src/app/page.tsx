@@ -569,20 +569,24 @@ export default function HomePage() {
       {/* Final CTA */}
       <section className="py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-primary p-12 lg:p-20 rounded-[3rem] text-white shadow-2xl shadow-primary/40 relative overflow-hidden">
-            <div className="absolute -top-24 -left-24 size-64 bg-white/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-24 -right-24 size-64 bg-black/10 rounded-full blur-3xl"></div>
-            <h2 className="text-4xl lg:text-6xl font-black mb-8 relative z-10">Ready to build the next big thing?</h2>
-            <p className="text-white/80 text-xl mb-12 max-w-2xl mx-auto relative z-10">
-              Join 85+ industry leaders who have scaled their digital footprint with ZettaB.io's expert engineering.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 relative z-10">
-              <Link href="/contact" className="px-10 py-5 bg-white text-primary rounded-2xl font-black text-xl hover:scale-105 transition-transform">
-                Book a Strategy Call
-              </Link>
-              <Link href="/about" className="px-10 py-5 bg-primary border-2 border-white text-white rounded-2xl font-black text-xl hover:bg-white hover:text-primary transition-all">
-                Contact Us
-              </Link>
+          <div className="bg-slate-900 overflow-hidden relative p-12 lg:p-20 rounded-[3rem] text-white shadow-2xl shadow-slate-900/20">
+            {/* Subtle Gradient Overlays */}
+            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[40rem] h-[40rem] rounded-full bg-gradient-to-bl from-cyan-500/10 to-transparent blur-3xl pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-[30rem] h-[30rem] rounded-full bg-gradient-to-tr from-teal-500/10 to-transparent blur-3xl pointer-events-none"></div>
+            
+            <div className="relative z-10">
+              <h2 className="text-4xl lg:text-5xl font-black mb-6">Ready to scale your next big idea?</h2>
+              <p className="text-slate-300 text-lg sm:text-xl mb-12 max-w-2xl mx-auto">
+                Join 85+ industry leaders who have accelerated their digital transformation with ZettaB.io's expert engineering.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link href="/contact" className="px-8 py-4 sm:px-10 sm:py-5 bg-white text-slate-900 rounded-2xl font-bold text-lg hover:scale-105 transition-transform shadow-lg shadow-white/10">
+                  Book a Strategy Call
+                </Link>
+                <Link href="/about" className="px-8 py-4 sm:px-10 sm:py-5 bg-transparent border-2 border-slate-700 text-white rounded-2xl font-bold text-lg hover:bg-slate-800 hover:border-slate-600 transition-all">
+                  Contact Us
+                </Link>
+              </div>
             </div>
           </div>
         </div>
