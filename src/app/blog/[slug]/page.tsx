@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { blogPosts } from '@/data/blog';
 
 interface Props {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 }
 
 // Generate static routes at build time
@@ -17,8 +17,9 @@ export function generateStaticParams() {
 }
 
 // Dynamically generate metadata for each post
-export function generateMetadata({ params }: Props): Metadata {
-    const post = blogPosts.find((p) => p.slug === params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const resolvedParams = await params;
+    const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
 
     if (!post) {
         return {
@@ -32,8 +33,9 @@ export function generateMetadata({ params }: Props): Metadata {
     };
 }
 
-export default function BlogPostPage({ params }: Props) {
-    const post = blogPosts.find((p) => p.slug === params.slug);
+export default async function BlogPostPage({ params }: Props) {
+    const resolvedParams = await params;
+    const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
 
     if (!post) {
         notFound();
