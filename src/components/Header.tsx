@@ -100,7 +100,7 @@ export function Header() {
                         <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/contact">Contact</Link>
                     </nav>
                     <div className="flex items-center gap-4">
-                        <Link href="/contact" className="group hidden lg:flex items-center justify-center gap-1.5 px-6 py-2.5 bg-primary text-white rounded-xl font-bold text-sm hover:opacity-90 transition-all shadow-lg shadow-primary/20">
+                        <Link href="/contact" className="group hidden lg:flex items-center justify-center gap-1.5 font-bold text-sm text-primary hover:text-[#0e45b5] transition-colors">
                             Get in Touch
                             <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
                         </Link>
@@ -134,7 +134,7 @@ export function Header() {
                     <Link href="/contact" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                     <Link
                         href="/contact"
-                        className="group flex items-center justify-center gap-1.5 px-6 py-3 mt-2 bg-primary text-white rounded-xl font-bold text-sm shadow-md"
+                        className="group flex items-center gap-1.5 font-bold text-base text-primary hover:text-[#0e45b5] transition-colors mt-2"
                         onClick={() => setMobileMenuOpen(false)}
                     >
                         Get in Touch

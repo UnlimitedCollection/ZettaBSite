@@ -340,7 +340,7 @@ export default function ServicesPage() {
                         Our engineering team thrives on unique challenges. Let's discuss your specific requirements.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <Link href="/contact" className="group flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-lg">
+                        <Link href="/contact" className="group inline-flex items-center justify-center gap-2 font-bold text-xl text-white hover:text-blue-200 transition-colors">
                             Get in Touch
                             <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
                         </Link>
