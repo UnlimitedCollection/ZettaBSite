@@ -92,22 +92,11 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-transparent to-slate-900/90"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center">
-          <div className="flex flex-col items-center justify-center gap-8 max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="flex flex-col justify-center max-w-4xl">
             <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[1.05] tracking-tight text-white drop-shadow-2xl">
               Best-in-class <span className="text-cyan-400">design</span>, <br className="hidden lg:block"/> marketing and <span className="text-primary">technology</span>
             </h1>
-            <p className="text-xl lg:text-2xl text-slate-200 leading-relaxed max-w-3xl drop-shadow-lg mx-auto">
-              We empower businesses with premium innovation and cutting-edge software solutions tailored for global scale and high-performance engineering.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 mt-6">
-              <Link href="/contact" className="px-10 py-5 bg-white text-slate-900 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-2xl shadow-black/50">
-                Start Your Project
-              </Link>
-              <Link href="/services" className="px-10 py-5 bg-transparent border-2 border-white/50 text-white rounded-2xl font-black text-xl hover:bg-white/10 hover:border-white transition-all backdrop-blur-sm">
-                View Solutions
-              </Link>
-            </div>
           </div>
         </div>
       </section>
