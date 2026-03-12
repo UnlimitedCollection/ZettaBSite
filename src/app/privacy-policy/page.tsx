@@ -10,10 +10,9 @@ export default function PrivacyPolicyPage() {
     return (
         <main>
             {/* Header / Hero */}
-            <section className="pt-32 pb-16 bg-slate-50 border-b border-slate-200 text-center">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Legal</p>
-                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+            <section className="bg-slate-50 pt-32 pb-20 border-b border-slate-200">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
                         Privacy Policy
                     </h1>
                     <p className="text-slate-500 font-medium">

@@ -24,8 +24,7 @@ export default function AboutPage() {
                     <div className="absolute inset-0 bg-black/40"></div>
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our Mission & Vision</p>
+                <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
                         Engineering the Future,<br />One Product at a Time.
                     </h1>

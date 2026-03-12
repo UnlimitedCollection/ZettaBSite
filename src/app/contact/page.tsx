@@ -18,9 +18,8 @@ export default function ContactPage() {
                     <div className="absolute inset-0 bg-black/40"></div>
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Get In Touch</p>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+                <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 tracking-tight">
                         Let's build something<br />exceptional together.
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">

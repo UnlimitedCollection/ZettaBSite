@@ -39,9 +39,8 @@ export default function CaseStudiesPage() {
         <main>
             {/* Header / Hero */}
             <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our Work</p>
-                    <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+                <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 tracking-tight">
                         Client Success<br />Stories.
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">

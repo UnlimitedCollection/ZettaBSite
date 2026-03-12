@@ -68,10 +68,10 @@ export default function ServicesPage() {
                     <div className="absolute inset-0 bg-black/30"></div>
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our Services</p>
-                    <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
-                        Comprehensive Digital<br />Engineering Solutions.
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+                        Comprehensive Digital<br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Engineering Solutions</span>
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
                         We provide end-to-end technology services designed to propel your business forward, from initial strategy to deployment and beyond.

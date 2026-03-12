@@ -27,10 +27,9 @@ export default function MobileApplicationsPage() {
                     <div className="absolute inset-0 bg-black/30"></div>
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Service</p>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
-                        Mobile Applications<br />built natively.
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+                        Mobile Applications
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
                         High-performance iOS and Android applications engineered for fluid user experiences, offline capabilities, and perfect hardware integration.
