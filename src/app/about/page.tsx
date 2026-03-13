@@ -207,7 +207,7 @@ export default function AboutPage() {
                                     </div>
                                 </li>
                             </ul>
-                            <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-sm hover:text-slate-900 transition-colors">
+                            <Link href="/careers" className="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-sm hover:text-slate-900 transition-colors">
                                 View Open Positions <span className="material-symbols-outlined text-base">arrow_forward</span>
                             </Link>
                         </div>
