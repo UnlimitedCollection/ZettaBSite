@@ -626,7 +626,7 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-[1fr_2fr] gap-4 sm:gap-6">
-            <Link href="/careers" className="group relative overflow-hidden rounded-3xl bg-[#11141b] p-7 sm:p-9 min-h-[300px] sm:min-h-[360px] flex flex-col justify-between border border-slate-800">
+            <Link href="/careers" className="dual-cta-card group relative overflow-hidden rounded-3xl bg-[#11141b] p-7 sm:p-9 min-h-[300px] sm:min-h-[360px] flex flex-col justify-between border border-slate-800">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.05),transparent_55%),radial-gradient(circle_at_78%_72%,rgba(6,127,249,0.08),transparent_60%)]"></div>
               <div className="relative z-10">
                 <span className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-5 py-2 text-white text-sm font-semibold tracking-tight">
@@ -640,14 +640,14 @@ export default function HomePage() {
                 </h3>
                 <div className="flex items-end justify-between gap-4">
                   <p className="text-slate-200 text-lg sm:text-2xl font-medium tracking-tight">Explore Opportunities</p>
-                  <span className="motion-button inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0 group-hover:rotate-45 transition-transform duration-500">
+                  <span className="dual-cta-arrow motion-button inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0 group-hover:rotate-45 transition-transform duration-500">
                     <span className="material-symbols-outlined text-3xl">north_east</span>
                   </span>
                 </div>
               </div>
             </Link>
 
-            <Link href="/contact" className="group brand-wave relative overflow-hidden rounded-3xl p-7 sm:p-9 min-h-[300px] sm:min-h-[360px] flex flex-col justify-between text-white border border-primary/30">
+            <Link href="/contact" className="dual-cta-card group brand-wave relative overflow-hidden rounded-3xl p-7 sm:p-9 min-h-[300px] sm:min-h-[360px] flex flex-col justify-between text-white border border-primary/30">
               <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/20"></div>
               <div className="relative z-10">
                 <span className="inline-flex items-center rounded-full bg-black/25 backdrop-blur-sm px-5 py-2 text-white text-sm font-semibold tracking-tight border border-white/20">
@@ -659,7 +659,7 @@ export default function HomePage() {
                 <p className="text-2xl sm:text-4xl font-medium text-white/90 tracking-tight">Accelerate your growth goals</p>
                 <div className="flex items-end justify-between gap-5">
                   <h3 className="text-white text-4xl sm:text-5xl font-black leading-[1.05] tracking-tight">Speak to our experts</h3>
-                  <span className="motion-button inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0 group-hover:rotate-45 transition-transform duration-500">
+                  <span className="dual-cta-arrow motion-button inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0 group-hover:rotate-45 transition-transform duration-500">
                     <span className="material-symbols-outlined text-3xl">north_east</span>
                   </span>
                 </div>
