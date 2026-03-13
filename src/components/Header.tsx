@@ -10,6 +10,23 @@ export function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const pathname = usePathname();
 
+    const servicePaths = new Set([
+        "/services",
+        "/web-development",
+        "/mobile-applications",
+        "/software-development",
+        "/ui-ux-designs",
+        "/digital-marketing",
+        "/cloud-deployments",
+    ]);
+
+    const navLinkClass = (href: string) => {
+        const isActive = pathname === href;
+        return `nav-link text-sm font-semibold transition-colors duration-300 ${isActive ? "nav-link-active text-primary" : "text-slate-900 hover:text-primary"}`;
+    };
+
+    const servicesLinkClass = `nav-link flex items-center gap-1 text-sm font-semibold transition-colors duration-300 py-4 ${servicePaths.has(pathname) ? "nav-link-active text-primary" : "text-slate-900 hover:text-primary"}`;
+
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 20);
@@ -18,26 +35,18 @@ export function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const navLinks = [
-        { name: "Services", href: "/services" },
-        { name: "Case Study", href: "/case-study-ecommerce-redesign" },
-        { name: "About", href: "/about" },
-        { name: "Blog", href: "/blog" },
-        { name: "Careers", href: "/careers" },
-    ];
-
     return (
-        <header className="fixed top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <header className={`fixed top-0 z-50 w-full border-b transition-all duration-500 ${scrolled ? "bg-white/80 border-slate-200/80 backdrop-blur-xl shadow-[0_20px_60px_rgba(15,23,42,0.08)]" : "bg-white/95 border-slate-200 shadow-sm"}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-20">
-                    <Link href="/" className="flex items-center">
+                <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? "h-[4.5rem]" : "h-20"}`}>
+                    <Link href="/" className="flex items-center transition-transform duration-300 hover:scale-[1.02]">
                         <Image src="/logo.webp" alt="ZettaB Logo" width={140} height={40} className="object-contain" priority />
                     </Link>
                     <nav className="hidden md:flex items-center gap-8">
-                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/">Home</Link>
-                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/about">About</Link>
+                        <Link className={navLinkClass("/")} href="/">Home</Link>
+                        <Link className={navLinkClass("/about")} href="/about">About</Link>
                         <div className="relative group">
-                            <Link className="flex items-center gap-1 text-sm font-semibold hover:text-primary transition-colors text-slate-900 py-4" href="/services">
+                            <Link className={servicesLinkClass} href="/services">
                                 Services <span className="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span>
                             </Link>
 
@@ -95,12 +104,12 @@ export function Header() {
                                 </div>
                             </div>
                         </div>
-                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/case-study-ecommerce-redesign">Portfolio</Link>
-                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/blog">Blog</Link>
-                        <Link className="text-sm font-semibold hover:text-primary transition-colors text-slate-900" href="/contact">Contact</Link>
+                        <Link className={navLinkClass("/case-study-ecommerce-redesign")} href="/case-study-ecommerce-redesign">Portfolio</Link>
+                        <Link className={navLinkClass("/blog")} href="/blog">Blog</Link>
+                        <Link className={navLinkClass("/contact")} href="/contact">Contact</Link>
                     </nav>
                     <div className="flex items-center gap-4">
-                        <Link href="/contact" className="group hidden lg:flex items-center justify-center gap-1.5 font-bold text-sm text-primary hover:text-[#0e45b5] transition-colors">
+                        <Link href="/contact" className="motion-button group hidden lg:flex items-center justify-center gap-1.5 rounded-full border border-primary/15 bg-primary/5 px-4 py-2 font-bold text-sm text-primary hover:border-primary/30 hover:text-[#0e45b5] transition-colors">
                             Get in Touch
                             <span className="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
                         </Link>
@@ -115,7 +124,7 @@ export function Header() {
             </div>
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-lg py-4 px-4 flex flex-col gap-4">
+                <div className="motion-surface md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-lg py-4 px-4 flex flex-col gap-4">
                     <Link href="/" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                     <Link href="/about" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>About</Link>
                     <div className="flex flex-col gap-2">
@@ -134,7 +143,7 @@ export function Header() {
                     <Link href="/contact" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                     <Link
                         href="/contact"
-                        className="group flex items-center gap-1.5 font-bold text-base text-primary hover:text-[#0e45b5] transition-colors mt-2"
+                        className="motion-button group flex items-center gap-1.5 w-fit rounded-full border border-primary/15 bg-primary/5 px-4 py-2 font-bold text-base text-primary hover:text-[#0e45b5] transition-colors mt-2"
                         onClick={() => setMobileMenuOpen(false)}
                     >
                         Get in Touch

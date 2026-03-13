@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { GlobalContactModal } from "@/components/GlobalContactModal";
 import { BackToTop } from "@/components/BackToTop";
+import { MotionEffects } from "@/components/MotionEffects";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -30,6 +31,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${manrope.variable} antialiased font-sans flex flex-col min-h-screen bg-white text-slate-900`}>
+        <MotionEffects />
         <Header />
         <main className="flex-1 pt-20">
           {children}

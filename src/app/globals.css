@@ -37,4 +37,124 @@ body {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-up {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0) scale(0.985);
+    transition:
+      opacity 700ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+      transform 900ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+      filter 900ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms);
+    filter: blur(10px);
+    will-change: opacity, transform, filter;
+  }
+
+  .reveal-up.is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+  }
+
+  .motion-surface {
+    transition:
+      transform 300ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 300ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 300ms ease,
+      background-color 300ms ease;
+  }
+
+  .motion-surface:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 54px rgba(15, 23, 42, 0.12);
+  }
+
+  .motion-button {
+    position: relative;
+    overflow: hidden;
+    transition:
+      transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 260ms cubic-bezier(0.22, 1, 0.36, 1),
+      color 260ms ease,
+      background-color 260ms ease,
+      border-color 260ms ease;
+  }
+
+  .motion-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(6, 127, 249, 0.18);
+  }
+
+  .motion-button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 20%, rgba(255, 255, 255, 0.28) 50%, transparent 80%);
+    transform: translateX(-140%);
+    transition: transform 650ms ease;
+    pointer-events: none;
+  }
+
+  .motion-button:hover::after {
+    transform: translateX(140%);
+  }
+
+  .nav-link {
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.35rem;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--color-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 260ms ease;
+  }
+
+  .nav-link:hover::after,
+  .nav-link-active::after {
+    transform: scaleX(1);
+  }
+
+  .social-link {
+    transition:
+      transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 260ms cubic-bezier(0.22, 1, 0.36, 1),
+      background-color 260ms ease;
+  }
+
+  .social-link:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.25);
+  }
+
+  main .group[class*="shadow"],
+  main .rounded-3xl[class*="shadow"],
+  main .rounded-2xl[class*="shadow"] {
+    transition:
+      transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 320ms ease;
+  }
+
+  main .group[class*="shadow"]:hover,
+  main .rounded-3xl[class*="shadow"]:hover,
+  main .rounded-2xl[class*="shadow"]:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 60px rgba(15, 23, 42, 0.14);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
