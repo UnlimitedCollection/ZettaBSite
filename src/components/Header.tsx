@@ -124,7 +124,7 @@ export function Header() {
             </div>
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-                <div className="motion-surface md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-lg py-4 px-4 flex flex-col gap-4">
+                <div className="motion-surface md:hidden absolute top-full left-0 w-full max-h-[calc(100vh-5rem)] overflow-y-auto bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-lg py-4 px-4 flex flex-col gap-4">
                     <Link href="/" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                     <Link href="/about" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>About</Link>
                     <div className="flex flex-col gap-2">

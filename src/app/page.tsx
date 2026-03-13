@@ -139,7 +139,7 @@ export default function HomePage() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100">
                 <img
                   alt="ZettaB Tech Team"
-                  className="w-full h-[520px] object-cover object-center"
+                  className="w-full h-[340px] sm:h-[420px] lg:h-[520px] object-cover object-center"
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1400"
                 />
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
@@ -341,7 +341,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="relative rounded-3xl overflow-hidden min-h-[500px]">
+            <div className="relative rounded-3xl overflow-hidden min-h-[360px] sm:min-h-[420px] lg:min-h-[500px]">
               <img alt="Collaboration" className="absolute inset-0 w-full h-full object-cover" src="/tech-bg.png" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
               <div className="absolute bottom-10 left-10 right-10 p-8 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">

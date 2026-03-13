@@ -40,7 +40,7 @@ export default function AboutPage() {
                     <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                         <div className="relative">
                             <div className="absolute inset-0 bg-primary/10 translate-x-4 translate-y-4 rounded-3xl -z-10"></div>
-                            <img alt="Our Workspace" className="rounded-3xl object-cover w-full h-64 lg:h-[500px] shadow-2xl" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200" />
+                            <img alt="Our Workspace" className="rounded-3xl object-cover w-full h-[280px] sm:h-[360px] lg:h-[500px] shadow-2xl" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200" />
                         </div>
                         <div>
                             <h2 className="text-4xl font-black text-slate-900 mb-6">Born from a desire to do things <span className="text-primary italic">right</span>.</h2>

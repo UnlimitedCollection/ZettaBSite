@@ -49,9 +49,9 @@ export default function CaseStudyPage() {
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <div className="relative group overflow-hidden rounded-3xl shadow-2xl parallax-layer float-card" data-parallax-speed="0.045">
                             <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
-                            <img alt="FinTech Dashboard" className="w-full h-[500px] object-cover group- duration-700" src="/tech-bg.png" />
+                            <img alt="FinTech Dashboard" className="w-full h-[320px] sm:h-[420px] lg:h-[500px] object-cover group- duration-700" src="/tech-bg.png" />
                             {/* Overlay Stats (Optional/Decorative) */}
-                            <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur border border-white/20 p-6 rounded-2xl z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-white/95 backdrop-blur border border-white/20 p-4 sm:p-6 rounded-2xl z-20 translate-y-0 opacity-100 lg:translate-y-4 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 transition-all duration-500">
                                 <div className="grid grid-cols-3 gap-4 text-center">
                                     <div><div className="text-2xl font-black text-primary">300%</div><div className="text-xs font-semibold text-slate-500 uppercase">User Growth</div></div>
                                     <div className="border-x border-slate-200"><div className="text-2xl font-black text-primary">&lt;50ms</div><div className="text-xs font-semibold text-slate-500 uppercase">Latency</div></div>
@@ -128,8 +128,8 @@ export default function CaseStudyPage() {
                         </div>
                         <div className="relative group overflow-hidden rounded-3xl shadow-2xl order-1 lg:order-2 parallax-layer float-card" data-parallax-speed="0.06">
                             <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
-                            <img alt="E-Commerce App" className="w-full h-[500px] object-cover group- duration-700" src="/office-work.png" />
-                            <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur border border-white/20 p-6 rounded-2xl z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <img alt="E-Commerce App" className="w-full h-[320px] sm:h-[420px] lg:h-[500px] object-cover group- duration-700" src="/office-work.png" />
+                            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-white/95 backdrop-blur border border-white/20 p-4 sm:p-6 rounded-2xl z-20 translate-y-0 opacity-100 lg:translate-y-4 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 transition-all duration-500">
                                 <div className="grid grid-cols-3 gap-4 text-center">
                                     <div><div className="text-2xl font-black text-primary">+45%</div><div className="text-xs font-semibold text-slate-500 uppercase">Conversion</div></div>
                                     <div className="border-x border-slate-200"><div className="text-2xl font-black text-primary">-60%</div><div className="text-xs font-semibold text-slate-500 uppercase">Bounce Rate</div></div>
@@ -146,8 +146,8 @@ export default function CaseStudyPage() {
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <div className="relative group overflow-hidden rounded-3xl shadow-2xl parallax-layer float-card" data-parallax-speed="0.05">
                             <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
-                            <img alt="Healthcare Analytics" className="w-full h-[500px] object-cover group- duration-700" src="/team-meeting.png" />
-                            <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur border border-white/20 p-6 rounded-2xl z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                            <img alt="Healthcare Analytics" className="w-full h-[320px] sm:h-[420px] lg:h-[500px] object-cover group- duration-700" src="/team-meeting.png" />
+                            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-white/95 backdrop-blur border border-white/20 p-4 sm:p-6 rounded-2xl z-20 translate-y-0 opacity-100 lg:translate-y-4 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 transition-all duration-500">
                                 <div className="grid grid-cols-3 gap-4 text-center">
                                     <div><div className="text-2xl font-black text-primary">HIPAA</div><div className="text-xs font-semibold text-slate-500 uppercase">Compliant</div></div>
                                     <div className="border-x border-slate-200"><div className="text-2xl font-black text-primary">500k+</div><div className="text-xs font-semibold text-slate-500 uppercase">Pt. Records</div></div>

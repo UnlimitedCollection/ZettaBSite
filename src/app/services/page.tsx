@@ -69,7 +69,7 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
                         Comprehensive Digital<br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Engineering Solutions</span>
                     </h1>

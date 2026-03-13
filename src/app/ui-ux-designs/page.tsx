@@ -28,7 +28,7 @@ export default function UIUXDesignsPage() {
                 </div>
 
                 <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
                         UI/UX Design
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
@@ -59,7 +59,7 @@ export default function UIUXDesignsPage() {
                             <div className="grid sm:grid-cols-2 gap-6">
                                 {process.map((item) => (
                                     <div key={item.step} className="p-6 bg-slate-50 rounded-2xl border border-slate-100 relative overflow-hidden group">
-                                        <div className="absolute -right-6 -top-6 text-9xl font-black text-slate-100 group-hover:scale-110 transition-transform duration-500 pointer-events-none">{item.step}</div>
+                                        <div className="absolute -right-3 -top-3 sm:-right-6 sm:-top-6 text-7xl sm:text-9xl font-black text-slate-100 group-hover:scale-110 transition-transform duration-500 pointer-events-none">{item.step}</div>
                                         <div className="relative z-10">
                                             <span className="material-symbols-outlined text-primary text-3xl mb-4">{item.icon}</span>
                                             <h4 className="font-bold mb-2">{item.title}</h4>

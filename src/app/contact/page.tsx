@@ -19,7 +19,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl sm:text-6xl font-black text-white mb-6 tracking-tight">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight">
                         Let&apos;s build something<br />exceptional together.
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">

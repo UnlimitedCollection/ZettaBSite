@@ -22,7 +22,7 @@ export default function BlogPage() {
                 </div>
 
                 <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6">Digital Insights & Trends</h1>
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">Digital Insights & Trends</h1>
                     <p className="text-xl text-gray-400 leading-relaxed">
                         Practical thinking on software, design, marketing, and technology from our team of practitioners.
                     </p>

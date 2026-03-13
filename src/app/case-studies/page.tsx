@@ -45,7 +45,7 @@ export default function CaseStudiesPage() {
                 </div>
 
                 <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 tracking-tight">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
                         Client Success<br />Stories.
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">

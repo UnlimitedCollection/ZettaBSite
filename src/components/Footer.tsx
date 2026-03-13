@@ -66,14 +66,14 @@ export function Footer() {
                                 <span className="text-sm font-medium">Thanks for subscribing!</span>
                             </div>
                         ) : (
-                            <form className="flex gap-2" onSubmit={handleSubscribe}>
+                            <form className="flex flex-col sm:flex-row gap-2" onSubmit={handleSubscribe}>
                                 <input
                                     type="email"
                                     required
                                     placeholder="Your email"
-                                    className="bg-slate-800 border-none rounded-xl px-4 py-3 flex-1 text-white focus:ring-2 focus:ring-primary outline-none"
+                                    className="bg-slate-800 border-none rounded-xl px-4 py-3 w-full sm:flex-1 text-white focus:ring-2 focus:ring-primary outline-none"
                                 />
-                                <button type="submit" className="motion-button bg-primary text-white p-3 rounded-xl hover:opacity-90 transition-opacity">
+                                <button type="submit" className="motion-button bg-primary text-white p-3 rounded-xl hover:opacity-90 transition-opacity self-stretch sm:self-auto">
                                     <span className="material-symbols-outlined">send</span>
                                 </button>
                             </form>
@@ -95,7 +95,7 @@ export function Footer() {
                     </div>
 
                     {/* Copyright — centred */}
-                    <p className="text-center xl:absolute xl:left-1/2 xl:-translate-x-1/2 whitespace-nowrap">
+                    <p className="text-center xl:absolute xl:left-1/2 xl:-translate-x-1/2 whitespace-normal sm:whitespace-nowrap">
                         © {currentYear} ZettaB.io. All rights reserved.
                     </p>
                     {/* Social Icons */}
