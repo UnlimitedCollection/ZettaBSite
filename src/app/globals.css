@@ -240,6 +240,7 @@ html {
   /* Unified hover/shadow/popup effect for all button-like elements */
   :is(a, button)[class*="rounded"][class*="px-"][class*="py-"],
   :is(a, button)[class*="rounded"][class*="px-"][class*="h-"],
+  :is(a, button)[class*="rounded-full"][class*="w-"][class*="h-"],
   .motion-button,
   .cta-banner-button {
     transition:
@@ -252,6 +253,7 @@ html {
 
   :is(a, button)[class*="rounded"][class*="px-"][class*="py-"]:hover,
   :is(a, button)[class*="rounded"][class*="px-"][class*="h-"]:hover,
+  :is(a, button)[class*="rounded-full"][class*="w-"][class*="h-"]:hover,
   .motion-button:hover,
   .cta-banner-button:hover {
     transform: translateY(-2px);
