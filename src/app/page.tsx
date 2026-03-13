@@ -634,7 +634,7 @@ export default function HomePage() {
                 <div className="flex items-end justify-between gap-4">
                   <p className="text-slate-200 text-lg sm:text-2xl font-medium tracking-tight">View Open Roles</p>
                   <span className="dual-cta-arrow inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0">
-                    <span className="material-symbols-outlined text-3xl">north_east</span>
+                    <span className="material-symbols-outlined text-3xl">search</span>
                   </span>
                 </div>
               </div>
@@ -653,7 +653,7 @@ export default function HomePage() {
                 <div className="flex items-end justify-between gap-5">
                   <h3 className="text-white text-4xl sm:text-5xl font-semibold leading-[1.05] tracking-tight">Start with an expert conversation</h3>
                   <span className="dual-cta-arrow inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0">
-                    <span className="material-symbols-outlined text-3xl">north_east</span>
+                    <span className="material-symbols-outlined text-3xl">support_agent</span>
                   </span>
                 </div>
               </div>
