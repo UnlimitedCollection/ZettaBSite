@@ -621,18 +621,16 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-[1fr_2fr] gap-4 sm:gap-6">
             <Link href="/careers" className="dual-cta-card group relative overflow-hidden rounded-3xl bg-[#11141b] p-7 sm:p-9 min-h-[300px] sm:min-h-[360px] flex flex-col justify-between border border-slate-800">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.05),transparent_55%),radial-gradient(circle_at_78%_72%,rgba(6,127,249,0.08),transparent_60%)]"></div>
-              <div className="relative z-10 min-h-10 flex items-start">
+              <div className="relative z-10 h-12 flex items-start">
                 <span className="inline-flex items-center whitespace-nowrap rounded-full border border-white/15 bg-white/5 px-5 py-2 text-white text-sm font-semibold tracking-tight">
                   Careers
                 </span>
               </div>
 
-              <div className="relative z-10 space-y-5">
-                <h3 className="text-white text-3xl sm:text-4xl font-semibold leading-[1.08] tracking-tight">
-                  Ready to build your career with us?
-                </h3>
+              <div className="relative z-10 flex-1 flex flex-col justify-end space-y-3">
+                <p className="text-xl sm:text-3xl font-medium text-white/85 tracking-tight">Career opportunities at ZettaB</p>
                 <div className="flex items-end justify-between gap-4">
-                  <p className="text-slate-200 text-base sm:text-xl font-medium tracking-tight">View Open Roles</p>
+                  <h3 className="text-white text-3xl sm:text-4xl font-semibold leading-[1.05] tracking-tight">Ready to build your career with us?</h3>
                   <span className="dual-cta-arrow inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0">
                     <span className="material-symbols-outlined text-[2.1rem]">search</span>
                   </span>
@@ -642,13 +640,13 @@ export default function HomePage() {
 
             <Link href="/contact" className="dual-cta-card group brand-wave relative overflow-hidden rounded-3xl p-7 sm:p-9 min-h-[300px] sm:min-h-[360px] flex flex-col justify-between text-white border border-primary/30">
               <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/20"></div>
-              <div className="relative z-10 min-h-10 flex items-start">
+              <div className="relative z-10 h-12 flex items-start">
                 <span className="inline-flex items-center whitespace-nowrap rounded-full bg-black/25 backdrop-blur-sm px-5 py-2 text-white text-sm font-semibold tracking-tight border border-white/20">
                   Get in touch
                 </span>
               </div>
 
-              <div className="relative z-10 space-y-3">
+              <div className="relative z-10 flex-1 flex flex-col justify-end space-y-3">
                 <p className="text-xl sm:text-3xl font-medium text-white/90 tracking-tight">Turn your next idea into momentum</p>
                 <div className="flex items-end justify-between gap-5">
                   <h3 className="text-white text-3xl sm:text-4xl font-semibold leading-[1.05] tracking-tight">Start with an expert conversation</h3>
