@@ -47,7 +47,7 @@ export default function CaseStudyPage() {
 
                     {/* Case Study 1: FinTech Scale-Up */}
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                        <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
+                        <div className="relative group overflow-hidden rounded-3xl shadow-2xl parallax-layer float-card" data-parallax-speed="0.045">
                             <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
                             <img alt="FinTech Dashboard" className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" src="/tech-bg.png" />
                             {/* Overlay Stats (Optional/Decorative) */}
@@ -126,7 +126,7 @@ export default function CaseStudyPage() {
                                 Read Full Case Study <span className="material-symbols-outlined text-base">east</span>
                             </Link>
                         </div>
-                        <div className="relative group overflow-hidden rounded-3xl shadow-2xl order-1 lg:order-2">
+                        <div className="relative group overflow-hidden rounded-3xl shadow-2xl order-1 lg:order-2 parallax-layer float-card" data-parallax-speed="0.06">
                             <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
                             <img alt="E-Commerce App" className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" src="/office-work.png" />
                             <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur border border-white/20 p-6 rounded-2xl z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
@@ -144,7 +144,7 @@ export default function CaseStudyPage() {
 
                     {/* Case Study 3: Healthcare App */}
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                        <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
+                        <div className="relative group overflow-hidden rounded-3xl shadow-2xl parallax-layer float-card" data-parallax-speed="0.05">
                             <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
                             <img alt="Healthcare Analytics" className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700" src="/team-meeting.png" />
                             <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur border border-white/20 p-6 rounded-2xl z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">

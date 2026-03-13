@@ -90,13 +90,29 @@ export default function HomePage() {
           {/* Dark Overlay for Text Readability */}
           <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+          <div className="float-soft absolute -top-24 left-[8%] w-52 h-52 rounded-full bg-cyan-300/20 blur-3xl pulse-glow" data-parallax-speed="0.08"></div>
+          <div className="float-soft-slow absolute top-[26%] right-[9%] w-72 h-72 rounded-full bg-primary/20 blur-3xl pulse-glow" data-parallax-speed="0.06"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="max-w-6xl">
-            <h1 className="text-5xl sm:text-6xl lg:text-[5.5rem] xl:text-[6.5rem] font-bold leading-[1.05] tracking-tight text-white drop-shadow-xl mb-4 sm:mb-8 lg:mb-12">
+            <p className="hero-enter hero-enter-1 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-cyan-100 mb-5">
+              Digital Product Studio
+            </p>
+            <h1 className="hero-enter hero-enter-2 text-5xl sm:text-6xl lg:text-[5.5rem] xl:text-[6.5rem] font-bold leading-[1.05] tracking-tight text-white drop-shadow-xl mb-4 sm:mb-8 lg:mb-10">
               Best-in-class design,<br className="hidden sm:block"/> marketing and technology
             </h1>
+            <p className="hero-enter hero-enter-3 max-w-2xl text-base sm:text-lg lg:text-xl text-slate-200/95 leading-relaxed mb-8">
+              We craft high-performance digital experiences with modern engineering, conversion-focused design, and strategy that scales globally.
+            </p>
+            <div className="hero-enter hero-enter-4 flex flex-wrap gap-4 pb-2">
+              <Link href="/contact" className="motion-button inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-primary text-white font-bold shadow-xl shadow-primary/30">
+                Start Your Project <span className="material-symbols-outlined text-base">north_east</span>
+              </Link>
+              <Link href="/case-study-ecommerce-redesign" className="motion-button inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl border border-white/35 bg-white/10 text-white font-bold backdrop-blur-sm hover:bg-white/20">
+                See Case Studies <span className="material-symbols-outlined text-base">east</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -450,7 +466,7 @@ export default function HomePage() {
           </div>
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 border border-slate-100 group">
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-64 overflow-hidden relative parallax-layer float-card" data-parallax-speed="0.045">
                 <img alt="FinTech" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/tech-bg.png" />
                 <div className="absolute top-4 left-4 flex gap-2">
                   <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold text-slate-900">FinTech</span>
@@ -464,7 +480,7 @@ export default function HomePage() {
             </div>
 
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 border border-slate-100 group">
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-64 overflow-hidden relative parallax-layer float-card" data-parallax-speed="0.06">
                 <img alt="Retail" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/office-work.png" />
                 <div className="absolute top-4 left-4 flex gap-2">
                   <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold text-slate-900">E-Commerce</span>
@@ -478,7 +494,7 @@ export default function HomePage() {
             </div>
 
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 border border-slate-100 group">
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-64 overflow-hidden relative parallax-layer float-card" data-parallax-speed="0.05">
                 <img alt="Cloud" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/team-meeting.png" />
                 <div className="absolute top-4 left-4 flex gap-2">
                   <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold text-slate-900">Cloud Architecture</span>
