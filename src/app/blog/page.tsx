@@ -17,8 +17,8 @@ export default function BlogPage() {
             <section className="relative pt-32 pb-20 overflow-hidden">
                 {/* Background Image with Black Overlay */}
                 <div className="absolute inset-0 z-0 bg-slate-900">
-                    <img src="/bg_blog_hero.png" alt="Blog Background" className="w-full h-full object-cover object-center opacity-80" />
-                    <div className="absolute inset-0 bg-black/40"></div>
+                    <img src="/bg_blog_hero_new.svg" alt="Blog Background" className="service-hero-image w-full h-full object-cover object-center opacity-100" />
+                    <div className="absolute inset-0 bg-slate-950/35"></div>
                 </div>
 
                 <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

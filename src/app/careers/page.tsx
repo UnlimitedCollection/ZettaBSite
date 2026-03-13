@@ -26,8 +26,13 @@ export default function CareersPage() {
     return (
         <>
             {/* Hero */}
-            <section className="pt-32 pb-20 bg-gradient-to-b from-[#0B0D12] to-gray-900">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <section className="relative pt-32 pb-20 text-center overflow-hidden">
+                <div className="absolute inset-0 z-0 bg-slate-900">
+                    <img src="/bg_careers_hero_new.svg" alt="Careers Background" className="service-hero-image w-full h-full object-cover object-center opacity-100" />
+                    <div className="absolute inset-0 bg-slate-950/35"></div>
+                </div>
+
+                <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 leading-tight">Join the Innovation</h1>
                     <p className="text-xl text-gray-400 leading-relaxed">
                         We&apos;re a growing team of passionate builders. If you care deeply about craft and want to work on ambitious problems, we want to hear from you.

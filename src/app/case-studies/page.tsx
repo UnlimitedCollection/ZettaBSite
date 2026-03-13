@@ -38,7 +38,12 @@ export default function CaseStudiesPage() {
     return (
         <main>
             {/* Header / Hero */}
-            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
+            <section className="relative pt-32 pb-20 text-center overflow-hidden">
+                <div className="absolute inset-0 z-0 bg-slate-900">
+                    <img src="/bg_portfolio_hero_new.svg" alt="Portfolio Background" className="service-hero-image w-full h-full object-cover object-center opacity-100" />
+                    <div className="absolute inset-0 bg-slate-950/35"></div>
+                </div>
+
                 <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 tracking-tight">
                         Client Success<br />Stories.

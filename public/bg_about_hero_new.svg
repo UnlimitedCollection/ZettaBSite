@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1422"/>
+      <stop offset="52%" stop-color="#172A43"/>
+      <stop offset="100%" stop-color="#0B1829"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1360 240) rotate(126) scale(620 880)">
+      <stop stop-color="#7AB6FF" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#7AB6FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="58" height="58" patternUnits="userSpaceOnUse">
+      <path d="M58 0H0V58" stroke="#A7C6EE" stroke-opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <rect width="1920" height="1080" fill="url(#halo)"/>
+  <g stroke="#9FC5F2" stroke-opacity="0.28" stroke-width="2.1">
+    <path d="M120 860C360 760 620 760 860 650C1070 554 1210 436 1480 400C1690 372 1820 410 1910 468"/>
+    <path d="M60 690C300 600 550 620 810 530C1040 450 1220 324 1500 290C1720 262 1840 302 1910 352"/>
+  </g>
+  <g fill="#D2E8FF" fill-opacity="0.62">
+    <circle cx="860" cy="650" r="9"/>
+    <circle cx="1480" cy="400" r="10"/>
+    <circle cx="810" cy="530" r="9"/>
+    <circle cx="1500" cy="290" r="10"/>
+  </g>
+</svg>
