@@ -106,14 +106,6 @@ export default function HomePage() {
             <p className="hero-enter hero-enter-3 max-w-2xl text-base sm:text-lg lg:text-xl text-slate-200/95 leading-relaxed mb-8">
               We craft high-performance digital experiences with modern engineering, conversion-focused design, and strategy that scales globally.
             </p>
-            <div className="hero-enter hero-enter-4 flex flex-wrap gap-4 pb-2">
-              <Link href="/contact" className="motion-button inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-primary text-white font-bold shadow-xl shadow-primary/30">
-                Start Your Project <span className="material-symbols-outlined text-base">north_east</span>
-              </Link>
-              <Link href="/case-study-ecommerce-redesign" className="motion-button inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl border border-white/35 bg-white/10 text-white font-bold backdrop-blur-sm hover:bg-white/20">
-                See Case Studies <span className="material-symbols-outlined text-base">east</span>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
