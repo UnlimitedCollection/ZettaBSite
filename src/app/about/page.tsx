@@ -173,7 +173,7 @@ export default function AboutPage() {
             </section>
 
             {/* Workplace / Culture */}
-            <section className="py-24 bg-slate-900 text-white overflow-hidden relative">
+            <section className="py-24 bg-slate-700 text-white overflow-hidden relative">
                 {/* Background Pattern */}
                 <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "32px 32px" }}></div>
 
