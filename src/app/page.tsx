@@ -629,10 +629,10 @@ export default function HomePage() {
 
               <div className="relative z-10 space-y-5">
                 <h3 className="text-white text-4xl sm:text-5xl font-semibold leading-[1.08] tracking-tight">
-                  Interested in joining our team of experts?
+                  Ready to build your career with us?
                 </h3>
                 <div className="flex items-end justify-between gap-4">
-                  <p className="text-slate-200 text-lg sm:text-2xl font-medium tracking-tight">Explore Opportunities</p>
+                  <p className="text-slate-200 text-lg sm:text-2xl font-medium tracking-tight">View Open Roles</p>
                   <span className="dual-cta-arrow inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0">
                     <span className="material-symbols-outlined text-3xl">north_east</span>
                   </span>
@@ -644,14 +644,14 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/20"></div>
               <div className="relative z-10">
                 <span className="inline-flex items-center rounded-full bg-black/25 backdrop-blur-sm px-5 py-2 text-white text-sm font-semibold tracking-tight border border-white/20">
-                  Get in touch
+                  Talk to us
                 </span>
               </div>
 
               <div className="relative z-10 space-y-3">
-                <p className="text-2xl sm:text-4xl font-medium text-white/90 tracking-tight">Accelerate your growth goals</p>
+                <p className="text-2xl sm:text-4xl font-medium text-white/90 tracking-tight">Turn your next idea into momentum</p>
                 <div className="flex items-end justify-between gap-5">
-                  <h3 className="text-white text-4xl sm:text-5xl font-semibold leading-[1.05] tracking-tight">Speak to our experts</h3>
+                  <h3 className="text-white text-4xl sm:text-5xl font-semibold leading-[1.05] tracking-tight">Start with an expert conversation</h3>
                   <span className="dual-cta-arrow inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0">
                     <span className="material-symbols-outlined text-3xl">north_east</span>
                   </span>
