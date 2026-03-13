@@ -7,8 +7,6 @@ const revealSelectors = [
     "main section",
     "main section .grid > *",
     "main section .space-y-24 > *",
-    "footer .grid > *",
-    "footer .pt-4 > *",
 ];
 
 const routeStaggerConfig: Record<string, { base: number; step: number; mod: number }> = {
