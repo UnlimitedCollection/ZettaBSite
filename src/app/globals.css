@@ -41,7 +41,7 @@ html {
 }
 
 .service-hero-image {
-  filter: contrast(1.14) saturate(1.08) brightness(0.9);
+  filter: contrast(1.1) saturate(1.12) brightness(0.98);
 }
 
 @media (prefers-reduced-motion: no-preference) {

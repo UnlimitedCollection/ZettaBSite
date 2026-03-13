@@ -26,7 +26,7 @@ export default function WebDevelopmentPage() {
                 {/* Background Image with Black Overlay */}
                 <div className="absolute inset-0 z-0 bg-slate-900">
                     <img src="/service_bg_web_new.svg" alt="Web Development Background" className="service-hero-image w-full h-full object-cover object-center opacity-100" />
-                    <div className="absolute inset-0 bg-slate-950/35"></div>
+                    <div className="absolute inset-0 bg-slate-950/30 md:bg-slate-950/20"></div>
                 </div>
 
                 <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
