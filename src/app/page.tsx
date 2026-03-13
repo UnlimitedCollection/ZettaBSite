@@ -232,61 +232,61 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <Link href="/software-development" className="block bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">developer_mode</span>
               </div>
               <h4 className="text-xl font-bold mb-3">Custom Software</h4>
               <p className="text-slate-600 text-sm leading-relaxed">Bespoke software solutions tailored to your unique business logic and operational needs.</p>
-            </div>
+            </Link>
 
-            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <Link href="/cloud-deployments" className="block bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">cloud_queue</span>
               </div>
               <h4 className="text-xl font-bold mb-3">Cloud Deployments</h4>
               <p className="text-slate-600 text-sm leading-relaxed">Scalable cloud infrastructure design and automated deployment pipelines for maximum uptime.</p>
-            </div>
+            </Link>
 
-            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <Link href="/web-development" className="block bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">language</span>
               </div>
               <h4 className="text-xl font-bold mb-3">Web Development</h4>
               <p className="text-slate-600 text-sm leading-relaxed">High-performance, responsive web applications built with modern frameworks like React and Vue.</p>
-            </div>
+            </Link>
 
-            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <Link href="/mobile-applications" className="block bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">phone_iphone</span>
               </div>
               <h4 className="text-xl font-bold mb-3">Mobile Applications</h4>
               <p className="text-slate-600 text-sm leading-relaxed">Native and cross-platform mobile apps that provide exceptional user experiences on the go.</p>
-            </div>
+            </Link>
 
-            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <Link href="/digital-marketing" className="block bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">ads_click</span>
               </div>
               <h4 className="text-xl font-bold mb-3">Digital Marketing</h4>
               <p className="text-slate-600 text-sm leading-relaxed">Data-driven growth strategies, SEO, and targeted campaigns to boost your online presence.</p>
-            </div>
+            </Link>
 
-            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <Link href="/ui-ux-designs" className="block bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">palette</span>
               </div>
               <h4 className="text-xl font-bold mb-3">UI/UX Design</h4>
               <p className="text-slate-600 text-sm leading-relaxed">User-centric design systems that balance aesthetic beauty with functional simplicity.</p>
-            </div>
+            </Link>
 
-            <div className="bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
+            <Link href="/software-development" className="block bg-white p-8 rounded-2xl border border-slate-100 hover:border-primary transition-all group shadow-sm hover:shadow-xl">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 <span className="material-symbols-outlined text-3xl">settings_suggest</span>
               </div>
               <h4 className="text-xl font-bold mb-3">Software Maintenance</h4>
               <p className="text-slate-600 text-sm leading-relaxed">Continuous monitoring, security updates, and performance tuning for your digital assets.</p>
-            </div>
+            </Link>
 
             <div className="p-8 rounded-2xl border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center">
               <p className="font-bold mb-4">Need something custom?</p>
