@@ -20,15 +20,15 @@ export default function CloudDeploymentsPage() {
     return (
         <main>
             {/* Header / Hero */}
-            <section className="relative pt-32 pb-20 text-center overflow-hidden">
+            <section className="relative pt-28 pb-20 sm:pt-32 sm:pb-24 text-center overflow-hidden min-h-[62vh] flex items-center">
                 {/* Background Image with Black Overlay */}
                 <div className="absolute inset-0 z-0 bg-slate-900">
-                    <img src="/service_bg_cloud.png" alt="Cloud Deployments Background" className="w-full h-full object-cover object-center opacity-80" />
-                    <div className="absolute inset-0 bg-black/30"></div>
+                    <img src="/service_bg_cloud.png" alt="Cloud Deployments Background" className="service-hero-image w-full h-full object-cover object-center opacity-100" />
+                    <div className="absolute inset-0 bg-slate-950/35"></div>
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+                <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
                         Cloud & DevOps
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
