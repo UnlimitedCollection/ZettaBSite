@@ -173,41 +173,41 @@ export default function AboutPage() {
             </section>
 
             {/* Workplace / Culture */}
-            <section className="py-24 bg-slate-700 text-white overflow-hidden relative">
+            <section className="py-24 bg-slate-200 overflow-hidden relative">
                 {/* Background Pattern */}
-                <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "32px 32px" }}></div>
+                <div className="absolute inset-0 opacity-30" style={{ backgroundImage: "radial-gradient(#94a3b8 1px, transparent 1px)", backgroundSize: "32px 32px" }}></div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                         <div>
-                            <h2 className="text-4xl lg:text-5xl font-black mb-8">A culture built on innovation and trust.</h2>
-                            <p className="text-slate-400 text-lg mb-8 leading-relaxed">
+                            <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-8">A culture built on innovation and trust.</h2>
+                            <p className="text-slate-700 text-lg mb-8 leading-relaxed">
                                 We&apos;ve created an environment where top talent wants to stay. By fostering autonomy, continuous learning, and a strictly blameless post-mortem culture, we attract engineers who are passionate about their craft.
                             </p>
                             <ul className="space-y-6 mb-10">
                                 <li className="flex gap-4 items-start">
                                     <span className="material-symbols-outlined text-primary text-3xl">public</span>
                                     <div>
-                                        <h4 className="text-xl font-bold mb-1">Remote-First Flexibility</h4>
-                                        <p className="text-slate-500 text-sm">While we maintain hubs in London and NY, we hire the best talent globally regardless of location.</p>
+                                        <h4 className="text-xl font-bold text-slate-900 mb-1">Remote-First Flexibility</h4>
+                                        <p className="text-slate-600 text-sm">While we maintain hubs in London and NY, we hire the best talent globally regardless of location.</p>
                                     </div>
                                 </li>
                                 <li className="flex gap-4 items-start">
                                     <span className="material-symbols-outlined text-primary text-3xl">psychology</span>
                                     <div>
-                                        <h4 className="text-xl font-bold mb-1">R&D Fridays</h4>
-                                        <p className="text-slate-500 text-sm">Our team spends 20% of their time exploring emerging techs like Web3, GenAI, and edge computing.</p>
+                                        <h4 className="text-xl font-bold text-slate-900 mb-1">R&D Fridays</h4>
+                                        <p className="text-slate-600 text-sm">Our team spends 20% of their time exploring emerging techs like Web3, GenAI, and edge computing.</p>
                                     </div>
                                 </li>
                                 <li className="flex gap-4 items-start">
                                     <span className="material-symbols-outlined text-primary text-3xl">volunteer_activism</span>
                                     <div>
-                                        <h4 className="text-xl font-bold mb-1">Comprehensive Wellness</h4>
-                                        <p className="text-slate-500 text-sm">We provide top-tier health coverage, mental health resources, and mandatory minimum PTO.</p>
+                                        <h4 className="text-xl font-bold text-slate-900 mb-1">Comprehensive Wellness</h4>
+                                        <p className="text-slate-600 text-sm">We provide top-tier health coverage, mental health resources, and mandatory minimum PTO.</p>
                                     </div>
                                 </li>
                             </ul>
-                            <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-sm hover:text-white transition-colors">
+                            <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-sm hover:text-slate-900 transition-colors">
                                 View Open Positions <span className="material-symbols-outlined text-base">arrow_forward</span>
                             </Link>
                         </div>
