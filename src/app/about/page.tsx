@@ -213,12 +213,12 @@ export default function AboutPage() {
                         </div>
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-4">
-                                <img alt="Office Culture" className="rounded-3xl object-cover h-64 w-full" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200" />
-                                <img alt="Team Event" className="rounded-3xl object-cover h-48 w-full" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200" />
+                                <img alt="Office Culture" className="rounded-3xl object-cover h-64 w-full grayscale brightness-90" src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200" />
+                                <img alt="Team Event" className="rounded-3xl object-cover h-48 w-full grayscale brightness-90" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200" />
                             </div>
                             <div className="space-y-4 pt-10">
-                                <img alt="Coding" className="rounded-3xl object-cover h-48 w-full" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200" />
-                                <img alt="Meeting" className="rounded-3xl object-cover h-64 w-full" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200" />
+                                <img alt="Coding" className="rounded-3xl object-cover h-48 w-full grayscale brightness-90" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200" />
+                                <img alt="Meeting" className="rounded-3xl object-cover h-64 w-full grayscale brightness-90" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200" />
                             </div>
                         </div>
                     </div>
