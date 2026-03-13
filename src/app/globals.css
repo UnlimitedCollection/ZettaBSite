@@ -76,6 +76,18 @@ html {
     }
   }
 
+  @keyframes surgeWaveShift {
+    0% {
+      background-position: 0% 50%, 0% 0%, 0% 0%, 50% 50%;
+    }
+    50% {
+      background-position: 100% 50%, 25% 20%, 70% 80%, 48% 52%;
+    }
+    100% {
+      background-position: 0% 50%, 0% 0%, 0% 0%, 50% 50%;
+    }
+  }
+
   .hero-enter {
     opacity: 0;
     animation: heroRise 900ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
@@ -104,6 +116,17 @@ html {
     transform: translate3d(0, var(--parallax-offset, 0px), 0);
     transition: transform 260ms linear;
     will-change: transform;
+  }
+
+  .surge-wave {
+    background-color: #8f0918;
+    background-image:
+      radial-gradient(110% 150% at 15% 25%, rgba(255, 90, 106, 0.85) 0%, rgba(255, 90, 106, 0) 55%),
+      radial-gradient(75% 120% at 85% 20%, rgba(186, 0, 34, 0.95) 0%, rgba(186, 0, 34, 0) 68%),
+      radial-gradient(70% 120% at 100% 75%, rgba(110, 0, 19, 0.88) 0%, rgba(110, 0, 19, 0) 62%),
+      linear-gradient(115deg, #b30c23 0%, #d0132f 30%, #ad0d25 60%, #7e0617 100%);
+    background-size: 220% 220%, 180% 180%, 170% 170%, 100% 100%;
+    animation: surgeWaveShift 12s ease-in-out infinite;
   }
 
   .float-card {
@@ -232,7 +255,8 @@ html {
   .float-soft,
   .float-soft-slow,
   .pulse-glow,
-  .float-card {
+  .float-card,
+  .surge-wave {
     animation: none !important;
   }
 
