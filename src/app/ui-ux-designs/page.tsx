@@ -136,8 +136,8 @@ export default function UIUXDesignsPage() {
             <section className="py-24 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="p-12 md:p-16 bg-slate-50 rounded-3xl border border-slate-200 text-center shadow-sm cta-banner-card">
-                        <h2 className="font-bold text-4xl text-slate-900 mb-4">Planning a web project?</h2>
-                        <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">Speak with our technical team to determine the best approach for an upcoming build.</p>
+                        <h2 className="font-bold text-4xl text-slate-900 mb-4">Planning a UI/UX redesign?</h2>
+                        <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">Speak with our design team to align user experience, conversion goals, and design system decisions before development.</p>
                         <Link href="/contact" className="cta-banner-button inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold text-lg">
                             Start a Conversation <span className="material-symbols-outlined text-sm">forum</span>
                         </Link>
