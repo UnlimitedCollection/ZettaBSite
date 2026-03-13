@@ -103,9 +103,6 @@ export default function HomePage() {
             <h1 className="hero-enter hero-enter-2 text-5xl sm:text-6xl lg:text-[5.5rem] xl:text-[6.5rem] font-bold leading-[1.05] tracking-tight text-white drop-shadow-xl mb-4 sm:mb-8 lg:mb-10">
               Best-in-class design,<br className="hidden sm:block"/> marketing and technology
             </h1>
-            <p className="hero-enter hero-enter-3 max-w-2xl text-base sm:text-lg lg:text-xl text-slate-200/95 leading-relaxed mb-8">
-              We craft high-performance digital experiences with modern engineering, conversion-focused design, and strategy that scales globally.
-            </p>
           </div>
         </div>
       </section>
