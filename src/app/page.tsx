@@ -119,7 +119,7 @@ export default function HomePage() {
                 <span className="material-symbols-outlined text-sm">verified</span>
                 Next-Gen Tech Solutions
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-slate-900">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-semibold leading-[1.1] tracking-tight text-slate-900">
                 Scalable Digital Products <span className="text-primary">Built for Growth</span>
               </h1>
               <p className="text-lg lg:text-xl text-slate-600 leading-relaxed max-w-xl">
@@ -628,7 +628,7 @@ export default function HomePage() {
               </div>
 
               <div className="relative z-10 space-y-5">
-                <h3 className="text-white text-4xl sm:text-5xl font-black leading-[1.08] tracking-tight">
+                <h3 className="text-white text-4xl sm:text-5xl font-semibold leading-[1.08] tracking-tight">
                   Interested in joining our team of experts?
                 </h3>
                 <div className="flex items-end justify-between gap-4">
@@ -651,7 +651,7 @@ export default function HomePage() {
               <div className="relative z-10 space-y-3">
                 <p className="text-2xl sm:text-4xl font-medium text-white/90 tracking-tight">Accelerate your growth goals</p>
                 <div className="flex items-end justify-between gap-5">
-                  <h3 className="text-white text-4xl sm:text-5xl font-black leading-[1.05] tracking-tight">Speak to our experts</h3>
+                  <h3 className="text-white text-4xl sm:text-5xl font-semibold leading-[1.05] tracking-tight">Speak to our experts</h3>
                   <span className="dual-cta-arrow inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0">
                     <span className="material-symbols-outlined text-3xl">north_east</span>
                   </span>
