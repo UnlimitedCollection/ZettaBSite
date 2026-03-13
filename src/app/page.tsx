@@ -676,10 +676,10 @@ export default function HomePage() {
                 Join 85+ industry leaders who have accelerated their digital transformation with ZettaB.io&apos;s expert engineering.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/contact" className="px-8 py-4 sm:px-10 sm:py-5 bg-white text-cyan-700 rounded-2xl font-bold text-lg  shadow-lg shadow-black/10">
+                <Link href="/contact" className="cta-banner-button px-8 py-4 sm:px-10 sm:py-5 bg-white text-cyan-700 rounded-2xl font-bold text-lg shadow-lg shadow-black/10">
                   Start a Conversation
                 </Link>
-                <Link href="/about" className="px-8 py-4 sm:px-10 sm:py-5 bg-transparent border-2 border-white/50 text-white rounded-2xl font-bold text-lg">
+                <Link href="/about" className="cta-banner-button px-8 py-4 sm:px-10 sm:py-5 bg-transparent border-2 border-white/50 text-white rounded-2xl font-bold text-lg">
                   Contact Us
                 </Link>
               </div>
