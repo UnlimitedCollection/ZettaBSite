@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CountUp } from "@/components/CountUp";
 
 export const metadata: Metadata = {
   title: "ZettaB | Seamless Software Experiences",
@@ -171,15 +172,15 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-black text-primary mb-1">150+</div>
+              <div className="text-4xl font-black text-primary mb-1"><CountUp target={150} suffix="+" /></div>
               <div className="text-sm font-semibold uppercase tracking-wider text-slate-500">Projects Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black text-primary mb-1">85+</div>
+              <div className="text-4xl font-black text-primary mb-1"><CountUp target={85} suffix="+" /></div>
               <div className="text-sm font-semibold uppercase tracking-wider text-slate-500">Global Clients</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black text-primary mb-1">10+</div>
+              <div className="text-4xl font-black text-primary mb-1"><CountUp target={10} suffix="+" /></div>
               <div className="text-sm font-semibold uppercase tracking-wider text-slate-500">Years Experience</div>
             </div>
             <div className="text-center">
