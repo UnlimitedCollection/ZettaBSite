@@ -646,7 +646,7 @@ export default function HomePage() {
                 </span>
               </div>
 
-              <div className="relative z-10 flex-1 flex flex-col justify-end space-y-3">
+              <div className="relative z-10 mt-10 sm:mt-14 space-y-3">
                 <p className="text-xl sm:text-3xl font-medium text-white/90 tracking-tight">Turn your next idea into momentum</p>
                 <div className="flex items-end justify-between gap-5">
                   <h3 className="text-white text-3xl sm:text-4xl font-semibold leading-[1.05] tracking-tight">Start with an expert conversation</h3>
