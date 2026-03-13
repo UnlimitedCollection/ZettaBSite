@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#190818"/>
+      <stop offset="52%" stop-color="#3A1231"/>
+      <stop offset="100%" stop-color="#1D091A"/>
+    </linearGradient>
+    <radialGradient id="pink" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1430 300) rotate(128) scale(650 900)">
+      <stop stop-color="#FF4DA7" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FF4DA7" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="mesh" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" stroke="#FF8CC8" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#mesh)"/>
+  <rect width="1920" height="1080" fill="url(#pink)"/>
+
+  <g opacity="0.92" stroke="#FF8EC9" stroke-opacity="0.28" stroke-width="2">
+    <polyline points="160,760 330,620 520,650 700,500 920,560 1110,420 1330,500 1570,340 1820,380" fill="none"/>
+    <polyline points="160,840 340,740 520,760 710,630 900,670 1120,540 1320,610 1570,480 1820,520" fill="none"/>
+  </g>
+
+  <g fill="#FFC4E4" fill-opacity="0.7">
+    <circle cx="330" cy="620" r="8"/>
+    <circle cx="700" cy="500" r="9"/>
+    <circle cx="1110" cy="420" r="10"/>
+    <circle cx="1570" cy="340" r="11"/>
+  </g>
+
+  <g stroke="#FF9BD0" stroke-opacity="0.24" fill="none">
+    <path d="M220 280h220v120H220z"/>
+    <path d="M520 220h260v160H520z"/>
+    <path d="M1340 200h320v190h-320z"/>
+  </g>
+</svg>
