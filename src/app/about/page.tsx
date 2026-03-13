@@ -76,7 +76,7 @@ export default function AboutPage() {
             </section>
 
             {/* Core Values */}
-            <section className="py-24 bg-slate-50 border-y border-slate-100">
+            <section className="py-24 bg-slate-200 border-y border-slate-300">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16 max-w-2xl mx-auto">
                         <h2 className="text-4xl font-black text-slate-900 mb-4">What We Stand For</h2>

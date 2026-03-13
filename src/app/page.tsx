@@ -160,7 +160,7 @@ export default function HomePage() {
       </section>
 
       {/* KPI Section */}
-      <section className="py-12 bg-white border-y border-primary/5">
+      <section className="py-12 bg-slate-200 border-y border-primary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
@@ -184,7 +184,7 @@ export default function HomePage() {
       </section>
 
       {/* About Preview */}
-      <section className="py-24" id="about">
+      <section className="py-24 bg-white" id="about">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
             <div className="lg:w-1/2 grid grid-cols-2 gap-4">
@@ -223,7 +223,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-4">Comprehensive Solutions</h2>
@@ -297,7 +297,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
             <div>
@@ -385,7 +385,7 @@ export default function HomePage() {
       </section>
 
       {/* Industries We Serve */}
-      <section className="py-24 overflow-hidden">
+      <section className="py-24 overflow-hidden bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-black text-slate-900 mb-4">Verticals We Empower</h2>
@@ -446,7 +446,7 @@ export default function HomePage() {
       </section>
 
       {/* Case Studies */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-end mb-16">
             <div>
@@ -577,7 +577,7 @@ export default function HomePage() {
       </section>
 
       {/* Logo Cloud / Partners */}
-      <section className="py-10 border-y border-slate-100">
+      <section className="py-10 bg-slate-200 border-y border-slate-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-slate-500 font-semibold uppercase tracking-widest text-xs mb-6">Strategic Technology Partners</p>
           <div className="flex flex-nowrap justify-between items-center gap-3 sm:gap-10 md:gap-16 lg:gap-32 transition-all">
@@ -663,7 +663,7 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24">
+      <section className="py-24 bg-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-gradient-to-tr from-teal-600 via-cyan-600 to-blue-600 overflow-hidden relative p-12 lg:p-20 rounded-[3rem] text-white shadow-2xl shadow-cyan-500/30">
             {/* Subtle Gradient Overlays */}
