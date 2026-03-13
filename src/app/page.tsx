@@ -451,7 +451,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 border border-slate-100 group">
               <div className="h-64 overflow-hidden relative">
-                <img alt="FinTech" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1531538512162-28266299d638?auto=format&fit=crop&q=80&w=1200" />
+                <img alt="FinTech" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/tech-bg.png" />
                 <div className="absolute top-4 left-4 flex gap-2">
                   <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold text-slate-900">FinTech</span>
                 </div>
@@ -465,7 +465,7 @@ export default function HomePage() {
 
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 border border-slate-100 group">
               <div className="h-64 overflow-hidden relative">
-                <img alt="Retail" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1556742049-0c37d80f6fa9?auto=format&fit=crop&q=80&w=1200" />
+                <img alt="Retail" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/office-work.png" />
                 <div className="absolute top-4 left-4 flex gap-2">
                   <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold text-slate-900">E-Commerce</span>
                 </div>
@@ -479,7 +479,7 @@ export default function HomePage() {
 
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 border border-slate-100 group">
               <div className="h-64 overflow-hidden relative">
-                <img alt="Cloud" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" />
+                <img alt="Cloud" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/team-meeting.png" />
                 <div className="absolute top-4 left-4 flex gap-2">
                   <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold text-slate-900">Cloud Architecture</span>
                 </div>
