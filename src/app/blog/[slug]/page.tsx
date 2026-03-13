@@ -97,8 +97,8 @@ export default async function BlogPostPage({ params }: Props) {
                         <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
                             Our engineering team can help you audit your current architecture or prototype your next big idea.
                         </p>
-                        <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold text-lg hover:border-primary transition-colors hover:shadow-md">
-                            Schedule a Strategy Route <span className="material-symbols-outlined text-sm">route</span>
+                        <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold text-lg">
+                            Start a Conversation <span className="material-symbols-outlined text-sm">forum</span>
                         </Link>
                     </div>
                 </div>
@@ -106,3 +106,4 @@ export default async function BlogPostPage({ params }: Props) {
         </main>
     );
 }
+

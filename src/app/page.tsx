@@ -126,7 +126,7 @@ export default function HomePage() {
                 We empower businesses with premium innovation and cutting-edge software solutions tailored for global scale and high-performance engineering.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-xl shadow-primary/30 text-center">
+                <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg  shadow-xl shadow-primary/30 text-center">
                   Start Your Project
                 </Link>
                 <Link href="/services" className="px-8 py-4 bg-white border border-slate-200 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors text-center">
@@ -633,7 +633,7 @@ export default function HomePage() {
                 </h3>
                 <div className="flex items-end justify-between gap-4">
                   <p className="text-slate-200 text-lg sm:text-2xl font-medium tracking-tight">Explore Opportunities</p>
-                  <span className="dual-cta-arrow motion-button inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0 group-hover:rotate-45 transition-transform duration-500">
+                  <span className="dual-cta-arrow inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0">
                     <span className="material-symbols-outlined text-3xl">north_east</span>
                   </span>
                 </div>
@@ -652,7 +652,7 @@ export default function HomePage() {
                 <p className="text-2xl sm:text-4xl font-medium text-white/90 tracking-tight">Accelerate your growth goals</p>
                 <div className="flex items-end justify-between gap-5">
                   <h3 className="text-white text-4xl sm:text-5xl font-black leading-[1.05] tracking-tight">Speak to our experts</h3>
-                  <span className="dual-cta-arrow motion-button inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0 group-hover:rotate-45 transition-transform duration-500">
+                  <span className="dual-cta-arrow inline-flex size-16 items-center justify-center rounded-full bg-white text-slate-900 shrink-0">
                     <span className="material-symbols-outlined text-3xl">north_east</span>
                   </span>
                 </div>
@@ -676,10 +676,10 @@ export default function HomePage() {
                 Join 85+ industry leaders who have accelerated their digital transformation with ZettaB.io&apos;s expert engineering.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/contact" className="px-8 py-4 sm:px-10 sm:py-5 bg-white text-cyan-700 rounded-2xl font-bold text-lg hover:scale-105 transition-transform shadow-lg shadow-black/10">
-                  Book a Strategy Call
+                <Link href="/contact" className="px-8 py-4 sm:px-10 sm:py-5 bg-white text-cyan-700 rounded-2xl font-bold text-lg  shadow-lg shadow-black/10">
+                  Start a Conversation
                 </Link>
-                <Link href="/about" className="px-8 py-4 sm:px-10 sm:py-5 bg-transparent border-2 border-white/50 text-white rounded-2xl font-bold text-lg hover:bg-white hover:text-cyan-700 hover:border-white transition-all">
+                <Link href="/about" className="px-8 py-4 sm:px-10 sm:py-5 bg-transparent border-2 border-white/50 text-white rounded-2xl font-bold text-lg">
                   Contact Us
                 </Link>
               </div>
@@ -690,3 +690,4 @@ export default function HomePage() {
     </main>
   );
 }
+

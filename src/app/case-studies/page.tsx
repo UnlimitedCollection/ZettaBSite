@@ -59,7 +59,7 @@ export default function CaseStudiesPage() {
                             <div className="w-full lg:w-1/2 relative group">
                                 <div className="absolute inset-0 bg-primary/20 rounded-3xl translate-x-4 translate-y-4 transition-transform group-hover:translate-x-6 group-hover:translate-y-6 -z-10"></div>
                                 <div className="rounded-3xl overflow-hidden shadow-xl bg-slate-100">
-                                    <img src={study.image} alt={study.title} className="w-full h-auto object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-700" />
+                                    <img src={study.image} alt={study.title} className="w-full h-auto object-cover aspect-[4/3] group- duration-700" />
                                 </div>
                             </div>
 
@@ -104,8 +104,8 @@ export default function CaseStudiesPage() {
                     <div className="p-12 md:p-16 bg-white rounded-3xl border border-slate-200 text-center shadow-sm">
                         <h2 className="font-bold text-4xl text-slate-900 mb-4">Planning a web project?</h2>
                         <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">Speak with our technical team to determine the best approach for an upcoming build.</p>
-                        <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold text-lg hover:border-primary transition-colors hover:shadow-md">
-                            Schedule Call <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                        <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold text-lg">
+                            Start a Conversation <span className="material-symbols-outlined text-sm">forum</span>
                         </Link>
                     </div>
                 </div>
@@ -113,3 +113,4 @@ export default function CaseStudiesPage() {
         </main>
     );
 }
+

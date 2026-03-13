@@ -138,8 +138,8 @@ export default function UIUXDesignsPage() {
                     <div className="p-12 md:p-16 bg-slate-50 rounded-3xl border border-slate-200 text-center shadow-sm">
                         <h2 className="font-bold text-4xl text-slate-900 mb-4">Planning a web project?</h2>
                         <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">Speak with our technical team to determine the best approach for an upcoming build.</p>
-                        <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold text-lg hover:border-primary transition-colors hover:shadow-md">
-                            Schedule Call <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                        <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold text-lg">
+                            Start a Conversation <span className="material-symbols-outlined text-sm">forum</span>
                         </Link>
                     </div>
                 </div>
@@ -147,3 +147,4 @@ export default function UIUXDesignsPage() {
         </main>
     );
 }
+

@@ -132,11 +132,10 @@ html {
   .dual-cta-card {
     box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14);
     transition:
-      transform 360ms cubic-bezier(0.22, 1, 0.36, 1),
       box-shadow 360ms cubic-bezier(0.22, 1, 0.36, 1),
       border-color 300ms ease,
       filter 300ms ease;
-    will-change: transform, box-shadow;
+    will-change: box-shadow;
   }
 
   .dual-cta-card::before {
@@ -152,10 +151,9 @@ html {
   }
 
   .dual-cta-card:hover {
-    transform: translateY(-7px) scale(1.008);
-    box-shadow: 0 24px 52px rgba(15, 23, 42, 0.22);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.16);
     border-color: rgba(255, 255, 255, 0.25);
-    filter: saturate(1.06);
+    filter: none;
   }
 
   .dual-cta-card:hover::before {
@@ -169,14 +167,12 @@ html {
 
   .dual-cta-arrow {
     transition:
-      transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
       box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1),
       background-color 320ms ease;
   }
 
   .dual-cta-card:hover .dual-cta-arrow {
-    transform: translateY(-2px) scale(1.08) rotate(12deg);
-    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.28);
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.16);
   }
 
   .float-card {
