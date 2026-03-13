@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140B07"/>
+      <stop offset="54%" stop-color="#2A180E"/>
+      <stop offset="100%" stop-color="#120A06"/>
+    </linearGradient>
+    <radialGradient id="warm" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1380 370) rotate(128) scale(620 860)">
+      <stop stop-color="#FFA65A" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#FFA65A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="accent" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(520 870) rotate(36) scale(640 860)">
+      <stop stop-color="#FF7A4D" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FF7A4D" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="60" height="60" patternUnits="userSpaceOnUse">
+      <circle cx="30" cy="30" r="1.2" fill="#FFB27A" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#dots)"/>
+  <rect width="1920" height="1080" fill="url(#warm)"/>
+  <rect width="1920" height="1080" fill="url(#accent)"/>
+
+  <g opacity="0.92" stroke="#FFAF6E" stroke-opacity="0.28" fill="none">
+    <rect x="180" y="220" width="260" height="170" rx="16"/>
+    <rect x="500" y="250" width="210" height="140" rx="14"/>
+    <rect x="1280" y="210" width="300" height="190" rx="18"/>
+    <rect x="1520" y="470" width="220" height="150" rx="16"/>
+    <rect x="330" y="590" width="260" height="170" rx="16"/>
+    <rect x="700" y="610" width="260" height="170" rx="16"/>
+  </g>
+
+  <g opacity="0.9">
+    <path d="M120 770C360 650 590 660 820 610C1030 564 1170 470 1390 430C1620 390 1790 430 1910 500" stroke="#FFB36F" stroke-opacity="0.42" stroke-width="3"/>
+    <path d="M80 900C320 790 560 800 790 740C1030 678 1210 580 1460 540C1660 510 1790 540 1910 590" stroke="#FF9A58" stroke-opacity="0.35" stroke-width="2.5"/>
+  </g>
+
+  <g fill="#FFC793" fill-opacity="0.7">
+    <circle cx="760" cy="610" r="8"/>
+    <circle cx="1390" cy="430" r="10"/>
+    <circle cx="790" cy="740" r="8"/>
+    <circle cx="1460" cy="540" r="10"/>
+  </g>
+
+  <g opacity="0.96">
+    <rect x="980" y="300" width="360" height="220" rx="24" fill="#24150D" stroke="#FFB06D" stroke-opacity="0.24"/>
+    <rect x="1020" y="352" width="230" height="18" rx="9" fill="#FFAB66" fill-opacity="0.58"/>
+    <rect x="1020" y="385" width="300" height="12" rx="6" fill="#FFAB66" fill-opacity="0.36"/>
+    <rect x="1020" y="410" width="240" height="12" rx="6" fill="#FFAB66" fill-opacity="0.36"/>
+
+    <rect x="1220" y="560" width="290" height="190" rx="22" fill="#2A180F" stroke="#FFB06D" stroke-opacity="0.24"/>
+    <circle cx="1290" cy="626" r="24" fill="#FFB06D" fill-opacity="0.36"/>
+    <rect x="1330" y="614" width="130" height="12" rx="6" fill="#FFAB66" fill-opacity="0.45"/>
+    <rect x="1330" y="638" width="110" height="10" rx="5" fill="#FFAB66" fill-opacity="0.36"/>
+  </g>
+</svg>

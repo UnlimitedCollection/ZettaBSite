@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090A2A"/>
+      <stop offset="52%" stop-color="#15104B"/>
+      <stop offset="100%" stop-color="#070824"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1450 250) rotate(132) scale(620 820)">
+      <stop stop-color="#7E5BFF" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#7E5BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(640 860) rotate(35) scale(640 860)">
+      <stop stop-color="#3AA8FF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#3AA8FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M52 0H0V52" stroke="#7BB6FF" stroke-opacity="0.07"/>
+    </pattern>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <rect width="1920" height="1080" fill="url(#g1)"/>
+  <rect width="1920" height="1080" fill="url(#g2)"/>
+
+  <g opacity="0.94">
+    <rect x="1020" y="250" width="280" height="560" rx="42" fill="#131C58" stroke="#85C5FF" stroke-opacity="0.25"/>
+    <rect x="1042" y="292" width="236" height="420" rx="24" fill="#1A2A77"/>
+    <rect x="1100" y="746" width="120" height="16" rx="8" fill="#80BDFF" fill-opacity="0.55"/>
+
+    <rect x="860" y="330" width="220" height="420" rx="34" transform="rotate(-17 860 330)" fill="#141A4A" stroke="#78C4FF" stroke-opacity="0.24"/>
+    <rect x="1230" y="360" width="210" height="390" rx="34" transform="rotate(15 1230 360)" fill="#181E54" stroke="#78C4FF" stroke-opacity="0.24"/>
+
+    <rect x="880" y="520" width="360" height="210" rx="28" fill="#0E2756" stroke="#6CC3FF" stroke-opacity="0.26"/>
+    <polyline points="930,640 990,610 1050,655 1110,585 1180,625" stroke="#72D8FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <g fill="#A8DBFF" fill-opacity="0.62" filter="url(#blur)">
+    <circle cx="1120" cy="430" r="7"/>
+    <circle cx="980" cy="612" r="8"/>
+    <circle cx="1260" cy="614" r="8"/>
+    <circle cx="1380" cy="300" r="7"/>
+    <circle cx="840" cy="410" r="7"/>
+  </g>
+
+  <g stroke="#93CBFF" stroke-opacity="0.26" stroke-width="2">
+    <path d="M120 870C320 760 560 760 790 660C980 576 1120 470 1330 420C1570 360 1760 420 1910 500"/>
+    <path d="M70 700C300 590 510 610 760 520C980 442 1170 290 1410 240C1610 198 1770 240 1910 312"/>
+  </g>
+</svg>

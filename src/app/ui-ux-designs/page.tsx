@@ -23,7 +23,7 @@ export default function UIUXDesignsPage() {
             <section className="relative pt-28 pb-20 sm:pt-32 sm:pb-24 text-center overflow-hidden min-h-[62vh] flex items-center">
                 {/* Background Image with Black Overlay */}
                 <div className="absolute inset-0 z-0 bg-slate-900">
-                    <img src="/service_bg_uiux.png" alt="UI/UX Designs Background" className="service-hero-image w-full h-full object-cover object-center opacity-100" />
+                    <img src="/service_bg_uiux_new.svg" alt="UI/UX Designs Background" className="service-hero-image w-full h-full object-cover object-center opacity-100" />
                     <div className="absolute inset-0 bg-slate-950/35"></div>
                 </div>
 
