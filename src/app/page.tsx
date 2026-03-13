@@ -571,36 +571,36 @@ export default function HomePage() {
       <section className="py-10 border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-slate-500 font-semibold uppercase tracking-widest text-xs mb-6">Strategic Technology Partners</p>
-          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 md:gap-16 lg:gap-32 transition-all">
+          <div className="flex flex-nowrap justify-between items-center gap-3 sm:gap-10 md:gap-16 lg:gap-32 transition-all">
             {/* AWS */}
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" 
               alt="Amazon Web Services" 
-              className="h-7 sm:h-9 md:h-11 lg:h-[3.25rem] w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
+              className="h-8 sm:h-9 md:h-11 lg:h-[3.25rem] w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
             />
             {/* Google Cloud */}
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg" 
               alt="Google Cloud" 
-              className="h-9 sm:h-11 md:h-14 lg:h-[4.5rem] w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
+              className="h-10 sm:h-11 md:h-14 lg:h-[4.5rem] w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
             />
             {/* Azure */}
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original-wordmark.svg" 
               alt="Microsoft Azure" 
-              className="h-9 sm:h-11 md:h-14 lg:h-[4.5rem] w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
+              className="h-10 sm:h-11 md:h-14 lg:h-[4.5rem] w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
             />
             {/* Salesforce */}
             <img 
               src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" 
               alt="Salesforce" 
-              className="h-6 sm:h-7 md:h-9 lg:h-10 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
+              className="h-7 sm:h-7 md:h-9 lg:h-10 w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
             />
             {/* Kubernetes */}
             <img 
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg" 
               alt="Kubernetes" 
-              className="h-8 sm:h-10 md:h-12 lg:h-[3.75rem] w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
+              className="h-9 sm:h-10 md:h-12 lg:h-[3.75rem] w-auto object-contain brightness-0 opacity-60 hover:opacity-100 transition-all duration-300" 
             />
           </div>
         </div>
