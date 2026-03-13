@@ -125,11 +125,11 @@ export default function HomePage() {
               <p className="text-lg lg:text-xl text-slate-600 leading-relaxed max-w-xl">
                 We empower businesses with premium innovation and cutting-edge software solutions tailored for global scale and high-performance engineering.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg  shadow-xl shadow-primary/30 text-center">
+              <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto max-w-[18rem] sm:max-w-none">
+                <Link href="/contact" className="w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg  shadow-xl shadow-primary/30 text-center">
                   Start Your Project
                 </Link>
-                <Link href="/services" className="px-8 py-4 bg-white border border-slate-200 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors text-center">
+                <Link href="/services" className="w-full sm:w-auto px-8 py-4 bg-white border border-slate-200 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors text-center">
                   View Solutions
                 </Link>
               </div>
