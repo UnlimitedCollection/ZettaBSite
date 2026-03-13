@@ -3,7 +3,7 @@ import Link from "next/link";
 import { WhitepaperCTA } from "@/components/WhitepaperCTA";
 
 export const metadata: Metadata = {
-    title: "Cloud Deployments | ZettaB",
+    title: "Cloud & DevOps | ZettaB",
     description: "Secure, scalable cloud infrastructure on AWS, GCP, and Azure — engineered for reliability, performance, and growth.",
 };
 
@@ -27,9 +27,9 @@ export default function CloudDeploymentsPage() {
                     <div className="absolute inset-0 bg-black/30"></div>
                 </div>
 
-                <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+                <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
-                        Cloud Deployments<br />& DevOps.
+                        Cloud & DevOps
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
                         Scalable, secure, and resilient cloud infrastructure designed for high availability and rapid iteration.

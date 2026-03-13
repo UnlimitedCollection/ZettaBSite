@@ -29,7 +29,7 @@ export default function DigitalMarketingPage() {
 
                 <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
-                        Digital Marketing that<br />drives measurable growth.
+                        Digital Marketing
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
                         Data-driven digital marketing strategies — SEO, paid media, social, and content that drives measurable ROI.
