@@ -238,9 +238,8 @@ html {
   }
 
   /* Unified hover/shadow/popup effect for all button-like elements */
-  :is(a, button)[class*="font-bold"][class*="rounded-xl"],
-  :is(a, button)[class*="font-bold"][class*="rounded-2xl"],
-  :is(a, button)[class*="font-bold"][class*="rounded-full"],
+  :is(a, button)[class*="rounded"][class*="px-"][class*="py-"],
+  :is(a, button)[class*="rounded"][class*="px-"][class*="h-"],
   .motion-button,
   .cta-banner-button {
     transition:
@@ -251,9 +250,8 @@ html {
       color 220ms ease;
   }
 
-  :is(a, button)[class*="font-bold"][class*="rounded-xl"]:hover,
-  :is(a, button)[class*="font-bold"][class*="rounded-2xl"]:hover,
-  :is(a, button)[class*="font-bold"][class*="rounded-full"]:hover,
+  :is(a, button)[class*="rounded"][class*="px-"][class*="py-"]:hover,
+  :is(a, button)[class*="rounded"][class*="px-"][class*="h-"]:hover,
   .motion-button:hover,
   .cta-banner-button:hover {
     transform: translateY(-2px);

@@ -33,7 +33,7 @@ export function BackToTop() {
                 <button
                     onClick={scrollToTop}
                     aria-label="Back to top"
-                    className="flex justify-center items-center w-12 h-12 rounded-full bg-slate-900 text-white shadow-xl hover:-translate-y-1 hover:bg-primary transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                    className="motion-button flex justify-center items-center w-12 h-12 rounded-full bg-slate-900 text-white shadow-xl hover:bg-primary transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 >
                     <span className="material-symbols-outlined font-bold text-xl">
                         arrow_upward
