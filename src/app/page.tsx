@@ -100,7 +100,7 @@ export default function HomePage() {
             <p className="hero-enter hero-enter-1 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-[11px] sm:text-xs font-bold uppercase tracking-[0.22em] text-cyan-100 mb-5">
               Digital Product Studio
             </p>
-            <h1 className="hero-enter hero-enter-2 text-4xl sm:text-5xl lg:text-[4.75rem] xl:text-[5.5rem] font-bold leading-[1.05] tracking-tight text-white drop-shadow-xl mb-4 sm:mb-8 lg:mb-10">
+            <h1 className="hero-enter hero-enter-2 text-3xl sm:text-4xl lg:text-[4rem] xl:text-[4.5rem] font-bold leading-[1.05] tracking-tight text-white drop-shadow-xl mb-4 sm:mb-8 lg:mb-10">
               Best-in-class design,<br className="hidden sm:block"/> marketing and technology
             </h1>
             <p className="hero-enter hero-enter-3 max-w-2xl text-base sm:text-lg lg:text-xl text-slate-200/95 leading-relaxed mb-8">
