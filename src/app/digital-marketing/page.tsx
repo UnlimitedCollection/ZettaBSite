@@ -127,7 +127,7 @@ export default function DigitalMarketingPage() {
             <WhitepaperCTA
                 title="The Data-Driven Marketing Handbook"
                 description="Download our comprehensive whitepaper on leveraging multi-touch attribution, mastering technical SEO, and scaling profitable ROAS across paid channels."
-                pdfUrl="/whitepapers/Digital-Marketing.pdf"
+                pdfUrl="/whitepapers/Digital-marketing.pdf"
             />
 
             {/* Global Contact CTA Box */}
