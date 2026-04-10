@@ -344,10 +344,13 @@ export default function HomePage() {
             <div className="relative rounded-3xl overflow-hidden min-h-[360px] sm:min-h-[420px] lg:min-h-[500px]">
               <img alt="Collaboration" className="absolute inset-0 w-full h-full object-cover" src="/tech-bg.png" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+              {/* Quote overlay — hidden until ready */}
+              {false && (
               <div className="absolute bottom-10 left-10 right-10 p-8 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
                 <p className="text-white text-lg font-medium italic">&quot;ZettaB changed how we look at software. They aren&apos;t just developers, they are innovators.&quot;</p>
                 <p className="text-primary font-bold mt-4">— Sarah Chen, CEO of InnovateCorp</p>
               </div>
+              )}
             </div>
           </div>
         </div>
