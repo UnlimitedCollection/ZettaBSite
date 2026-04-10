@@ -129,7 +129,7 @@ export default function UIUXDesignsPage() {
             <WhitepaperCTA
                 title="The Executive Guide to Enterprise UX"
                 description="Download our comprehensive whitepaper on aligning business metrics with user experience, conducting high-ROI user research, and scaling design systems across organizations."
-                pdfUrl="/whitepapers/UIUX.pdf"
+                pdfUrl="/whitepapers/Ui-Ux-Design.pdf"
             />
 
             {/* Global Contact CTA Box */}

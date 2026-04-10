@@ -127,7 +127,7 @@ export default function SoftwareDevelopmentPage() {
             <WhitepaperCTA
                 title="The Modern Software Architecture Guide"
                 description="Download our comprehensive whitepaper on selecting scalable tech stacks, implementing CI/CD pipelines, and establishing secure coding standards for enterprise applications."
-                pdfUrl="/whitepapers/Software-Development-service.pdf"
+                pdfUrl="/whitepapers/Software-Development.pdf"
             />
 
             {/* Global Contact CTA Box */}

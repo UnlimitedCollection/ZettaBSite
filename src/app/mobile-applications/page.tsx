@@ -126,7 +126,7 @@ export default function MobileApplicationsPage() {
             <WhitepaperCTA
                 title="The Mobile App Strategy Playbook"
                 description="Download our comprehensive whitepaper on choosing between React Native, Kotlin, and Swift—and how to plan a mobile roadmap that aligns with business growth."
-                pdfUrl="/whitepapers/Mobile-app-development.pdf"
+                pdfUrl="/whitepapers/Mobile-Apps.pdf"
             />
 
             {/* Global Contact CTA Box */}
