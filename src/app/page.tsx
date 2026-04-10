@@ -150,7 +150,7 @@ export default function HomePage() {
                   <span className="material-symbols-outlined text-primary">rocket_launch</span>
                 </div>
                 <div>
-                  <div className="text-sm font-black text-slate-900">150+ Projects Delivered</div>
+                  <div className="text-sm font-black text-slate-900">25+ Projects Delivered</div>
                   <div className="text-xs text-slate-500">Across 30+ Countries</div>
                 </div>
               </div>
@@ -164,15 +164,15 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-black text-primary mb-1"><CountUp target={150} suffix="+" /></div>
+              <div className="text-4xl font-black text-primary mb-1"><CountUp target={25} suffix="+" /></div>
               <div className="text-sm font-semibold uppercase tracking-wider text-slate-500">Projects Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black text-primary mb-1"><CountUp target={85} suffix="+" /></div>
+              <div className="text-4xl font-black text-primary mb-1"><CountUp target={20} suffix="+" /></div>
               <div className="text-sm font-semibold uppercase tracking-wider text-slate-500">Global Clients</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black text-primary mb-1"><CountUp target={10} suffix="+" /></div>
+              <div className="text-4xl font-black text-primary mb-1"><CountUp target={5} suffix="+" /></div>
               <div className="text-sm font-semibold uppercase tracking-wider text-slate-500">Years Experience</div>
             </div>
             <div className="text-center">
