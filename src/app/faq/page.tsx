@@ -70,7 +70,7 @@ export default function FAQPage() {
             {/* Header / Hero */}
             <section className="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800 text-center">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
+                    <h1 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
                         Frequently Asked<br />Questions.
                     </h1>
                     <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
