@@ -35,6 +35,17 @@ body {
   overflow-x: hidden;
 }
 
+/* Hide Material Symbols icon text while font is loading to prevent FOUC */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  visibility: hidden;
+}
+
+/* Revealed once JS confirms font is loaded */
+.icons-ready .material-symbols-outlined {
+  visibility: visible;
+}
+
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
