@@ -445,7 +445,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Case Studies */}
+      {/* Featured Success — hidden until ready */}
+      {false && (
       <section className="py-24 bg-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-end mb-16">
@@ -471,7 +472,6 @@ export default function HomePage() {
                 <Link href="/case-study-ecommerce-redesign" className="text-primary font-bold flex items-center gap-2">View Case Study <span className="material-symbols-outlined text-sm">arrow_outward</span></Link>
               </div>
             </div>
-
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 border border-slate-100 group">
               <div className="h-64 overflow-hidden relative parallax-layer float-card" data-parallax-speed="0.06">
                 <img alt="Retail" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/office-work.png" />
@@ -485,7 +485,6 @@ export default function HomePage() {
                 <Link href="/case-study-ecommerce-redesign" className="text-primary font-bold flex items-center gap-2">View Case Study <span className="material-symbols-outlined text-sm">arrow_outward</span></Link>
               </div>
             </div>
-
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50 border border-slate-100 group">
               <div className="h-64 overflow-hidden relative parallax-layer float-card" data-parallax-speed="0.05">
                 <img alt="Cloud" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/team-meeting.png" />
@@ -502,79 +501,39 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      )}
 
-      {/* Testimonials Section */}
+      {/* Testimonials — hidden until ready */}
+      {false && (
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-primary font-bold uppercase tracking-widest text-sm mb-3">Client Stories</p>
             <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-4">What Our Clients Say</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto text-lg">
-              Real feedback from the businesses we&apos;ve helped scale.
-            </p>
+            <p className="text-slate-600 max-w-2xl mx-auto text-lg">Real feedback from the businesses we&apos;ve helped scale.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-
-            {/* Card 1 */}
             <div className="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
-              <div className="flex gap-1 mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-amber-400 fill-amber-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                ))}
-              </div>
-              <p className="text-slate-700 leading-relaxed text-lg italic flex-1">
-                &ldquo;ZettaB transformed our entire digital presence in just 3 months. Our web app now handles 10x the traffic with zero downtime. Absolutely world-class engineering team.&rdquo;
-              </p>
-              <div className="flex items-center gap-4 mt-8 pt-6 border-t border-slate-200">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-black text-lg shrink-0">A</div>
-                <div>
-                  <div className="font-bold text-slate-900">Ahmed Al-Rashidi</div>
-                  <div className="text-sm text-slate-500">CTO, NovaTech Solutions — UAE</div>
-                </div>
-              </div>
+              <div className="flex gap-1 mb-6">{[...Array(5)].map((_, i) => (<svg key={i} className="w-5 h-5 text-amber-400 fill-amber-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}</div>
+              <p className="text-slate-700 leading-relaxed text-lg italic flex-1">&ldquo;ZettaB transformed our entire digital presence in just 3 months. Our web app now handles 10x traffic with zero downtime.&rdquo;</p>
+              <div className="flex items-center gap-4 mt-8 pt-6 border-t border-slate-200"><div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-black text-lg shrink-0">A</div><div><div className="font-bold text-slate-900">Ahmed Al-Rashidi</div><div className="text-sm text-slate-500">CTO, NovaTech Solutions — UAE</div></div></div>
             </div>
-
-            {/* Card 2 */}
             <div className="bg-slate-900 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
-              <div className="flex gap-1 mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-amber-400 fill-amber-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                ))}
-              </div>
-              <p className="text-slate-300 leading-relaxed text-lg italic flex-1">
-                &ldquo;From UI/UX design to mobile app launch — ZettaB delivered on every promise and exceeded expectations. Our user retention jumped 68% within the first quarter.&rdquo;
-              </p>
-              <div className="flex items-center gap-4 mt-8 pt-6 border-t border-slate-700">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-blue-700 flex items-center justify-center text-white font-black text-lg shrink-0">S</div>
-                <div>
-                  <div className="font-bold text-white">Sarah Mitchell</div>
-                  <div className="text-sm text-slate-400">CEO, Bloom Retail — Australia</div>
-                </div>
-              </div>
+              <div className="flex gap-1 mb-6">{[...Array(5)].map((_, i) => (<svg key={i} className="w-5 h-5 text-amber-400 fill-amber-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}</div>
+              <p className="text-slate-300 leading-relaxed text-lg italic flex-1">&ldquo;From UI/UX design to mobile app launch — ZettaB delivered on every promise. Our user retention jumped 68% within the first quarter.&rdquo;</p>
+              <div className="flex items-center gap-4 mt-8 pt-6 border-t border-slate-700"><div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-blue-700 flex items-center justify-center text-white font-black text-lg shrink-0">S</div><div><div className="font-bold text-white">Sarah Mitchell</div><div className="text-sm text-slate-400">CEO, Bloom Retail — Australia</div></div></div>
             </div>
-
-            {/* Card 3 */}
             <div className="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
-              <div className="flex gap-1 mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-amber-400 fill-amber-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                ))}
-              </div>
-              <p className="text-slate-700 leading-relaxed text-lg italic flex-1">
-                &ldquo;Their cloud migration strategy saved us 40% in infrastructure costs and cut our deployment time from days to minutes. The team was professional, responsive, and incredibly knowledgeable.&rdquo;
-              </p>
-              <div className="flex items-center gap-4 mt-8 pt-6 border-t border-slate-200">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center text-white font-black text-lg shrink-0">R</div>
-                <div>
-                  <div className="font-bold text-slate-900">Rajesh Patel</div>
-                  <div className="text-sm text-slate-500">Head of Engineering, Finova — Singapore</div>
-                </div>
-              </div>
+              <div className="flex gap-1 mb-6">{[...Array(5)].map((_, i) => (<svg key={i} className="w-5 h-5 text-amber-400 fill-amber-400" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>))}</div>
+              <p className="text-slate-700 leading-relaxed text-lg italic flex-1">&ldquo;Their cloud migration strategy saved us 40% in infrastructure costs and cut our deployment time from days to minutes.&rdquo;</p>
+              <div className="flex items-center gap-4 mt-8 pt-6 border-t border-slate-200"><div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center text-white font-black text-lg shrink-0">R</div><div><div className="font-bold text-slate-900">Rajesh Patel</div><div className="text-sm text-slate-500">Head of Engineering, Finova — Singapore</div></div></div>
             </div>
-
           </div>
         </div>
       </section>
+      )}
+
+
 
       {/* Logo Cloud / Partners */}
       <section className="py-10 bg-slate-200 border-y border-slate-300">

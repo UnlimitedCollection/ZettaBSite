@@ -119,8 +119,8 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
-
-            {/* Team */}
+            {/* Leadership Team — hidden until ready */}
+            {false && (
             <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
@@ -141,7 +141,7 @@ export default function AboutPage() {
                                 <img alt="CEO" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" />
                             </div>
                             <h4 className="text-xl font-bold">Elena Rostova</h4>
-                            <p className="text-primary font-bold text-sm mb-3">Founder & CEO</p>
+                            <p className="text-primary font-bold text-sm mb-3">Founder &amp; CEO</p>
                             <p className="text-slate-600 text-sm">Former VP of Engineering at TechGlobal. Passionate about aligning technical strategy with business scaling.</p>
                         </div>
                         <div className="group">
@@ -171,6 +171,7 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
+            )}
 
             {/* Workplace / Culture */}
             <section className="py-24 bg-slate-200 overflow-hidden relative">
