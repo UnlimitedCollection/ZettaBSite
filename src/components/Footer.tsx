@@ -98,7 +98,8 @@ export function Footer() {
                     <p className="text-center xl:absolute xl:left-1/2 xl:-translate-x-1/2 whitespace-normal sm:whitespace-nowrap">
                         © {currentYear} ZettaB.io. All rights reserved.
                     </p>
-                    {/* Social Icons */}
+                    {/* Social Icons — hidden until links are ready */}
+                    {false && (
                     <div className="flex gap-2">
                         {/* LinkedIn */}
                         <Link href="https://linkedin.com/company/zettab" target="_blank" rel="noopener noreferrer" className="social-link size-9 bg-slate-800 rounded-lg flex items-center justify-center text-white hover:bg-[#0A66C2] transition-colors">
@@ -131,6 +132,7 @@ export function Footer() {
                             </svg>
                         </Link>
                     </div>
+                    )}
                 </div>
             </div>
         </footer>
