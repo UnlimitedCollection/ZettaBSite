@@ -104,7 +104,7 @@ export function Header() {
                                 </div>
                             </div>
                         </div>
-                        <Link className={navLinkClass("/case-study-ecommerce-redesign")} href="/case-study-ecommerce-redesign">Portfolio</Link>
+
                         <Link className={navLinkClass("/blog")} href="/blog">Blog</Link>
                         <Link className={navLinkClass("/contact")} href="/contact">Contact</Link>
                     </nav>
@@ -138,7 +138,7 @@ export function Header() {
                             <Link href="/cloud-deployments" className="text-sm text-slate-600 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Cloud & DevOps</Link>
                         </div>
                     </div>
-                    <Link href="/case-study-ecommerce-redesign" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Portfolio</Link>
+
                     <Link href="/blog" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
                     <Link href="/contact" className="text-base font-semibold text-slate-900 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                     <Link

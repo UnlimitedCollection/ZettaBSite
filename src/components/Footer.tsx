@@ -50,7 +50,7 @@ export function Footer() {
                         <h5 className="text-white font-bold mb-4">Company</h5>
                         <ul className="space-y-2 text-sm">
                             <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
-                            <li><Link href="/case-study-ecommerce-redesign" className="hover:text-primary transition-colors">Our Portfolio</Link></li>
+
                             <li><Link href="/careers" className="hover:text-primary transition-colors">Careers</Link></li>
                             <li><Link href="/blog" className="hover:text-primary transition-colors">Latest News</Link></li>
                             <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
