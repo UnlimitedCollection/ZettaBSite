@@ -160,6 +160,7 @@ export default function HomePage() {
       </section>
 
       {/* KPI Section */}
+      {false && (
       <section className="py-12 bg-slate-200 border-y border-primary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -182,6 +183,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      )}
 
       {/* About Preview */}
       <section className="py-24 bg-white" id="about">
@@ -211,7 +213,7 @@ export default function HomePage() {
                 Your Strategic Engineering Ally in the Digital Age
               </h3>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                ZettaB.io is a global digital solutions provider dedicated to transforming complex business challenges into seamless digital experiences through strategic engineering. We don&apos;t just build software; we build the future of your enterprise.
+                Zettab is a global digital solutions provider dedicated to transforming complex business challenges into seamless digital experiences through strategic engineering. We don&apos;t just build software; we build the future of your enterprise.
               </p>
               <Link href="/about" className="group flex items-center gap-3 text-primary font-bold text-lg">
                 Learn more about our mission
@@ -633,7 +635,7 @@ export default function HomePage() {
             <div className="relative z-10">
               <h2 className="text-4xl lg:text-5xl font-black mb-6">Ready to scale your next big idea?</h2>
               <p className="text-cyan-50 text-lg sm:text-xl mb-12 max-w-2xl mx-auto drop-shadow-sm">
-                Join 85+ industry leaders who have accelerated their digital transformation with ZettaB.io&apos;s expert engineering.
+                Join 85+ industry leaders who have accelerated their digital transformation with Zettab&apos;s expert engineering.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link href="/contact" className="cta-banner-button px-8 py-4 sm:px-10 sm:py-5 bg-white text-cyan-700 rounded-2xl font-bold text-lg shadow-lg shadow-black/10">

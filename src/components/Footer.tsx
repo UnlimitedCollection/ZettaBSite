@@ -96,7 +96,7 @@ export function Footer() {
 
                     {/* Copyright — centred */}
                     <p className="text-center xl:absolute xl:left-1/2 xl:-translate-x-1/2 whitespace-normal sm:whitespace-nowrap">
-                        © {currentYear} ZettaB.io. All rights reserved.
+                        © {currentYear} Zettab. All rights reserved.
                     </p>
                     {/* Social Icons — hidden until links are ready */}
                     {false && (

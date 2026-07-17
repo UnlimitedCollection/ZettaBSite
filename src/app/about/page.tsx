@@ -46,7 +46,7 @@ export default function AboutPage() {
                             <h2 className="text-4xl font-black text-slate-900 mb-6">Born from a desire to do things <span className="text-primary italic">right</span>.</h2>
                             <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
                                 <p>
-                                    Founded in 2021, ZettaB.io started with a simple observation: too many businesses were settling for mediocre software that hindered their growth rather than accelerating it.
+                                    Founded in 2024, Zettab started with a simple observation: too many businesses were settling for mediocre software that hindered their growth rather than accelerating it.
                                 </p>
                                 <p>
                                     We set out to create an agency that prioritised engineering excellence, transparent communication, and tangible business results over quick fixes and buzzwords.
@@ -58,17 +58,21 @@ export default function AboutPage() {
 
                             <div className="mt-10 grid grid-cols-3 gap-4 pt-10 border-t border-slate-100">
                                 <div>
-                                    <div className="text-3xl font-black text-primary mb-1">2021</div>
+                                    <div className="text-3xl font-black text-primary mb-1">2024</div>
                                     <div className="text-sm font-semibold uppercase text-slate-500">Founded</div>
                                 </div>
+                                {false && (
                                 <div>
                                     <div className="text-3xl font-black text-primary mb-1">8+</div>
                                     <div className="text-sm font-semibold uppercase text-slate-500">Engineers</div>
                                 </div>
+                                )}
+                                {false && (
                                 <div>
                                     <div className="text-3xl font-black text-primary mb-1">100%</div>
                                     <div className="text-sm font-semibold uppercase text-slate-500">In-House</div>
                                 </div>
+                                )}
                             </div>
                         </div>
                     </div>
